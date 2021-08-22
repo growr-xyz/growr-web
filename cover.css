@@ -33,9 +33,13 @@ p {
 }
 
 .cover-container {
+  margin-top: 1rem;
   max-width: 52em;
 }
 
+.text-cyan {
+  color: #6AE7DA;
+}
 
 /*
  * Header
