@@ -1,0 +1,72 @@
+{
+    "growr" : {
+        "title": "Growr: join the financial health revolution"
+    },
+    "menu" : {
+        "what": "What we do",
+        "mission": "Our mission",
+        "sign": "Sign in",
+        "signup": "Sign up"
+    },
+    "h" : {
+        "master-life": "Master your money. <br/> Get more from life.",
+        "spend-just": "Spend just 30 minutes per week to master money and improve your financial health. Create a better life for you and your family.",
+        "check-health": "Check your financial health",
+        "only-takes": "(It only takes 2 minutes and it's free. Or scroll down for more.)"
+    },
+    "what" : {
+        "title": "What we do?",
+        "growr-is-community": "Growr is a community that empowers you to take your financial health in your hands. It's time to embark on a journey to financial independence, creating a better life and achieving your dreams.",
+        "step-1": "Step 1: Check your financial health",
+        "step-1-content": "Start with knowing your financial health, get prescription on how to improve it and monitor your progress.",
+        "step-2": "Step 2: Embark on weekly quests",
+        "step-2-content": "Learn new skills and create new habits by taking little “pills” of distilled wisdom, personalized for your situation and needs.",
+        "step-3": "Step 3: Use interactive money tools",
+        "step-3-content": "Creating and following your budget, knowing what you own & owe, and planning the future has never been easier with our money tools built to empower your own life moments.",
+        "step-4": "Step 4: Find mentors",
+        "step-4-content": "Tap into our network of experienced mentors who are not incentivized to sell you a product to earn commission, but invest in your future success and the community.",
+        "step-5": "Step 5: Choose from the marketplace",
+        "step-5-content": "The future of financial services is owned by the people, not the 1% – our marketplace provides access to the best deals sharing value back with the Growr community (and with you as a member).",
+        "step-6": "Step 6: Learn, own and earn",
+        "step-6-content": "For the first time, the ownership economy enables you to own a part of the community and start earning by improving your financial health and mentoring others.",
+        "own-your-future": "Own your future",
+        "start-now": "Start now",
+        "to-mission": "(Or scroll down for our mission.)"
+    },
+    "mission": {
+        "title": "Here's our mission.",
+        "h-1": "Growr is redefining financial services for Web 3.0 and the ownership economy: delivered for the people, by the people.",
+        "p-1": "Growr is a global community aiming to revolutionize and democratize the way people learn, get advice, and use premium financial services to master their money and create better lives for themselves and their families.",
+        "p-2": "Today, people still go to banks and other financial service providers who are clueless about their real-life problems, needs and aspirations. There’s a complete disconnect between the person and the provider.",
+        "p-3-1": "As a result, younger generations are more likely to ",
+        "p-3-2": "go to the dentist",
+        "p-3-3": " than visit a bank. Banks, and even more so non-banking lenders, have a negative image with generations Y and Z. FinTech neobanks are aggressively penetrating the market targeting the younger population, and crypto alternatives are starting to gain attention.",
+        "p-4-1": "On top of that, financial literacy in Southeast Europe – the region where Growr is initially launching – is at a relatively ",
+        "p-4-2": "low level at 57%",
+        "p-4-3": ", and risk of poverty or ",
+        "p-4-4": "social exclusion is high at 32%",
+        "p-5": "Who is then helping the young and uneducated people get the right life & money skills and habits to help them avoid falling prey to financial sharks?",
+        "p-6": "Growr’s community-first approach is to provide its members with personalized financial education and tools, within a human-focused gamified environment. Mentors are also part of the community, helping people in need get the right financial “treatment”, independently from financial service providers. They are not rewarded based on sales commissions but based on the overall success of the community members. ",
+        "p-7": "Growr will progressively transition to a DAO (decentralized autonomous organization) and transfer its ownership to its most active members.",
+        "p-8-1": "As a first step, we are launching the ",
+        "p-8-2": "Financial Health Checkup",
+        "p-8-3":  " – an onboarding journey for people who would like to join the Growr community and get help."
+    },
+    "values": {
+        "title": "And the values we abide by.",
+        "democratized": "Democratized",
+        "democratized-content": "Literally – we let people be the owners. Stop benefiting the 1%, provide access to financial services to everyone and give back to each what they deserve.",
+        "life-first": "Life-first",
+        "life-first-content": "Money is not the end – it's just the means to go smoothly through your life moments and challenges, and to achieve your dreams. Growr delivers financial services that are designed around and put your life first.",
+        "premium": "Premium",
+        "premium-content": "Our community is built by engineers, designers, storytellers and financiers who are masters in their craft, delivering premium feeling in every aspect.",
+        "human": "Digital, yet human",
+        "human-content": "We believe in creating a safe environment where people can share their experiences and challenges, and get support by experienced mentors – there's always somebody knowledgeable and empathetic you can talk to.",
+        "join": "Join the movement"
+    },
+    "footer": {
+        "rights": "&copy; dmakr, 2021. All rights reserved.",
+        "terms": "Terms of Use",
+        "privacy": "Privacy Policy"
+    }
+}
