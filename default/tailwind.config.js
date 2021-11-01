@@ -1,7 +1,6 @@
 module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
-  theme: {    
+  darkMode: 'media', // or 'media' or 'class'
+  theme: {
     extend: {
       colors: {
         'teal-lighter': '#A9F3EA',
@@ -9,6 +8,10 @@ module.exports = {
         'teal': '#18D0BA',
         'teal-dark': '#0CA896',
         'teal-darker': '#0E6459',
+        'gray-darker': '#333333',
+        'gray-darkest': '#222222',
+        'gray-lighter': '#F5F5F5',
+        'gray-light': '#CACACA'
       },
       fontFamily: {
         rubik: "'Rubik', sans-serif",
