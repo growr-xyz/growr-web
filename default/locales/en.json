@@ -1,11 +1,13 @@
 {
     "growr" : {
-        "title": "Growr: join the financial health revolution"
+        "title": "Growr – join the financial health revolution"
     },
     "menu" : {
         "what": "What we do",
         "mission": "Our mission",
         "sign": "Sign in",
+        "language": "Български",
+        "language-link": "../index.html",
         "signup": "Sign up"
     },
     "h" : {
@@ -26,7 +28,7 @@
         "step-4": "Step 4: Find mentors",
         "step-4-content": "Tap into our network of experienced mentors who are not incentivized to sell you a product to earn commission, but invest in your future success and the community.",
         "step-5": "Step 5: Choose from the marketplace",
-        "step-5-content": "The future of financial services is owned by the people, not the 1% – our marketplace provides access to the best deals sharing value back with the Growr community (and with you as a member).",
+        "step-5-content": "In the future, financial services will be owned by the people, not the rich elite. Our marketplace provides access to the best deals from partners who have committed to give back to the Growr community – and to you as a member.",
         "step-6": "Step 6: Learn, own and earn",
         "step-6-content": "For the first time, the ownership economy enables you to own a part of the community and start earning by improving your financial health and mentoring others.",
         "own-your-future": "Own your future",
@@ -54,12 +56,12 @@
     },
     "values": {
         "title": "And the values we abide by.",
-        "democratized": "Democratized",
+        "democratized": "Democratization",
         "democratized-content": "Literally – we let people be the owners. Stop benefiting the 1%, provide access to financial services to everyone and give back to each what they deserve.",
         "life-first": "Life-first",
-        "life-first-content": "Money is not the end – it's just the means to go smoothly through your life moments and challenges, and to achieve your dreams. Growr delivers financial services that are designed around and put your life first.",
+        "life-first-content": "Money is not the end goal – it's just the means to go smoothly through your life moments and challenges, and to achieve your dreams. Growr delivers financial services that are designed around and put your life first.",
         "premium": "Premium",
-        "premium-content": "Our community is built by engineers, designers, storytellers and financiers who are masters in their craft, delivering premium feeling in every aspect.",
+        "premium-content": "Our community is built by engineers, designers, storytellers and financiers who are masters in their craft, delivering premium feeling accessible to everybody.",
         "human": "Digital, yet human",
         "human-content": "We believe in creating a safe environment where people can share their experiences and challenges, and get support by experienced mentors – there's always somebody knowledgeable and empathetic you can talk to.",
         "join": "Join the movement"
@@ -68,5 +70,13 @@
         "rights": "&copy; dmakr, 2021. All rights reserved.",
         "terms": "Terms of Use",
         "privacy": "Privacy Policy"
+    },
+    "privacy": {
+        "title": "Growr Privacy Policy",
+        "para1": "Thank you for choosing to be part of our community at Growr (\"Company\" ,\"we,\" \"us,\" or \"our\"). We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about this privacy notice or our practices with regard to your personal information, please contact us at privacy@growr.xyz."
+    },
+    "terms": {
+        "title": "Growr Terms of Use",
+        "para1": "These Terms are currently being prepared."
     }
 }
