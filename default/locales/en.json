@@ -6,9 +6,11 @@
         "what": "What we do",
         "mission": "Our mission",
         "sign": "Sign in",
+        "signin-link": "https://finhealth.growr.xyz/",
         "language": "Български",
         "language-link": "../index.html",
-        "signup": "Sign up"
+        "signup": "Sign up",
+        "signup-link": "https://finhealth.growr.xyz/"
     },
     "h" : {
         "master-life": "Master your money. <br/> Get more from life.",
