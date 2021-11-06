@@ -1,4 +1,8 @@
 module.exports = {
+  purge: {
+    enabled: true,
+    content: ['./default/**/*.html'],
+  },
   darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {
