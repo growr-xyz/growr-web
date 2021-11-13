@@ -15,7 +15,9 @@ module.exports = {
         'gray-darker': '#333333',
         'gray-darkest': '#222222',
         'gray-lighter': '#F5F5F5',
-        'gray-light': '#CACACA'
+        'gray-light': '#CACACA',
+        'teal-gray-dark': '#6C7B7A',
+        'teal-gray-darker': '#566868'
       },
       fontFamily: {
         rubik: "'Rubik', sans-serif",
