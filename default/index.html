@@ -1,353 +1,338 @@
 <!doctype html>
 <html lang="en" class="h-100">
-  <head profile="http://www.w3.org/2005/10/profile">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <title data-t>growr.title</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link href="tailwind.css" rel="stylesheet">
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <script defer data-domain="growr.xyz" src="https://plausible.io/js/plausible.js"></script>
-  </head>
-  <body class="bg-white dark:bg-gray-darkest text-black dark:text-gray-lighter">
-    <div class="text-white relative overflow-hidden min-h-full md:h-700 mb-8">
-      <img src="images/splash1-dark-lo.jpg" class="opacity-90 absolute inset-0 object-cover w-full h-full" alt="" />
-         
-      <header class="absolute top-0 left-0 right-0 z-20">
-        <nav class="container mx-auto px-6 md:px-12 py-5" x-data="{ open: false }">
-          <div class="lg:flex justify-between items-center">
 
-            <div class="relative flex items-center justify-between">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-                class="pt-2 w-24 h-24 md:w-32 md:h-32 flex-no-shrink fill-current" viewBox="0 0 147.489 82.708">
-                <defs>
-                  <filter id="Ellipse_273" x="34.072" y="0" width="16.472" height="16.472" filterUnits="userSpaceOnUse">
-                    <feOffset dy="0.5" input="SourceAlpha"/>
-                    <feGaussianBlur stdDeviation="0.5" result="blur"/>
-                    <feFlood flood-opacity="0.4"/>
-                    <feComposite operator="in" in2="blur"/>
-                    <feComposite in="SourceGraphic"/>
-                  </filter>
-                  <filter id="Ellipse_275" x="0" y="5.613" width="45.661" height="45.661" filterUnits="userSpaceOnUse">
-                    <feOffset dy="0.5" input="SourceAlpha"/>
-                    <feGaussianBlur stdDeviation="0.5" result="blur-2"/>
-                    <feFlood flood-opacity="0.4"/>
-                    <feComposite operator="in" in2="blur-2"/>
-                    <feComposite in="SourceGraphic"/>
-                  </filter>
-                  <filter id="Ellipse_274" x="5.613" y="48.274" width="34.434" height="34.434" filterUnits="userSpaceOnUse">
-                    <feOffset dy="0.5" input="SourceAlpha"/>
-                    <feGaussianBlur stdDeviation="0.5" result="blur-3"/>
-                    <feFlood flood-opacity="0.4"/>
-                    <feComposite operator="in" in2="blur-3"/>
-                    <feComposite in="SourceGraphic"/>
-                  </filter>
-                  <filter id="Path_38" x="59.736" y="28.467" width="87.753" height="23.25" filterUnits="userSpaceOnUse">
-                    <feOffset dy="0.5" input="SourceAlpha"/>
-                    <feGaussianBlur stdDeviation="0.5" result="blur-4"/>
-                    <feFlood flood-opacity="0.4"/>
-                    <feComposite operator="in" in2="blur-4"/>
-                    <feComposite in="SourceGraphic"/>
-                  </filter>
-                </defs>
-                <g id="Group_19" data-name="Group 19" transform="translate(-1411.625 -805.5)">
-                  <g transform="matrix(1, 0, 0, 1, 1411.63, 805.5)" filter="url(#Ellipse_273)">
-                    <circle id="Ellipse_273-2" data-name="Ellipse 273" cx="6.736" cy="6.736" r="6.736" transform="translate(35.57 1)" fill="#a9f3ea"/>
-                  </g>
-                  <g transform="matrix(1, 0, 0, 1, 1411.63, 805.5)" filter="url(#Ellipse_275)">
-                    <circle id="Ellipse_275-2" data-name="Ellipse 275" cx="21.33" cy="21.33" r="21.33" transform="translate(1.5 6.61)" fill="#6ae7da"/>
-                  </g>
-                  <g transform="matrix(1, 0, 0, 1, 1411.63, 805.5)" filter="url(#Ellipse_274)">
-                    <circle id="Ellipse_274-2" data-name="Ellipse 274" cx="15.717" cy="15.717" r="15.717" transform="translate(7.11 49.27)" fill="#18d0ba"/>
-                  </g>
-                  <g transform="matrix(1, 0, 0, 1, 1411.63, 805.5)" filter="url(#Path_38)">
-                    <path id="Path_38-2" data-name="Path 38" d="M-35.033,5.94A9.177,9.177,0,0,1-39.244,5.1a5.867,5.867,0,0,1-2.322-1.93,3.624,3.624,0,0,1-.7-1.822.588.588,0,0,1,.216-.459A.719.719,0,0,1-41.566.7h3.618a.7.7,0,0,1,.432.122,1.065,1.065,0,0,1,.3.418,2.428,2.428,0,0,0,.7.932,2.189,2.189,0,0,0,1.35.338,2.317,2.317,0,0,0,1.728-.581A2.7,2.7,0,0,0-32.872,0V-1.809A5.182,5.182,0,0,1-36.787-.324,5.368,5.368,0,0,1-40.959-1.9a7.173,7.173,0,0,1-1.579-4.657l-.027-.729a8.119,8.119,0,0,1,1.472-5.157,5.158,5.158,0,0,1,4.306-1.863,5.365,5.365,0,0,1,2.43.526A5.11,5.11,0,0,1-32.6-12.366v-.972a.7.7,0,0,1,.189-.5.635.635,0,0,1,.486-.2h3.294a.679.679,0,0,1,.5.2.679.679,0,0,1,.2.5V-.405A5.923,5.923,0,0,1-29.795,4.32,7.731,7.731,0,0,1-35.033,5.94Zm-.216-9.909a2.089,2.089,0,0,0,1.728-.7,3.134,3.134,0,0,0,.648-1.782,7.382,7.382,0,0,0,.027-.81,6.932,6.932,0,0,0-.027-.81,3.1,3.1,0,0,0-.648-1.8,2.109,2.109,0,0,0-1.728-.689,2.025,2.025,0,0,0-1.728.716,3.485,3.485,0,0,0-.594,1.984l-.027.594a4.8,4.8,0,0,0,.513,2.417A1.946,1.946,0,0,0-35.249-3.969ZM-24.151,0a.648.648,0,0,1-.473-.2.648.648,0,0,1-.2-.473V-13.338a.7.7,0,0,1,.189-.5.635.635,0,0,1,.486-.2h3.294a.679.679,0,0,1,.5.2.679.679,0,0,1,.2.5v1.026a5.162,5.162,0,0,1,1.768-1.282,5.539,5.539,0,0,1,2.254-.445h1.215a.658.658,0,0,1,.486.189.658.658,0,0,1,.189.486v2.943a.671.671,0,0,1-.189.472.635.635,0,0,1-.486.2h-2.727a2.217,2.217,0,0,0-1.661.594,2.3,2.3,0,0,0-.58,1.674v6.8a.635.635,0,0,1-.2.486.7.7,0,0,1-.5.189ZM-5.737.27a7.745,7.745,0,0,1-5.225-1.579,6.1,6.1,0,0,1-1.984-4.5q-.027-.351-.027-1.215t.027-1.215A6.046,6.046,0,0,1-10.908-12.7,7.7,7.7,0,0,1-5.737-14.31,7.7,7.7,0,0,1-.567-12.7,6.046,6.046,0,0,1,1.472-8.235q.054.7.054,1.215T1.472-5.805a6.1,6.1,0,0,1-1.984,4.5A7.745,7.745,0,0,1-5.737.27Zm0-3.4A1.964,1.964,0,0,0-4.09-3.82a3.775,3.775,0,0,0,.621-2.12q.027-.27.027-1.08T-3.469-8.1a3.8,3.8,0,0,0-.621-2.106,1.947,1.947,0,0,0-1.647-.7,1.947,1.947,0,0,0-1.647.7A3.8,3.8,0,0,0-8.005-8.1l-.027,1.08.027,1.08a3.775,3.775,0,0,0,.621,2.12A1.964,1.964,0,0,0-5.737-3.132ZM7.6,0a.861.861,0,0,1-.58-.176,1.106,1.106,0,0,1-.311-.5l-3.888-12.5-.054-.243a.581.581,0,0,1,.189-.445.617.617,0,0,1,.432-.175H6.331a.829.829,0,0,1,.54.175.74.74,0,0,1,.27.391L9.355-5.994,11.7-13.419a.8.8,0,0,1,.27-.432.83.83,0,0,1,.567-.189H14.4a.83.83,0,0,1,.567.189.986.986,0,0,1,.3.432l2.349,7.425L19.8-13.473a.97.97,0,0,1,.284-.391.775.775,0,0,1,.527-.175h2.943a.6.6,0,0,1,.445.175.6.6,0,0,1,.175.445,1,1,0,0,1-.027.243L20.236-.675A.827.827,0,0,1,19.372,0H16.807a.911.911,0,0,1-.918-.675l-2.4-7.182L11.056-.675A.843.843,0,0,1,10.165,0Zm19.44,0a.648.648,0,0,1-.472-.2.648.648,0,0,1-.2-.473V-13.338a.7.7,0,0,1,.189-.5.635.635,0,0,1,.486-.2h3.294a.679.679,0,0,1,.5.2.679.679,0,0,1,.2.5v1.026a5.162,5.162,0,0,1,1.769-1.282,5.539,5.539,0,0,1,2.255-.445h1.215a.658.658,0,0,1,.486.189.658.658,0,0,1,.189.486v2.943a.671.671,0,0,1-.189.472.635.635,0,0,1-.486.2H33.548a2.217,2.217,0,0,0-1.66.594,2.3,2.3,0,0,0-.581,1.674v6.8a.635.635,0,0,1-.2.486A.7.7,0,0,1,30.6,0ZM37.948,0a.7.7,0,0,1-.5-.189.635.635,0,0,1-.2-.486V-4.239a.679.679,0,0,1,.2-.5.679.679,0,0,1,.5-.2h3.564a.635.635,0,0,1,.486.2.7.7,0,0,1,.189.5V-.675A.671.671,0,0,1,42-.2a.635.635,0,0,1-.486.2Z" transform="translate(103.8 43.78)" fill="#fff"/>
-                  </g>
+<head profile="http://www.w3.org/2005/10/profile">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <title data-t>growr-home.title</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link href="tailwind.css" rel="stylesheet">
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script defer data-domain="growr.xyz" src="https://plausible.io/js/plausible.js"></script>
+</head>
+
+<body class="bg-white dark:bg-gray-darkest text-black dark:text-gray-lighter">
+  <div class="text-white relative overflow-hidden min-h-full md:h-700 mb-8">
+    <img src="images/pexels-pixabay-247676.jpg" class="opacity-25 absolute inset-0 object-cover w-full h-full" alt="" />
+
+    <header class="absolute top-0 left-0 right-0 z-20">
+      <nav class="container mx-auto px-6 md:px-12 py-5" x-data="{ open: false }">
+        <div class="lg:flex justify-between items-center">
+
+          <div class="relative flex items-center justify-between">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              class="pt-2 w-24 h-24 md:w-32 md:h-32 flex-no-shrink fill-current" viewBox="0 0 147.489 82.708">
+              <defs>
+                <filter id="Ellipse_273" x="34.072" y="0" width="16.472" height="16.472" filterUnits="userSpaceOnUse">
+                  <feOffset dy="0.5" input="SourceAlpha" />
+                  <feGaussianBlur stdDeviation="0.5" result="blur" />
+                  <feFlood flood-opacity="0.4" />
+                  <feComposite operator="in" in2="blur" />
+                  <feComposite in="SourceGraphic" />
+                </filter>
+                <filter id="Ellipse_275" x="0" y="5.613" width="45.661" height="45.661" filterUnits="userSpaceOnUse">
+                  <feOffset dy="0.5" input="SourceAlpha" />
+                  <feGaussianBlur stdDeviation="0.5" result="blur-2" />
+                  <feFlood flood-opacity="0.4" />
+                  <feComposite operator="in" in2="blur-2" />
+                  <feComposite in="SourceGraphic" />
+                </filter>
+                <filter id="Ellipse_274" x="5.613" y="48.274" width="34.434" height="34.434"
+                  filterUnits="userSpaceOnUse">
+                  <feOffset dy="0.5" input="SourceAlpha" />
+                  <feGaussianBlur stdDeviation="0.5" result="blur-3" />
+                  <feFlood flood-opacity="0.4" />
+                  <feComposite operator="in" in2="blur-3" />
+                  <feComposite in="SourceGraphic" />
+                </filter>
+                <filter id="Path_38" x="59.736" y="28.467" width="87.753" height="23.25" filterUnits="userSpaceOnUse">
+                  <feOffset dy="0.5" input="SourceAlpha" />
+                  <feGaussianBlur stdDeviation="0.5" result="blur-4" />
+                  <feFlood flood-opacity="0.4" />
+                  <feComposite operator="in" in2="blur-4" />
+                  <feComposite in="SourceGraphic" />
+                </filter>
+              </defs>
+              <g id="Group_19" data-name="Group 19" transform="translate(-1411.625 -805.5)">
+                <g transform="matrix(1, 0, 0, 1, 1411.63, 805.5)" filter="url(#Ellipse_273)">
+                  <circle id="Ellipse_273-2" data-name="Ellipse 273" cx="6.736" cy="6.736" r="6.736"
+                    transform="translate(35.57 1)" fill="#a9f3ea" />
                 </g>
-              </svg>
-              <div class="lg:hidden">
-                <button @click="open = !open" class="text-white focus:outline-none">
-                  <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path x-show="open === false" d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path x-show="open === true" d="M6 18L18 6M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </button>
-              </div>
+                <g transform="matrix(1, 0, 0, 1, 1411.63, 805.5)" filter="url(#Ellipse_275)">
+                  <circle id="Ellipse_275-2" data-name="Ellipse 275" cx="21.33" cy="21.33" r="21.33"
+                    transform="translate(1.5 6.61)" fill="#6ae7da" />
+                </g>
+                <g transform="matrix(1, 0, 0, 1, 1411.63, 805.5)" filter="url(#Ellipse_274)">
+                  <circle id="Ellipse_274-2" data-name="Ellipse 274" cx="15.717" cy="15.717" r="15.717"
+                    transform="translate(7.11 49.27)" fill="#18d0ba" />
+                </g>
+                <g transform="matrix(1, 0, 0, 1, 1411.63, 805.5)" filter="url(#Path_38)">
+                  <path id="Path_38-2" data-name="Path 38"
+                    d="M-35.033,5.94A9.177,9.177,0,0,1-39.244,5.1a5.867,5.867,0,0,1-2.322-1.93,3.624,3.624,0,0,1-.7-1.822.588.588,0,0,1,.216-.459A.719.719,0,0,1-41.566.7h3.618a.7.7,0,0,1,.432.122,1.065,1.065,0,0,1,.3.418,2.428,2.428,0,0,0,.7.932,2.189,2.189,0,0,0,1.35.338,2.317,2.317,0,0,0,1.728-.581A2.7,2.7,0,0,0-32.872,0V-1.809A5.182,5.182,0,0,1-36.787-.324,5.368,5.368,0,0,1-40.959-1.9a7.173,7.173,0,0,1-1.579-4.657l-.027-.729a8.119,8.119,0,0,1,1.472-5.157,5.158,5.158,0,0,1,4.306-1.863,5.365,5.365,0,0,1,2.43.526A5.11,5.11,0,0,1-32.6-12.366v-.972a.7.7,0,0,1,.189-.5.635.635,0,0,1,.486-.2h3.294a.679.679,0,0,1,.5.2.679.679,0,0,1,.2.5V-.405A5.923,5.923,0,0,1-29.795,4.32,7.731,7.731,0,0,1-35.033,5.94Zm-.216-9.909a2.089,2.089,0,0,0,1.728-.7,3.134,3.134,0,0,0,.648-1.782,7.382,7.382,0,0,0,.027-.81,6.932,6.932,0,0,0-.027-.81,3.1,3.1,0,0,0-.648-1.8,2.109,2.109,0,0,0-1.728-.689,2.025,2.025,0,0,0-1.728.716,3.485,3.485,0,0,0-.594,1.984l-.027.594a4.8,4.8,0,0,0,.513,2.417A1.946,1.946,0,0,0-35.249-3.969ZM-24.151,0a.648.648,0,0,1-.473-.2.648.648,0,0,1-.2-.473V-13.338a.7.7,0,0,1,.189-.5.635.635,0,0,1,.486-.2h3.294a.679.679,0,0,1,.5.2.679.679,0,0,1,.2.5v1.026a5.162,5.162,0,0,1,1.768-1.282,5.539,5.539,0,0,1,2.254-.445h1.215a.658.658,0,0,1,.486.189.658.658,0,0,1,.189.486v2.943a.671.671,0,0,1-.189.472.635.635,0,0,1-.486.2h-2.727a2.217,2.217,0,0,0-1.661.594,2.3,2.3,0,0,0-.58,1.674v6.8a.635.635,0,0,1-.2.486.7.7,0,0,1-.5.189ZM-5.737.27a7.745,7.745,0,0,1-5.225-1.579,6.1,6.1,0,0,1-1.984-4.5q-.027-.351-.027-1.215t.027-1.215A6.046,6.046,0,0,1-10.908-12.7,7.7,7.7,0,0,1-5.737-14.31,7.7,7.7,0,0,1-.567-12.7,6.046,6.046,0,0,1,1.472-8.235q.054.7.054,1.215T1.472-5.805a6.1,6.1,0,0,1-1.984,4.5A7.745,7.745,0,0,1-5.737.27Zm0-3.4A1.964,1.964,0,0,0-4.09-3.82a3.775,3.775,0,0,0,.621-2.12q.027-.27.027-1.08T-3.469-8.1a3.8,3.8,0,0,0-.621-2.106,1.947,1.947,0,0,0-1.647-.7,1.947,1.947,0,0,0-1.647.7A3.8,3.8,0,0,0-8.005-8.1l-.027,1.08.027,1.08a3.775,3.775,0,0,0,.621,2.12A1.964,1.964,0,0,0-5.737-3.132ZM7.6,0a.861.861,0,0,1-.58-.176,1.106,1.106,0,0,1-.311-.5l-3.888-12.5-.054-.243a.581.581,0,0,1,.189-.445.617.617,0,0,1,.432-.175H6.331a.829.829,0,0,1,.54.175.74.74,0,0,1,.27.391L9.355-5.994,11.7-13.419a.8.8,0,0,1,.27-.432.83.83,0,0,1,.567-.189H14.4a.83.83,0,0,1,.567.189.986.986,0,0,1,.3.432l2.349,7.425L19.8-13.473a.97.97,0,0,1,.284-.391.775.775,0,0,1,.527-.175h2.943a.6.6,0,0,1,.445.175.6.6,0,0,1,.175.445,1,1,0,0,1-.027.243L20.236-.675A.827.827,0,0,1,19.372,0H16.807a.911.911,0,0,1-.918-.675l-2.4-7.182L11.056-.675A.843.843,0,0,1,10.165,0Zm19.44,0a.648.648,0,0,1-.472-.2.648.648,0,0,1-.2-.473V-13.338a.7.7,0,0,1,.189-.5.635.635,0,0,1,.486-.2h3.294a.679.679,0,0,1,.5.2.679.679,0,0,1,.2.5v1.026a5.162,5.162,0,0,1,1.769-1.282,5.539,5.539,0,0,1,2.255-.445h1.215a.658.658,0,0,1,.486.189.658.658,0,0,1,.189.486v2.943a.671.671,0,0,1-.189.472.635.635,0,0,1-.486.2H33.548a2.217,2.217,0,0,0-1.66.594,2.3,2.3,0,0,0-.581,1.674v6.8a.635.635,0,0,1-.2.486A.7.7,0,0,1,30.6,0ZM37.948,0a.7.7,0,0,1-.5-.189.635.635,0,0,1-.2-.486V-4.239a.679.679,0,0,1,.2-.5.679.679,0,0,1,.5-.2h3.564a.635.635,0,0,1,.486.2.7.7,0,0,1,.189.5V-.675A.671.671,0,0,1,42-.2a.635.635,0,0,1-.486.2Z"
+                    transform="translate(103.8 43.78)" fill="#fff" />
+                </g>
+              </g>
+            </svg>
+            <div class="lg:hidden">
+              <button @click="open = !open" class="text-white focus:outline-none">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path x-show="open === false" d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path x-show="open === true" d="M6 18L18 6M6 6L18 18" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
             </div>
-
-            <ul class="flex items-center hidden space-x-8 lg:flex mr-4">
-              <li><a href="#what" aria-label="What we do" title="What we do" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" data-t>menu.what</a></li>
-              <li><a href="#mission" aria-label="Our mission" title="Our mission" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" data-t>menu.mission</a></li>
-              <li><a data-attr-t href-t="menu.signin-link" aria-label="Sign in" title="Sign in" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" data-t>menu.sign</a></li>
-              <li><a data-attr-t href-t="menu.language-link" aria-label="Change language" title="Change language" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" data-t>menu.language</a></li>
-              <li>
-                <a
-                  data-attr-t href-t="menu.signup-link"
-                  class="text-white inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal focus:shadow-outline focus:outline-none"
-                  aria-label="Sign up"
-                  title="Sign up"
-                  data-t
-                >menu.signup</a>
-              </li>
-            </ul>
-  
-            
-            <!-- </div> -->
           </div>
 
-          <!-- Mobile navigation -->
-          <div x-show="open === true" class="lg:hidden flex flex-col w-full z-40 bg-teal-dark rounded mt-4 py-2 overflow-hidden">
-            <a href="#what" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>menu.what</a>
-            <a href="#mission" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>menu.mission</a>
-            <a data-attr-t href-t="menu.signin-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>menu.sign</a>
-            <a data-attr-t href-t="menu.signup-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>menu.signup</a>
-            <a data-attr-t href-t="menu.language-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>menu.language</a>
-          </div>
-        </nav>
-      
-      </header>
+          <ul class="flex items-center hidden space-x-8 lg:flex mr-4">
+            <li><a data-attr-t href="#mission" aria-label-t="growr-home.menu.mission" title-t="growr-home.menu.mission"
+              class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" data-t>growr-home.menu.mission</a></li>
+            <li><a data-attr-t href="#what" aria-label-t="growr-home.menu.what" title-t="growr-home.menu.what"
+              class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" data-t>growr-home.menu.what</a></li>
+            <li><a data-attr-t href-t="growr-home.menu.finhealth-link" aria-label-t="growr-home.menu.finhealth" title-t="growr-home.menu.finhealth"
+              class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" data-t>growr-home.menu.finhealth</a></li>
+            <li><a data-attr-t href-t="growr-home.menu.protocol-link" aria-label-t="growr-home.menu.protocol" title-t="growr-home.menu.protocol"
+              class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" data-t>growr-home.menu.protocol</a></li>
+            <!-- <li><a data-attr-t href-t="menu.signin-link" aria-label="Sign in" title="Sign in" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" data-t>growr-home.menu.sign</a></li>
+            <li><a data-attr-t href-t="menu.language-link" aria-label="Change language" title="Change language" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" data-t>growr-home.menu.language</a></li>
+            <li>
+              <a
+                data-attr-t href-t="menu.signup-link"
+                class="text-white inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal focus:shadow-outline focus:outline-none"
+                aria-label="Sign up"
+                title="Sign up"
+                data-t
+              >growr-home.menu.signup</a>
+            </li> -->
+          </ul>
 
-      <!-- Hero -->
-      <div class="container mx-auto px-6 md:px-12 relative z-10 flex items-center min-h-screen py-28 md:py-36 xl:py-48">
-          <div class="lg:w-3/5 xl:w-2/5 flex flex-col items-start relative z-10">
-              <!-- <span class="uppercase text-indigo-500">Lorem ipsum</span> -->
-  
-              <h1 class="font-bold text-3xl sm:text-5xl text-white mt-5" data-t>h.master-life</h1>
-  
-              <div class="max-w-md">
-                  <p class="text-white mt-3 text-base md:text-lg" data-t>h.spend-just</p>
-                  <!-- <p class="text-white mt-3 text-md">We help you with measuring you current financial health and prescribe you the right “pills” of wisdom for your improvement journey.</p> -->
-              </div>
-  
-              <a data-attr-t href-t="menu.signup-link" class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 tracking-wide" data-t>h.check-health</a>
-              <p class="text-sm text-white pt-2" data-t>h.only-takes</p>
-            </div>
+          <!-- </div> -->
+        </div>
+
+        <!-- Mobile navigation -->
+        <div x-show="open === true" class="lg:hidden flex flex-col w-full z-40 bg-teal-dark rounded mt-4 py-2 overflow-hidden">
+          <a href="#mission" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-home.menu.mission</a>
+          <a href="#what" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-home.menu.what</a>
+          <a href-t="growr-home.menu.finhealth-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-home.menu.finhealth</a>
+          <a href-t="growr-home.menu.protocol-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-home.menu.protocol</a>
+          <!-- <a data-attr-t href-t="growr-home.menu.signin-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-home.menu.sign</a>
+            <a data-attr-t href-t="menu.signup-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-home.menu.signup</a>
+            <a data-attr-t href-t="menu.language-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-home.menu.language</a> -->
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <div class="container mx-auto px-6 md:px-12 relative z-10 flex items-center min-h-screen py-28 md:py-36 xl:py-48">
+      <div class="lg:w-3/5 xl:w-2/5 flex flex-col items-start relative z-10">
+        <!-- <span class="uppercase text-indigo-500">Lorem ipsum</span> -->
+
+        <h1 class="font-bold text-3xl sm:text-5xl text-white mt-5" data-t>growr-home.heading</h1>
+
+        <!-- <div class="max-w-md">
+          <p class="text-white mt-3 text-base md:text-lg" data-t>growr-home.subheading</p>
+        </div> -->
+
+        <a data-attr-t href-t="growr-home.button-link"
+          class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 tracking-wide"
+          data-t>growr-home.button</a>
       </div>
     </div>
+  </div>
 
-    <!-- What we do -->
-    <a name="what"></a>
-    <div class="px-6 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-      <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-        <h2 class="max-w-lg mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-5xl md:mx-auto" data-t>what.title</h2>
-        <p class="text-lg sm:text-xl" data-t>what.growr-is-community</p>
+  <!-- Mission -->
+  <a name="mission"></a>
+  <div class="px-6 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
+    <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+      <h2
+        class="max-w-lg mb-6 text-4xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-5xl md:mx-auto"
+        data-t>growr-home.mission.title</h2>
+      <p class="text-xl md:text-2xl mb-8" data-t>growr-home.mission.subtitle</p>
+      <div class="container mx-auto mb-10">
+        <svg class="h-14 md:h-20 mx-auto" viewBox="0 0 332 165" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M82.5 165C128.063 165 165 128.063 165 82.5C165 36.9365 128.063 0 82.5 0C36.9365 0 0 36.9365 0 82.5C0 128.063 36.9365 165 82.5 165Z" fill="#6AE7DA" />
+          <path d="M305.5 165C320.136 165 332 153.136 332 138.5C332 123.864 320.136 112 305.5 112C290.864 112 279 123.864 279 138.5C279 153.136 290.864 165 305.5 165Z" fill="#A9F3EA" />
+          <path d="M225 165C258.689 165 286 137.913 286 104.5C286 71.0868 258.689 44 225 44C191.311 44 164 71.0868 164 104.5C164 137.913 191.311 165 225 165Z" fill="#18D0BA" />
+        </svg>
       </div>
-      <div class="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-        <div class="grid gap-6 row-gap-10 lg:grid-cols-2">
-          <div class="lg:py-6 lg:pr-16">
-            <div class="flex">
-              <div class="flex flex-col items-center mr-4">
-                <div>
-                  <div class="flex items-center justify-center w-10 h-10 border rounded-full">
-                    <svg class="w-4 text-gray-600 dark:text-gray-light stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                      <line fill="none" stroke-miterlimit="10" x1="12" y1="2" x2="12" y2="22"></line>
-                      <polyline fill="none" stroke-miterlimit="10" points="19,15 12,22 5,15"></polyline>
-                    </svg>
-                  </div>
-                </div>
-                <div class="w-px h-full bg-gray-300"></div>
-              </div>
-              <div class="pt-1 pb-8">
-                <p class="mb-2 text-lg font-bold" data-t>what.step-1</p>
-                <p class="text-gray-700 dark:text-gray-light" data-t>what.step-1-content</p>
-              </div>
-            </div>
-            <div class="flex">
-              <div class="flex flex-col items-center mr-4">
-                <div>
-                  <div class="flex items-center justify-center w-10 h-10 border rounded-full">
-                    <svg class="w-4 text-gray-600 dark:text-gray-light stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                      <line fill="none" stroke-miterlimit="10" x1="12" y1="2" x2="12" y2="22"></line>
-                      <polyline fill="none" stroke-miterlimit="10" points="19,15 12,22 5,15"></polyline>
-                    </svg>
-                  </div>
-                </div>
-                <div class="w-px h-full bg-gray-300"></div>
-              </div>
-              <div class="pt-1 pb-8">
-                <p class="mb-2 text-lg font-bold" data-t>what.step-2</p>
-                <p class="text-gray-700 dark:text-gray-light" data-t>what.step-2-content</p>
-              </div>
-            </div>
-            <div class="flex">
-              <div class="flex flex-col items-center mr-4">
-                <div>
-                  <div class="flex items-center justify-center w-10 h-10 border rounded-full">
-                    <svg class="w-4 text-gray-600 dark:text-gray-light stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                      <line fill="none" stroke-miterlimit="10" x1="12" y1="2" x2="12" y2="22"></line>
-                      <polyline fill="none" stroke-miterlimit="10" points="19,15 12,22 5,15"></polyline>
-                    </svg>
-                  </div>
-                </div>
-                <div class="w-px h-full bg-gray-300"></div>
-              </div>
-              <div class="pt-1 pb-8">
-                <p class="mb-2 text-lg font-bold" data-t>what.step-3</p>
-                <p class="text-gray-700 dark:text-gray-light" data-t>what.step-3-content</p>
-              </div>
-            </div>
-            <div class="flex">
-              <div class="flex flex-col items-center mr-4">
-                <div>
-                  <div class="flex items-center justify-center w-10 h-10 border rounded-full">
-                    <svg class="w-4 text-gray-600 dark:text-gray-light stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                      <line fill="none" stroke-miterlimit="10" x1="12" y1="2" x2="12" y2="22"></line>
-                      <polyline fill="none" stroke-miterlimit="10" points="19,15 12,22 5,15"></polyline>
-                    </svg>
-                  </div>
-                </div>
-                <div class="w-px h-full bg-gray-300"></div>
-              </div>
-              <div class="pt-1 pb-8">
-                <p class="mb-2 text-lg font-bold" data-t>what.step-4</p>
-                <p class="text-gray-700 dark:text-gray-light" data-t>what.step-4-content</p>
-              </div>
-            </div>
-            <div class="flex">
-              <div class="flex flex-col items-center mr-4">
-                <div>
-                  <div class="flex items-center justify-center w-10 h-10 border rounded-full">
-                    <svg class="w-4 text-gray-600 dark:text-gray-light stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                      <line fill="none" stroke-miterlimit="10" x1="12" y1="2" x2="12" y2="22"></line>
-                      <polyline fill="none" stroke-miterlimit="10" points="19,15 12,22 5,15"></polyline>
-                    </svg>
-                  </div>
-                </div>
-                <div class="w-px h-full bg-gray-300"></div>
-              </div>
-              <div class="pt-1 pb-8">
-                <p class="mb-2 text-lg font-bold" data-t>what.step-5</p>
-                <p class="text-gray-700 dark:text-gray-light" data-t>what.step-5-content</p>
-              </div>
-            </div>
-            <div class="flex">
-              <div class="flex flex-col items-center mr-4">
-                <div>
-                  <div class="flex items-center justify-center w-10 h-10 border rounded-full">
-                    <svg class="w-4 text-gray-600 dark:text-gray-light stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                      <line fill="none" stroke-miterlimit="10" x1="12" y1="2" x2="12" y2="22"></line>
-                      <polyline fill="none" stroke-miterlimit="10" points="19,15 12,22 5,15"></polyline>
-                    </svg>
-                  </div>
-                </div>
-                <div class="w-px h-full bg-gray-300"></div>
-              </div>
-              <div class="pt-1 pb-8">
-                <p class="mb-2 text-lg font-bold" data-t>what.step-6</p>
-                <p class="text-gray-700 dark:text-gray-light" data-t>what.step-6-content</p>
-              </div>
-            </div>
-            <div class="flex">
-              <div class="flex flex-col items-center mr-4">
-                <div>
-                  <div class="flex items-center justify-center w-10 h-10 border rounded-full">
-                    <svg class="w-6 text-gray-600 dark:text-gray-light stroke-current" viewBox="0 0 24 24">
-                      <polyline fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="6,12 10,16 18,8"></polyline>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="pt-1">
-                <p class="mb-2 text-lg font-bold" data-t>what.own-your-future</p>
-                <p class="text-gray-700 dark:text-gray-light"></p>
-              </div>
-            </div>
-            <a data-attr-t href-t="menu.signup-link" class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full mx-auto md:w-60" data-t>what.start-now</a>
-            <div class="mx-auto text-center">
-              <p class="text-sm pt-2" data-t>what.to-mission</p>
-            </div>
-          </div>
-          <div class="relative">
-            <img
-              class="filter saturate-50 inset-0 object-cover object-bottom w-full rounded shadow-lg h-96 lg:absolute lg:h-full"
-              src="https://images.pexels.com/photos/1066176/pexels-photo-1066176.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-              alt=""
-            />
-          </div>
+    </div>
+    <div class="grid lg:grid-cols-2">
+      <div class="lg:pr-16">
+        <div class="max-w-xl md:mx-auto lg:max-w-2xl text-base md:text-lg text-gray-700 dark:text-gray-light">
+          <p class="mb-8" data-t>growr-home.mission.p-1</p>
+          <p class="mb-8"><span data-t>growr-home.mission.p-2-1</span>
+              <a class="underline text-teal-dark" data-attr-t href-t="growr-home.mission.p-2-2-link" target="_blank" rel="noreferrer"
+              data-t>growr-home.mission.p-2-2</a><span data-t>growr-home.mission.p-2-3</span>
+          </p>
+          <p class="mb-8">
+            <span data-t>growr-home.mission.p-3-1</span>
+            <a class="underline text-teal-dark" data-attr-t href-t="growr-home.mission.p-3-2-link" target="_blank" rel="noreferrer"
+            data-t>growr-home.mission.p-3-2</a><span data-t>growr-home.mission.p-3-3</span>
+            <a class="underline text-teal-dark" data-attr-t href-t="growr-home.mission.p-3-4-link" target="_blank" rel="noreferrer"
+            data-t>growr-home.mission.p-3-4</a><span data-t>growr-home.mission.p-3-5</span>
+          </p>
+        </div>
+      </div>
+      <div class="relative lg:pr-16">
+        <div class="max-w-xl md:mx-auto lg:max-w-2xl text-base md:text-lg text-gray-700 dark:text-gray-light">
+          <p class="mb-8">
+            <span data-t>growr-home.mission.p-4-1</span>
+            <a class="underline text-teal-dark" data-attr-t href-t="growr-home.mission.p-4-2-link" target="_blank" rel="noreferrer"
+            data-t>growr-home.mission.p-4-2</a><span data-t>growr-home.mission.p-4-3</span>
+            <a class="underline text-teal-dark" data-attr-t href-t="growr-home.mission.p-4-4-link" target="_blank" rel="noreferrer"
+            data-t>growr-home.mission.p-4-4</a><span data-t>growr-home.mission.p-4-5</span>
+          </p>
+          <p class="mb-8">
+            <span data-t>growr-home.mission.p-5-1</span>
+            <a class="underline text-teal-dark" data-attr-t href-t="growr-home.mission.p-5-2-link" target="_blank" rel="noreferrer"
+            data-t>growr-home.mission.p-5-2</a><span data-t>growr-home.mission.p-5-3</span>
+          </p>
+          <p class="mb-8" data-t>growr-home.mission.p-6</p>
+        </div>
+      </div>
+      <!-- <p class="mb-8"><span data-t>growr-home.mission.p-8-1</span><a data-attr-t href-t="growr-home.menu.signup-link"
+          class="underline text-teal-dark" data-t>growr-home.mission.p-8-2</a><span data-t>growr-home.mission.p-8-3</span></p> -->
+    </div>
+  </div> 
+
+  <!-- What we do -->
+  <a name="what"></a>
+  <div class="px-6 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
+    <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+      <h2
+        class="max-w-lg mb-6 text-4xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-5xl md:mx-auto"
+        data-t>growr-home.vision.title</h2>
+    </div>
+
+    <div class="grid lg:grid-cols-2">
+      <div class="lg:pr-16">
+        <div class="max-w-xl md:mx-auto lg:max-w-2xl text-base md:text-lg text-gray-700 dark:text-gray-light">
+          <p class="mb-8" data-t>growr-home.vision.p-1</p>
+          <p class="mb-8"><span data-t>growr-home.vision.p-2-1</span><a class="underline text-teal-dark" data-attr-t href-t="growr-home.vision.p-2-2-link"
+            target="_blank" rel="noreferrer" data-t>growr-home.vision.p-2-2</a><span data-t>growr-home.vision.p-2-3</span></p>
+          <p class="mb-8" data-t>growr-home.vision.p-3</p>
+          <p class="mb-8"><span data-t>growr-home.vision.p-4-1</span><a class="underline text-teal-dark" data-attr-t href-t="growr-home.vision.p-4-2-link"
+            target="_blank" rel="noreferrer" data-t>growr-home.vision.p-4-2</a><span data-t>growr-home.vision.p-4-3</span></p>
+        </div>
+      </div>
+      <div class="relative lg:pr-16">
+        <div class="max-w-xl md:mx-auto lg:max-w-2xl text-base md:text-lg text-gray-700 dark:text-gray-light">
+          <p class="mb-8" data-t>growr-home.vision.p-5</p>
+          <p class="mb-8" data-t>growr-home.vision.p-6</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-light dark:bg-teal-dark sm:w-24 sm:h-24">
+        <svg class="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52">
+          <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+        </svg>
+      </div>
+      <div class="flex flex-col lg:flex-row">
+        <div class="mb-6 lg:mb-0 lg:w-1/2 lg:pr-5">
+          <h3 class="max-w-3xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto" data-t>growr-home.vision.finhealth.title</h3>
+          <p class="mb-8"><a data-attr-t href-t="growr-home.menu.finhealth-link"
+            class="underline text-teal-dark" data-t>Learn more</a></p>
+        </div>
+        <div class="lg:w-1/2">
+          <p class="text-base md:text-lg text-gray-700 dark:text-gray-light" data-t>growr-home.vision.finhealth.content</p>
         </div>
       </div>
     </div>
 
-    <!-- Mission -->
-    <a name="mission"></a>
-    <div class="px-6 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
-      <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-        <h2 class="max-w-lg mb-6 text-4xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-5xl md:mx-auto" data-t>mission.title</h2>
-        <p class="text-lg md:text-xl mb-8" data-t>mission.h-1</p>
-        <div class="container mx-auto mb-10">
-          <svg class="h-14 md:h-20 mx-auto" viewBox="0 0 332 165" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M82.5 165C128.063 165 165 128.063 165 82.5C165 36.9365 128.063 0 82.5 0C36.9365 0 0 36.9365 0 82.5C0 128.063 36.9365 165 82.5 165Z" fill="#6AE7DA"/>
-            <path d="M305.5 165C320.136 165 332 153.136 332 138.5C332 123.864 320.136 112 305.5 112C290.864 112 279 123.864 279 138.5C279 153.136 290.864 165 305.5 165Z" fill="#A9F3EA"/>
-            <path d="M225 165C258.689 165 286 137.913 286 104.5C286 71.0868 258.689 44 225 44C191.311 44 164 71.0868 164 104.5C164 137.913 191.311 165 225 165Z" fill="#18D0BA"/>
-          </svg>
+    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-light dark:bg-teal-dark sm:w-24 sm:h-24">
+        <svg class="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52">
+          <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+        </svg>
+      </div>
+      <div class="flex flex-col lg:flex-row">
+        <div class="mb-6 lg:mb-0 lg:w-1/2 lg:pr-5">
+          <h3 class="max-w-3xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto" data-t>growr-home.vision.protocol.title</h3>
+          <p class="mb-8"><a data-attr-t href-t="growr-home.menu.protocol-link"
+            class="underline text-teal-dark" data-t>Learn more</a></p>
+        </div>
+        <div class="lg:w-1/2">
+          <p class="text-base md:text-lg text-gray-700 dark:text-gray-light" data-t>growr-home.vision.protocol.content</p>
         </div>
       </div>
-      <div class="max-w-xl mb-10 md:mx-auto lg:max-w-2xl md:mb-12 text-base md:text-lg text-gray-700 dark:text-gray-light">
-        <p class="mb-8" data-t>mission.p-1</p>
-        <p class="mb-8" data-t>mission.p-2</p>
-        <p class="mb-8"><span data-t>mission.p-3-1</span><a class="underline text-teal-dark" href="https://www.forbes.com/sites/zachconway/2017/04/19/why-more-millennials-would-rather-visit-the-dentist-than-listen-to-banks/" target="_blank" rel="noreferrer" data-t>mission.p-3-2</a><span data-t>mission.p-3-3</span></p>
-        <p class="mb-8"><span data-t>mission.p-4-1</span><a class="underline text-teal-dark" href="https://www.oecd.org/financial/education/Financial-Literacy-of-Adults-in-South-East-Europe.pdf" target="_blank" rel="noreferrer" data-t>mission.p-4-2</a><span data-t>mission.p-4-3</span><a class="underline text-teal-dark" href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Living_conditions_in_Europe_-_poverty_and_social_exclusion" target="_blank" rel="noreferrer" data-t>mission.p-4-4</a>.</p>
-        <p class="mb-8" data-t>mission.p-5</p>
-        <p class="mb-8" data-t>mission.p-6</p>
-        <p class="mb-8" data-t>mission.p-7</p>
-        <p class="mb-8"><span data-t>mission.p-8-1</span><a data-attr-t href-t="menu.signup-link" class="underline text-teal-dark" data-t>mission.p-8-2</a><span data-t>mission.p-8-3</span></p>
-      </div>
-      <div class="py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-4">
-        <h3 class="max-w-3xl mb-12 text-3xl md:text-center font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto" data-t>values.title</h3>
-        <div class="grid gap-8 row-gap-10 lg:grid-cols-2">
-          <div class="max-w-md sm:mx-auto sm:text-center">
-            <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-light dark:bg-teal-dark sm:mx-auto sm:w-24 sm:h-24">
-              <svg class="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52">
-                <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-              </svg>
-            </div>
-            <h3 class="mb-3 text-xl font-bold leading-5" data-t>values.democratized</h3>
-            <p class="mb-3 text-md text-gray-700 dark:text-gray-light" data-t>values.democratized-content</p>
-          </div>
-          <div class="max-w-md sm:mx-auto sm:text-center">
-            <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-light dark:bg-teal-dark sm:mx-auto sm:w-24 sm:h-24">
-              <svg class="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52">
-                <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-              </svg>
-            </div>
-            <h6 class="mb-3 text-xl font-bold leading-5" data-t>values.life-first</h6>
-            <p class="mb-3 text-md text-gray-700 dark:text-gray-light" data-t>values.life-first-content</p>
-          </div>
-          <div class="max-w-md sm:mx-auto sm:text-center">
-            <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-light dark:bg-teal-dark sm:mx-auto sm:w-24 sm:h-24">
-              <svg class="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52">
-                <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-              </svg>
-            </div>
-            <h6 class="mb-3 text-xl font-bold leading-5" data-t>values.premium</h6>
-            <p class="mb-3 text-md text-gray-700 dark:text-gray-light" data-t>values.premium-content</p>
-          </div>
-          <div class="max-w-md sm:mx-auto sm:text-center">
-            <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-light dark:bg-teal-dark sm:mx-auto sm:w-24 sm:h-24">
-              <svg class="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52">
-                <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-              </svg>
-            </div>
-            <h6 class="mb-3 text-xl font-bold leading-5" data-t>values.human</h6>
-            <p class="mb-3 text-md text-gray-700 dark:text-gray-light" data-t>values.human-content</p>
-          </div>
-        </div>
-      </div>
-  
-      <a data-attr-t href-t="menu.signup-link" class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 md:w-80 mx-auto" data-t>values.join</a>
     </div>
 
+    <!-- Values -->
+    <div class="py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-4">
+      <h3
+        class="max-w-3xl mb-12 text-3xl md:text-center font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto"
+        data-t>growr-home.values.title</h3>
+      <div class="grid gap-8 row-gap-10 lg:grid-cols-2">
+        <div class="max-w-md sm:mx-auto sm:text-center">
+          <div
+            class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-light dark:bg-teal-dark sm:mx-auto sm:w-24 sm:h-24">
+            <svg class="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16" stroke="currentColor"
+              viewBox="0 0 52 52">
+              <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"
+                points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+            </svg>
+          </div>
+          <h3 class="mb-3 text-xl font-bold leading-5" data-t>growr-home.values.value1</h3>
+          <p class="mb-3 text-md text-gray-700 dark:text-gray-light" data-t>growr-home.values.value1-content</p>
+        </div>
+        <div class="max-w-md sm:mx-auto sm:text-center">
+          <div
+            class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-light dark:bg-teal-dark sm:mx-auto sm:w-24 sm:h-24">
+            <svg class="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16" stroke="currentColor"
+              viewBox="0 0 52 52">
+              <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"
+                points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+            </svg>
+          </div>
+          <h6 class="mb-3 text-xl font-bold leading-5" data-t>growr-home.values.value2</h6>
+          <p class="mb-3 text-md text-gray-700 dark:text-gray-light" data-t>growr-home.values.value2-content</p>
+        </div>
+        <div class="max-w-md sm:mx-auto sm:text-center">
+          <div
+            class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-light dark:bg-teal-dark sm:mx-auto sm:w-24 sm:h-24">
+            <svg class="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16" stroke="currentColor"
+              viewBox="0 0 52 52">
+              <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"
+                points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+            </svg>
+          </div>
+          <h6 class="mb-3 text-xl font-bold leading-5" data-t>growr-home.values.value3</h6>
+          <p class="mb-3 text-md text-gray-700 dark:text-gray-light" data-t>growr-home.values.value3-content</p>
+        </div>
+        <div class="max-w-md sm:mx-auto sm:text-center">
+          <div
+            class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-light dark:bg-teal-dark sm:mx-auto sm:w-24 sm:h-24">
+            <svg class="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16" stroke="currentColor"
+              viewBox="0 0 52 52">
+              <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"
+                points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+            </svg>
+          </div>
+          <h6 class="mb-3 text-xl font-bold leading-5" data-t>growr-home.values.value4</h6>
+          <p class="mb-3 text-md text-gray-700 dark:text-gray-light" data-t>growr-home.values.value4-content</p>
+        </div>
+      </div>
+    </div>
+    <!-- <a data-attr-t href-t="menu.signup-link"
+      class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 md:w-80 mx-auto"
+      data-t>growr-home.values.join</a> -->
+  </div>
 
-    <!-- Footer -->
-    <footer class="text-sm bg-gray-200 text-gray-500 dark:bg-gray-darker dark:text-gray-400">
-      <p class="px-6 py-5">
+
+  <!-- Footer -->
+  <footer class="text-sm bg-gray-200 text-gray-500 dark:bg-gray-darker dark:text-gray-400">
+    <p class="px-6 py-5">
       <span data-t>footer.rights</span> •
       <a href="terms/index.html" data-t>footer.terms</a> •
       <a href="privacy/index.html" data-t>footer.privacy</a></p>
-    </footer>
-  </body>
+  </footer>
+</body>
+
 </html>
