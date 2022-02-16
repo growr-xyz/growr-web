@@ -145,12 +145,13 @@
     "growr-finhealth" : {
         "title": "Growr: join the financial health revolution",
         "menu" : {
+            "home-link": "../index.html",
             "what": "What we do",
             "mission": "Our mission",
             "sign": "Sign in",
             "signin-link": "https://finhealth.growr.xyz/login",
             "language": "Български",
-            "language-link": "../index.html",
+            "language-link": "../bg/finhealth/index.html",
             "signup": "Sign up",
             "signup-link": "https://finhealth.growr.xyz/"
         },
