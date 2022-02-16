@@ -86,14 +86,42 @@
         "button": "Learn more",
         "button-link": "#how",
         "menu": {
-            "how": "How it works",
+            "why": "Why",
+            "why-link": "#why",
+            "how": "How does it work",
             "how-link": "#how",
-            "ssfi": "Self-sovereign financial identity",
-            "ssfi-link": "#ssfi",
             "peseta": "Peseta",
             "peseta-link": "#peseta",
             "whitepaper": "Whitepaper",
             "whitepaper-link": "#whitepaper"
+        },
+        "value-prop": {
+            "title": "Why Growr protocol?",
+            "value-1": "Loans with fair conditions",
+            "value-1-content": "",
+            "value-2": "Empowering local communities",
+            "value-2-content": "",
+            "value-3": "Yield on excess capital",
+            "value-3-content": "",
+            "value-4": "Growing revenue for merchants",
+            "value-4-content": "",
+            "value-5": "Transparency in capital allocation",
+            "value-5-content": "",
+            "value-6": "On-chain credit record",
+            "value-6-content": ""
+        },
+        "how": {
+            "title": "How does it work?",
+            "how-1": "Self-sovereign financial identity",
+            "how-1-content": "A decentralized identity and credit record based on the W3C DID standard that promotes financial health through personalized advice and education.",
+            "how-2": "Open participation",
+            "how-2-content": "Anyone can access and use the protocol, either directly or via a last mile provider, such as Peseta in El Salvador. This advances financial inclusion.",
+            "how-3": "Smart contract-based system",
+            "how-3-content": "Tiered lending pool and lending pond smart contracts automate the liquidity funding and lending processes globally and locally, and compensate the protocol contributors (investors, risk managers, reviewers, borrowers).",
+            "how-4": "On top of Bitcoin and integrated with Lightning",
+            "how-4-content": "The protocol runs on top of RSK, a smart contract network secured by the Bitcoin network, and is integrated with the Lightning Network for instant global payments.",
+            "how-5": "Embedded sustainability",
+            "how-5-content": "The Growr protocol incentivizes good financial health – that is, improving financial literacy and behaviors. This ultimately leads to a better lifestyle and financial independence. Financial health metrics are combined with additional off-chain and on-chain data to create a new type of decentralized identity that we call the Self-sovereign Financial Identity. It contains verifiable credentials from different sources and is presented in front of the lending pools to assert creditworthiness."
         }
     },
     "growr-finhealth" : {
