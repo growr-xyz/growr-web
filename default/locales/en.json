@@ -10,7 +10,7 @@
             "what": "What we are building",
             "finhealth": "Financial health",
             "finhealth-link": "finhealth/index.html",
-            "protocol": "Growr Protocol",
+            "protocol": "Growr protocol",
             "protocol-link": "protocol/index.html"
         },
         "mission": {
@@ -75,7 +75,7 @@
             "value3": "Empowerment",
             "value3-content": "Money is not the end goal — it's just the means to go smoothly through your life moments and challenges, and to achieve your dreams. Growr empowers people by delivering financial services that are designed around and put life first.",
             "value4": "Craftsmanship",
-            "value4-content": "Our community is built by engineers, designers, storytellers and financiers who are masters in their craft, delivering premium feeling accessible to everybody.",
+            "value4-content": "Our community is built by engineers, designers, storytellers and financiers who are masters in their craft, delivering premium feeling accessible to everyone.",
             "join": "Join the movement"
         }
     },
@@ -84,7 +84,7 @@
         "heading": "An open, fair and sustainable lending protocol on top of Bitcoin",
         "subheading": "Growr advances financial inclusion by enabling borrowers to receive instant unsecured loans based on a decentralized identity",
         "button": "Learn more",
-        "button-link": "#how",
+        "button-link": "#why",
         "menu": {
             "why": "Why",
             "why-link": "#why",
@@ -97,21 +97,23 @@
         },
         "value-prop": {
             "title": "Why Growr protocol?",
+            "subtitle": "Growr advances financial inclusion by enabling borrowers to receive instant unsecured loans based on a decentralized identity.",
             "value-1": "Loans with fair conditions",
-            "value-1-content": "",
-            "value-2": "Empowering local communities",
-            "value-2-content": "",
+            "value-1-content": "Growr creates a global decentralized marketplace to match supply and demand at the best possible price. This open free market creates fair conditions by enforcing the same rules for everyone.",
+            "value-2": "Empowerment of local communities",
+            "value-2-content": "Local players can use the protocol to facilitate access to credit by understanding the risk context and defining the right risk model, and social circles play an important role in referring borrowers and supporting them throughout the loan lifecycle.",
             "value-3": "Yield on excess capital",
-            "value-3-content": "",
-            "value-4": "Growing revenue for merchants",
-            "value-4-content": "",
+            "value-3-content": "Investors across the globe can deploy their excess capital through the protocol and generate yield depending on their risk appetite.",
+            "value-4": "Revenue growth for merchants",
+            "value-4-content": "Merchants can grow their revenue by offering \"buy now, pay later\" type of credit facilities to their customers, facilitating origination and collection within the community.",
             "value-5": "Transparency in capital allocation",
-            "value-5-content": "",
+            "value-5-content": "Growr enforces sustainable lending policies by embedding financial health incentives for borrowers, and enables end-to-end transparency down to the level of each individual borrower how investor's capital is allocated.",
             "value-6": "On-chain credit record",
-            "value-6-content": ""
+            "value-6-content": "Instead of relying on risk data locked within proprietary databases, Growr provides an open credit record model, which also preserves the privacy of the borrowers through a self-sovereign identity."
         },
         "how": {
             "title": "How does it work?",
+            "subtitle": "Growr enables institutional and individual investors to fund lending pools according to their risk/reward appetite, and borrowers to apply for and receive unsecured or partially secured loans. ",
             "how-1": "Self-sovereign financial identity",
             "how-1-content": "A decentralized identity and credit record based on the W3C DID standard that promotes financial health through personalized advice and education.",
             "how-2": "Open participation",
@@ -122,6 +124,22 @@
             "how-4-content": "The protocol runs on top of RSK, a smart contract network secured by the Bitcoin network, and is integrated with the Lightning Network for instant global payments.",
             "how-5": "Embedded sustainability",
             "how-5-content": "The Growr protocol incentivizes good financial health – that is, improving financial literacy and behaviors. This ultimately leads to a better lifestyle and financial independence. Financial health metrics are combined with additional off-chain and on-chain data to create a new type of decentralized identity that we call the Self-sovereign Financial Identity. It contains verifiable credentials from different sources and is presented in front of the lending pools to assert creditworthiness."
+        },
+        "peseta": {
+            "title": "Peseta: fair loans made easy.",
+            "subtitle": "The Peseta app was designed for El Salvador, as a simple and secure way for consumers and merchants to easily apply for loans on top of the Bitcoin network.",
+            "step-1": "Link account",
+            "step-1-content": "Link your bank account and social profiles to Peseta to create your personal financial identity.",
+            "step-2": "Apply for loans",
+            "step-2-content": "Use the Peseta app and your financial identity to apply for a loan and get an instant response.",
+            "step-3": "Pay",
+            "step-3-content": "Through integration with the Lightning network, Peseta enables instant payments to any merchant in El Salvador.",
+            "step-4": "Manage your loans",
+            "step-4-content": "The Peseta app has all the tools to manage every aspect of your loan transactions, withraw the amount to your Chivo wallet and easily pay it off to build your credit score.",
+            "step-5": "Learn and earn",
+            "step-5-content": "Learning the features and benefits of Bitcoin through short tutorials earns you fractional bitcoin to build wealth and pay off loans.",
+            "button": "Learn more",
+            "button-link": "https://www.peseta.xyz/"
         }
     },
     "growr-finhealth" : {
