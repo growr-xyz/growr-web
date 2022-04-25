@@ -99,8 +99,8 @@
         }
     },
     "growr-protocol": {
-        "title": "Growr: an open, fair and sustainable lending protocol on top of Bitcoin",
-        "heading": "An open, fair and sustainable lending protocol on top of Bitcoin",
+        "title": "Growr: Fair loans through self-sovereign identity and decentralized risk management",
+        "heading": "Fair loans through self-sovereign identity and decentralized risk management",
         "subheading": "Growr enables financial inclusion through fair & instant unsecured loans based on a self-sovereign identity and decentralized risk management",
         "button": "Learn more",
         "button-link": "#why",
@@ -142,7 +142,7 @@
             "how-4": "Risk assessor",
             "how-4-content": "Risk assessors are third parties trusted – or even owned – by the lenders that perform verification of borrowers' credentials and assert their eligibility to receive a loan.",
             "how-5": "Growr core protocol",
-            "how-5-content": "A decentralized smart contract ecosystem for funding and consuming loans on top of blockchain, with open access for everyone. The key differentiator of Growr is that loans are provided against verified credentials from borrower's self-sovereign financial identity and decentralized risk assessment, instead of asking for collateral.",
+            "how-5-content": "A decentralized smart contract ecosystem for lending and borrowing on top of the Bitcoin network and RSK, with open access for everyone. The key differentiator of Growr is that loans are provided against verified credentials from borrower's self-sovereign financial identity and decentralized risk assessment, instead of asking for collateral.",
             "how-6": "Lender",
             "how-6-content": "A regulated or unregulated party that is providing loans on the global lending marketplace with specific conditions and eligibility criteria.",
             "how-7": "Liquidity provider",
