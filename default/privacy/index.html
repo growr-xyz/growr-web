@@ -14,7 +14,7 @@
     <script defer data-domain="growr.xyz" src="https://plausible.io/js/plausible.js"></script>
   </head>
   <body class="bg-white dark:bg-gray-darkest text-black dark:text-gray-lighter">
-    <div class="text-white bg-teal-gray-dark dark:bg-teal-gray-darker h-44 mb-8">
+    <div class="text-white h-44 mb-8">
       
       <header class="absolute top-0 left-0 right-0 z-20">
         <nav class="container mx-auto px-6 md:px-12 py-5" x-data="{ open: false }">
@@ -80,33 +80,25 @@
               </div>
             </div>
 
-            <ul class="flex items-center hidden space-x-8 md:flex mr-4">
-              <li><a href="../index.html#what" aria-label="What we do" title="What we do" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400" data-t>menu.what</a></li>
-              <li><a href="../index.html#mission" aria-label="Our mission" title="Our mission" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400" data-t>menu.mission</a></li>
-              <li><a data-attr-t href-t="menu.signin-link" aria-label="Sign in" title="Sign in" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400" data-t>menu.sign</a></li>
-              <li><a data-attr-t href-t="menu.language-link" aria-label="Change language" title="Change language" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400" data-t>menu.language</a></li>
-              <li>
-                <a
-                  data-attr-t href-t="menu.signup-link"
-                  class="text-white inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md bg-teal-dark hover:bg-teal focus:shadow-outline focus:outline-none"
-                  aria-label="Sign up"
-                  title="Sign up"
-                  data-t
-                >menu.signup</a>
-              </li>
+            <!-- <ul class="flex items-center hidden space-x-8 lg:flex mr-4">
+              <li><a data-attr-t href="#mission" aria-label-t="growr-home.menu.mission" title-t="growr-home.menu.mission"
+                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" data-t>growr-home.menu.mission</a></li>
+              <li><a data-attr-t href="#what" aria-label-t="growr-home.menu.what" title-t="growr-home.menu.what"
+                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" data-t>growr-home.menu.what</a></li>
+              <li><a data-attr-t href-t="growr-home.menu.finhealth-link" aria-label-t="growr-home.menu.finhealth" title-t="growr-home.menu.finhealth"
+                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" data-t>growr-home.menu.finhealth</a></li>
+              <li><a data-attr-t href-t="growr-home.menu.protocol-link" aria-label-t="growr-home.menu.protocol" title-t="growr-home.menu.protocol"
+                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" data-t>growr-home.menu.protocol</a></li>
             </ul>
-  
-            <!-- </div> -->
-          </div>
+          </div> -->
 
           <!-- Mobile navigation -->
-          <div x-show="open === true" class="md:hidden flex flex-col w-full z-40 bg-teal-dark rounded mt-4 py-2 overflow-hidden">
-            <a href="../index.html#what" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>menu.what</a>
-            <a href="../index.html#mission" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>menu.mission</a>
-            <a data-attr-t href-t="menu.signin-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>menu.sign</a>
-            <a data-attr-t href-t="menu.signup-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>menu.signup</a>
-            <a data-attr-t href-t="menu.language-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>menu.language</a>
-          </div>
+          <!-- <div x-show="open === true" class="lg:hidden flex flex-col w-full z-40 bg-teal-dark rounded mt-4 py-2 overflow-hidden">
+            <a href="../#mission" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-home.menu.mission</a>
+            <a href="../#what" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-home.menu.what</a>
+            <a data-attr-t href-t="growr-home.menu.finhealth-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-home.menu.finhealth</a>
+            <a data-attr-t href-t="growr-home.menu.protocol-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-home.menu.protocol</a>
+          </div> -->
         </nav> 
       </header>
     </div>

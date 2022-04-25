@@ -11,7 +11,8 @@
             "finhealth": "Financial health",
             "finhealth-link": "finhealth/index.html",
             "protocol": "Growr protocol",
-            "protocol-link": "protocol/index.html"
+            "protocol-link": "protocol/index.html",
+            "news": "News"
         },
         "mission": {
             "title": "Our mission.",
@@ -59,11 +60,11 @@
             "p-6": "Dealing with money, especially borrowed from others, requires knowledge and high responsibility. That’s why everyone gets a financial health treatment to improve their long-term wellbeing. It’s not about a single transaction, but achieving more throughout people's lives.",
             "finhealth": {
                 "title": "Improving financial health",
-                "content": "Growr is building a community and tools that empower people in taking financial health in their own hands."
+                "content": "Growr is building a community and tools that empower people in taking their financial health into their own hands. We have started with a financial health checkup and personalized advice how to improve your score."
             },
             "protocol": {
                 "title": "Open, fair and sustainable lending",
-                "content": "Growr advances financial inclusion by enabling borrowers to receive instant unsecured loans based on a decentralized identity."
+                "content": "Growr advances financial inclusion by enabling borrowers to receive instant unsecured loans based on a self-sovereign identity and decentralized risk management. In contrast to traditional microfinance, Growr creates an open and global lending marketplace, and enforces a fully transparent deployment of capital."
             }
         },
         "values": {
@@ -77,12 +78,30 @@
             "value4": "Empowerment",
             "value4-content": "Money is not the end goal — it's just the means to go smoothly through your life moments and challenges, and to achieve your dreams. We empower people by delivering innovative financial services that are designed around and put life first.",
             "join": "Join the movement"
+        },
+        "news": {
+            "title": "News",
+            "news-20211115-date": "15 Nov 2021",
+            "news-20211115-title": "Growr launches the Financial Health Checkup",
+            "news-20211115-content": "Financial healthcare is at the heart of Growr's ethos. Today, we launched our first product – the Financial Health Checkup. It provides anyone with a score of their financial health and personalized advice on how to improve it.",
+            "news-20211115-button": "Read more",
+            "news-20211115-link": "https://growr.xyz/finhealth",
+            "news-20211209-date": "San Salvador, 9 Dec 2021",
+            "news-20211209-title": "Growr wins Best Overall Product award at the Bitcoin Bankathon",
+            "news-20211209-content": "We are proud to announce that we have won the Best Overall Product award at the Bitcoin Bankathon in El Salvador, organized by Banco Hipotecario in collaboration with API3 and Open Bank Project, and sponsored by Qredo and Tropykus.",
+            "news-20211209-button": "Read more",
+            "news-20211209-link": "https://devpost.com/software/growr-on-chain",
+            "news-20220410-date": "10 Apr 2022",
+            "news-20220410-title": "Growr releases version 0.2 of the protocol on RSK Testnet",
+            "news-20220410-content": "Today, we are releasing a major update to the Growr Protocol on RSK Testnet, demonstrating the power of self-sovereign identity and decentralized risk management as enablers of financial inclusion.",
+            "news-20220410-button": "Read more",
+            "news-20220410-link": "https://github.com/growr-xyz/growr-protocol-app/releases/tag/httf4"
         }
     },
     "growr-protocol": {
         "title": "Growr: an open, fair and sustainable lending protocol on top of Bitcoin",
         "heading": "An open, fair and sustainable lending protocol on top of Bitcoin",
-        "subheading": "Growr advances financial inclusion by enabling borrowers to receive instant unsecured loans based on a decentralized identity",
+        "subheading": "Growr enables financial inclusion through fair & instant unsecured loans based on a self-sovereign identity and decentralized risk management",
         "button": "Learn more",
         "button-link": "#why",
         "menu": {
@@ -92,12 +111,12 @@
             "how-link": "#how",
             "peseta": "Peseta",
             "peseta-link": "#peseta",
-            "whitepaper": "Whitepaper",
-            "whitepaper-link": "#whitepaper"
+            "resources": "Resources",
+            "resources-link": "#resources"
         },
         "value-prop": {
             "title": "Why Growr protocol?",
-            "subtitle": "Growr advances financial inclusion by enabling borrowers to receive instant unsecured loans based on a decentralized identity.",
+            "subtitle": "Growr enables financial inclusion through fair & instant unsecured loans based on a self-sovereign identity and decentralized risk management.",
             "value-1": "Loans with fair conditions",
             "value-1-content": "Growr creates a global decentralized marketplace to match supply and demand at the best possible price. This open free market creates fair conditions by enforcing the same rules for everyone.",
             "value-2": "Empowerment of local communities",
@@ -115,15 +134,19 @@
             "title": "How does it work?",
             "subtitle": "Growr enables institutional and individual investors to fund lending pools according to their risk/reward appetite, and borrowers to apply for and receive unsecured or partially secured loans. ",
             "how-1": "Self-sovereign financial identity",
-            "how-1-content": "A decentralized identity and credit record based on the W3C DID standard that promotes financial health through personalized advice and education.",
-            "how-2": "Open participation",
-            "how-2-content": "Anyone can access and use the protocol, either directly or via a last mile provider, such as Peseta in El Salvador. This advances financial inclusion.",
-            "how-3": "Smart contract-based system",
-            "how-3-content": "Tiered lending pool and lending pond smart contracts automate the liquidity funding and lending processes globally and locally, and compensate the protocol contributors (investors, risk managers, reviewers, borrowers).",
-            "how-4": "On top of Bitcoin and integrated with Lightning",
-            "how-4-content": "The protocol runs on top of RSK, a smart contract network secured by the Bitcoin network, and is integrated with the Lightning Network for instant global payments.",
-            "how-5": "Embedded sustainability",
-            "how-5-content": "The Growr protocol incentivizes good financial health – that is, improving financial literacy and behaviors. This ultimately leads to a better lifestyle and financial independence. Financial health metrics are combined with additional off-chain and on-chain data to create a new type of decentralized identity that we call the Self-sovereign Financial Identity. It contains verifiable credentials from different sources and is presented in front of the lending pools to assert creditworthiness."
+            "how-1-content": "A digital identity, based on W3C’s DID and VC standards, owned and managed by the user, storing their credentials and promoting financial health through personalized advice and education.",
+            "how-2": "Distributor",
+            "how-2-content": "Financial institutions, FinTech companies and non-financial providers such as merchants, telcos and employers, facilitating access to the protocol through a simple and secure way for borrowers to easily apply and obtain fair loans.",
+            "how-3": "Credential issuer",
+            "how-3-content": "Trusted parties (such as financial providers, telcos, merchants, NGOs) issue cryptographically verifiable credentials to the borrowers about their financial and non-financial life that are stored in their self-sovereign financial identity.",
+            "how-4": "Risk assessor",
+            "how-4-content": "Risk assessors are third parties trusted – or even owned – by the lenders that perform verification of borrowers' credentials and assert their eligibility to receive a loan.",
+            "how-5": "Growr core protocol",
+            "how-5-content": "A decentralized smart contract ecosystem for funding and consuming loans on top of blockchain, with open access for everyone. The key differentiator of Growr is that loans are provided against verified credentials from borrower's self-sovereign financial identity and decentralized risk assessment, instead of asking for collateral.",
+            "how-6": "Lender",
+            "how-6-content": "A regulated or unregulated party that is providing loans on the global lending marketplace with specific conditions and eligibility criteria.",
+            "how-7": "Liquidity provider",
+            "how-7-content": "Lenders can apply to get liquidity from liquidity providers and pay yield to them."
         },
         "peseta": {
             "title": "Peseta: fair loans made easy.",
@@ -140,6 +163,25 @@
             "step-5-content": "Learning the features and benefits of Bitcoin through short tutorials earns you fractional bitcoin to build wealth and pay off loans.",
             "button": "Learn more",
             "button-link": "https://www.peseta.xyz/"
+        },
+        "resources": {
+            "title": "Resources",
+            "litepaper-title": "Litepaper",
+            "litepaper-content": "Growr's litepaper is a short non-technical description of how the protocol works and the main concepts behind it.",
+            "litepaper-button": "Open",
+            "litepaper-link": "https://growr-xyz.github.io/growr-documentation/litepaper/Growr-litepaper.pdf",
+            "docs-title": "Documentation",
+            "docs-content": "Growr's documentation provides in-depth details about the different components of the protocol – distribution & identity, risk management, liquidity, payments and governance.",
+            "docs-button": "Open",
+            "docs-link": "https://growr-xyz.github.io/growr-documentation/",
+            "github-title": "GitHub repositories",
+            "github-content": "Visit Growr's GitHub page to view our open source repositories and contribute.",
+            "github-button": "Open",
+            "github-link": "https://github.com/growr-xyz",
+            "video-title": "Video tutorial",
+            "video-content": "For an visual overview of Growr, its concepts and borrowing and lending apps, check our playlist on YouTube.",
+            "video-button": "Open",
+            "video-link": "https://www.youtube.com/watch?v=dzzadU2suGw&list=PL2-XQBmXVGxzQf1z-2MISs7aJuX-91bQ6"
         }
     },
     "growr-finhealth" : {
