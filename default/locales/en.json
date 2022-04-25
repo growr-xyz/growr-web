@@ -116,7 +116,7 @@
         },
         "value-prop": {
             "title": "Why Growr protocol?",
-            "subtitle": "Growr enables financial inclusion through fair & instant unsecured loans based on a self-sovereign identity and decentralized risk management.",
+            "subtitle": "Growr enables financial inclusion through fair & instant unsecured loans based on a self-sovereign identity and decentralized risk management, instead of requiring over-collateralization.",
             "value-1": "Loans with fair conditions",
             "value-1-content": "Growr creates a global decentralized marketplace to match supply and demand at the best possible price. This open free market creates fair conditions by enforcing the same rules for everyone.",
             "value-2": "Empowerment of local communities",
@@ -142,7 +142,7 @@
             "how-4": "Risk assessor",
             "how-4-content": "Risk assessors are third parties trusted – or even owned – by the lenders that perform verification of borrowers' credentials and assert their eligibility to receive a loan.",
             "how-5": "Growr core protocol",
-            "how-5-content": "A decentralized smart contract ecosystem for lending and borrowing on top of the Bitcoin network and RSK, with open access for everyone. The key differentiator of Growr is that loans are provided against verified credentials from borrower's self-sovereign financial identity and decentralized risk assessment, instead of asking for collateral.",
+            "how-5-content": "A decentralized smart contract ecosystem for lending and borrowing on top of the Bitcoin network and RSK, with open access for everyone. The key differentiator of Growr is that loans are provided against verified credentials from borrower's self-sovereign financial identity and decentralized risk assessment, instead of requiring over-collateralization.",
             "how-6": "Lender",
             "how-6-content": "A regulated or unregulated party that is providing loans on the global lending marketplace with specific conditions and eligibility criteria.",
             "how-7": "Liquidity provider",
