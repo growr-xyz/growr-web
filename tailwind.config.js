@@ -1,8 +1,5 @@
 module.exports = {
-  purge: {
-    enabled: true,
-    content: ['./default/**/*.html'],
-  },
+  content: ['./default/**/*.html'],
   darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {
@@ -27,6 +24,15 @@ module.exports = {
         medium: 500,
         bold: 700
       },
+      keyframes: {
+        'fadein': {
+          from: { opacity: 0 },
+          to: { opacity: 1 }
+        },
+        animation: {
+          'fadein': 'fade-in 2s 2s forwards',
+        }  
+      }
     },
   },
   variants: {
