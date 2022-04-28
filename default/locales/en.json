@@ -95,7 +95,12 @@
             "news-20220410-title": "Growr releases version 0.2 of the protocol on RSK Testnet",
             "news-20220410-content": "Today, we are releasing a major update to the Growr Protocol on RSK Testnet, demonstrating the power of self-sovereign identity and decentralized risk management as enablers of financial inclusion.",
             "news-20220410-button": "Read more",
-            "news-20220410-link": "https://github.com/growr-xyz/growr-protocol-app/releases/tag/httf4"
+            "news-20220410-link": "https://github.com/growr-xyz/growr-protocol-app/releases/tag/httf4",
+            "news-20220428-date": "London, 28 Apr 2022",
+            "news-20220428-title": "Growr wins big at Finastra's Hack to the Future",
+            "news-20220428-content": "Growr has won best Diversity, Equity & Inclusion (DE&I) submission at Finastra's Hack to the Future hackathon, and the 2nd place in the Decentralized Finance (DeFi) category, out of 230 total submissions.",
+            "news-20220428-button": "Read more",
+            "news-20220428-link": "https://www.finastra.com/press-media/finastra-names-hack-future-4-winners"
         }
     },
     "growr-protocol": {
