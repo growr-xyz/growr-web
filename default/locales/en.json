@@ -101,6 +101,11 @@
             "news-20220428-content": "Growr has won Best Diversity, Equity & Inclusion (DE&I) submission at Finastra's Hack to the Future 4 annual global hackathon, and second place in the Decentralized Finance (DeFi) category. Thousands of participants from over 75 countries submitted 230+ projects focused on sustainable and inclusive finance, embedded finance and DeFi.",
             "news-20220428-button": "Read more",
             "news-20220428-link": "https://www.finastra.com/press-media/finastra-names-hack-future-4-winners"
+        },
+        "recognitions": {
+            "title": "Recognitions",
+            "bitcoin-bankathon-link": "https://devpost.com/software/growr-on-chain",
+            "httf4-link": "https://www.finastra.com/press-media/finastra-names-hack-future-4-winners"
         }
     },
     "growr-protocol": {

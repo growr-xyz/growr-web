@@ -3,6 +3,7 @@ module.exports = {
   darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {
+      variants: { extend: { display: ['dark'] } },
       colors: {
         'teal-lighter': '#A9F3EA',
         'teal-light': '#6AE7DA',

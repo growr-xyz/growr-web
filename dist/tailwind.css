@@ -683,6 +683,10 @@ body {
   height: 11rem;
 }
 
+.max-h-32 {
+  max-height: 8rem;
+}
+
 .min-h-full {
   min-height: 100%;
 }
@@ -1178,6 +1182,14 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
+  .dark\:block {
+    display: block;
+  }
+
+  .dark\:hidden {
+    display: none;
+  }
+
   .dark\:bg-gray-darkest {
     --tw-bg-opacity: 1;
     background-color: rgb(34 34 34 / var(--tw-bg-opacity));
