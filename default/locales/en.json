@@ -37,12 +37,12 @@
             "p-2": "Bitcoin is a global open network that already provides free access to the hardest money that has ever existed, and the ability to pay and get paid instantly with nearly zero fees, thanks to its second-layer Lightning network.",
             "p-3": "Growr is building on top of that to complete the stack of financial services that every single person deserves, starting from sustainable productive financing and financial health tools that provide personalized guidance.",
             "finhealth": {
-                "title": "Improving financial health",
+                "title": "Improving financial health.",
                 "content": "Growr is building a community and tools that empower people in taking their financial health into their own hands. We have started with a financial health checkup and personalized advice how to improve your score.",
                 "button": "Learn more"
             },
             "protocol": {
-                "title": "Fair and sustainable micro-lending protocol",
+                "title": "Fair and sustainable micro-lending.",
                 "content": "The Growr protocol enables micro-entrepreneurs to receive instant productive loans based on their self-sovereign credit rating, without the need for over-collateralization. In contrast to traditional microfinance, Growr enables an open and global lending marketplace, and enforces a fully transparent deployment of capital.",
                 "button": "Learn more"
             }
