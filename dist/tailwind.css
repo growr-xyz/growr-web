@@ -691,6 +691,10 @@ body {
   height: 4rem;
 }
 
+.h-5 {
+  height: 1.25rem;
+}
+
 .h-10 {
   height: 2.5rem;
 }
@@ -819,6 +823,12 @@ body {
   --tw-space-x-reverse: 0;
   margin-right: calc(2rem * var(--tw-space-x-reverse));
   margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .overflow-hidden {
@@ -989,6 +999,14 @@ body {
 
 .pl-6 {
   padding-left: 1.5rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
 }
 
 .text-center {
@@ -1183,6 +1201,10 @@ body {
   transition-duration: 200ms;
 }
 
+.duration-300 {
+  transition-duration: 300ms;
+}
+
 .hover\:bg-teal-light:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(106 231 218 / var(--tw-bg-opacity));
@@ -1258,6 +1280,10 @@ body {
     margin-bottom: 2rem;
   }
 
+  .sm\:mt-0 {
+    margin-top: 0px;
+  }
+
   .sm\:h-24 {
     height: 6rem;
   }
@@ -1276,6 +1302,10 @@ body {
 
   .sm\:max-w-xl {
     max-width: 36rem;
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
   }
 
   .sm\:p-10 {
