@@ -118,7 +118,7 @@
             "value-4-content": "Suppliers and buyers can grow their business volume by facilitating value chain credit facilities for their micro-enterprise partners, participating in the origination and collection within the community.",
             "value-5": "Transparency in capital allocation",
             "value-5-content": "Growr enforces sustainable micro-lending policies by embedding financial health incentives for borrowers, and enables end-to-end transparency down to the level of each individual borrower how investor's capital is allocated.",
-            "value-6": "Self-sovereign credit rating",
+            "value-6": "Democratized credit rating",
             "value-6-content": "Instead of relying on risk data locked within proprietary databases, Growr provides an open credit rating model, which also preserves the privacy of the borrowers through a self-sovereign identity."
         },
         "video": {
@@ -127,7 +127,7 @@
         "how": {
             "title": "Protocol mechanics",
             "subtitle": "Growr enables institutional and individual investors to fund lending pools according to their risk/reward appetite, and borrowers to apply for and receive unsecured or partially secured loans. ",
-            "how-1": "Self-sovereign financial identity",
+            "how-1": "Self-sovereign credit rating",
             "how-1-content": "A digital identity, based on W3C’s DID and VC standards, owned and managed by the user, storing their credentials, credit rating and financial health tools for education and personalized advice.",
             "how-2": "Distributor",
             "how-2-content": "Financial institutions, FinTech companies and non-financial providers such as merchants, telcos and employers, facilitating access to the protocol through a simple and secure way for borrowers to easily apply and obtain fair loans.",
