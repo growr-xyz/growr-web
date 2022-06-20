@@ -93,6 +93,9 @@
             <li><a data-attr-t href-t="growr-protocol.menu.why-link" aria-label-t="growr-protocol.menu.why" title-t="growr-protocol.menu.why"
                 class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter"
                 data-t>growr-protocol.menu.why</a></li>
+            <li><a data-attr-t href-t="growr-protocol.menu.video-link" aria-label-t="growr-protocol.menu.how" title-t="growr-protocol.menu.video"
+              class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter"
+              data-t>growr-protocol.menu.video</a></li>
             <li><a data-attr-t href-t="growr-protocol.menu.how-link" aria-label-t="growr-protocol.menu.how" title-t="growr-protocol.menu.how"
                 class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter"
                 data-t>growr-protocol.menu.how</a></li>
@@ -111,6 +114,7 @@
         <div x-show="open === true"
           class="lg:hidden flex flex-col w-full z-40 bg-teal-dark rounded mt-4 py-2 overflow-hidden">
           <a data-attr-t href-t="growr-protocol.menu.why-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-protocol.menu.why</a>
+          <a data-attr-t href-t="growr-protocol.menu.video-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-protocol.menu.video</a>
           <a data-attr-t href-t="growr-protocol.menu.how-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-protocol.menu.how</a>
           <a data-attr-t href-t="growr-protocol.menu.peseta-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-protocol.menu.peseta</a>
           <a data-attr-t href-t="growr-protocol.menu.resources-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-protocol.menu.resources</a>
@@ -171,6 +175,18 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <!-- How does it work? -->
+  <a name="video"></a>
+  <div class="px-6 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10" x-data="{ shown: false }" x-intersect:enter="shown = true" x-intersect:leave="shown = false">
+    <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+      <h2
+        class="max-w-lg mb-6 text-4xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-5xl md:mx-auto"
+        data-t>growr-protocol.video.title</h2>
+    </div>
+
+    <!-- Embed the video -->
   </div>
 
   <!-- How does it work? -->
@@ -466,7 +482,7 @@
           fill="currentColor" />
       </g>
     </svg>
-    
+
     <div class="grid gap-12 row-gap-5 md:grid-cols-2">
       <div class="relative p-5 sm:p-10">
         <div>
