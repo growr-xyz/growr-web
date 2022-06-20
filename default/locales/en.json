@@ -96,7 +96,9 @@
         "menu": {
             "why": "Why",
             "why-link": "#why",
-            "how": "How does it work",
+            "video": "How does it work?",
+            "video-link": "#video",
+            "how": "Mechanics",
             "how-link": "#how",
             "peseta": "Peseta",
             "peseta-link": "#peseta",
@@ -119,8 +121,11 @@
             "value-6": "Self-sovereign credit rating",
             "value-6-content": "Instead of relying on risk data locked within proprietary databases, Growr provides an open credit rating model, which also preserves the privacy of the borrowers through a self-sovereign identity."
         },
+        "video": {
+            "title": "How does it work?"
+        },
         "how": {
-            "title": "How does it work?",
+            "title": "Protocol mechanics",
             "subtitle": "Growr enables institutional and individual investors to fund lending pools according to their risk/reward appetite, and borrowers to apply for and receive unsecured or partially secured loans. ",
             "how-1": "Self-sovereign financial identity",
             "how-1-content": "A digital identity, based on W3C’s DID and VC standards, owned and managed by the user, storing their credentials, credit rating and financial health tools for education and personalized advice.",
@@ -133,7 +138,9 @@
             "how-5": "Growr core protocol",
             "how-5-content": "A decentralized smart contract ecosystem for lending and borrowing on top of the Bitcoin network and Rootstock (RSK), with open access for everyone. The key differentiator of Growr is that loans are provided against verified credentials from borrower's self-sovereign financial identity and credit rating, instead of requiring over-collateralization.",
             "how-6": "Lender",
-            "how-6-content": "A traditional finance institution, unregulated party or decentralized protocol that is providing financing through the global micro-lending marketplace with specific conditions and eligibility criteria. Lenders make their financing decisions based on the credit rating of the borrower, provided by the Risk assessors."
+            "how-6-content": "A traditional finance institution, unregulated party or decentralized protocol that is providing financing through the global micro-lending marketplace with specific conditions and eligibility criteria. Lenders make their financing decisions based on the credit rating of the borrower, provided by the Risk assessors.",
+            "how-7": "DeFi protocol",
+            "how-7-content": "A traditional finance institution, unregulated party or decentralized protocol that is providing financing through the global micro-lending marketplace with specific conditions and eligibility criteria. Lenders make their financing decisions based on the credit rating of the borrower, provided by the Risk assessors."
         },
         "peseta": {
             "title": "Peseta: fair loans made easy.",
