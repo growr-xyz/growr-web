@@ -80,7 +80,17 @@
             "news-20220428-title": "Growr wins big at Finastra's Hack to the Future",
             "news-20220428-content": "Growr has won Best Diversity, Equity & Inclusion (DE&I) submission at Finastra's Hack to the Future 4 annual global hackathon, and second place in the Decentralized Finance (DeFi) category. Thousands of participants from over 75 countries submitted 230+ projects focused on sustainable and inclusive finance, embedded finance and DeFi.",
             "news-20220428-button": "Read more",
-            "news-20220428-link": "https://www.finastra.com/press-media/finastra-names-hack-future-4-winners"
+            "news-20220428-link": "https://www.finastra.com/press-media/finastra-names-hack-future-4-winners",
+            "news-20220629-date": "London, 29 Jun 2022",
+            "news-20220629-title": "Finextra TV  showcases Growr",
+            "news-20220629-content": "Growr's Radoy Stoyanov was interviewed by Richard Peerce from Finextra TV, the leading financial technology media, presenting the key global problems the Growr protocol is solving.",
+            "news-20220629-button": "Read more",
+            "news-20220629-link": "https://www.finextra.com/videoarticle/2736/enabling-fair-instant-and-unsecured-loans-based-on-self-sovereign-identity--defi",
+            "news-20220725-date": "25 Jul 2022",
+            "news-20220725-title": "Growr releases version 0.3 of the protocol on RSK Testnet",
+            "news-20220725-content": "Today, we are releasing the next version of the Growr protocol with multiple bug fixes and new features in the core protocol and in the borrowing app.",
+            "news-20220725-button": "Read more",
+            "news-20220725-link": "https://github.com/growr-xyz/growr-protocol-app/releases/tag/v0.3"
         },
         "recognitions": {
             "title": "Recognitions",
