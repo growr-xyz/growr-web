@@ -83,9 +83,9 @@
               <!-- Mobile navigation -->
               <div x-show="open === true" class="lg:hidden fixed top-0 left-0 h-full pt-24 pb-8 px-8 sm:px-16 flex flex-col w-full z-40 bg-gray-900 bg-opacity-75 backdrop-blur-sm overflow-hidden">
                 <a href="../index.html" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-protocol.menu.home</a>
-                <a href="#what" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-finhealth.menu.what</a>
-                <a data-attr-t href-t="growr-finhealth.menu.signin-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-finhealth.menu.sign</a>
-                <a data-attr-t href-t="growr-finhealth.menu.signup-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-finhealth.menu.signup</a>
+                <a data-attr-t x-on:click="open = ! open" href="#what" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-finhealth.menu.what</a>
+                <a data-attr-t x-on:click="open = ! open" href-t="growr-finhealth.menu.signin-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-finhealth.menu.sign</a>
+                <a data-attr-t x-on:click="open = ! open" href-t="growr-finhealth.menu.signup-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-finhealth.menu.signup</a>
                 <!-- <a data-attr-t href-t="growr-finhealth.menu.language-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-finhealth.menu.language</a> -->
               </div>
             </div>

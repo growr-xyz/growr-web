@@ -2,7 +2,7 @@
     "growr-home": {
         "title": "Growr: delivering accessible financial services to the next billion",
         "heading": "Delivering accessible financial services to the next billion",
-        "subheading": "",
+        "subheading": "Growr is building on top of Bitcoin to enable a full stack of financial services with open access to anyone.",
         "button": "Learn why it’s needed",
         "button-link": "#mission",
         "menu": {
@@ -143,19 +143,19 @@
         },
         "value-prop": {
             "title": "Why Growr protocol?",
-            "subtitle": "Growr enables micro-entrepreneurs to receive instant productive loans based on their self-sovereign credit rating, without the need for over-collateralization.",
+            "subtitle": "Growr helps micro-entrepreneurs build their self-sovereign credit record and receive fair productive loans without over-collateralization, bringing real-world yield to the decentralized finance protocols in the Bitcoin ecosystem.",
             "value-1": "Micro-loans with fair conditions",
             "value-1-content": "Growr creates a global decentralized marketplace to match supply and demand at the best possible price. This open free market creates fair conditions by enforcing the same rules for everyone.",
             "value-2": "Empowerment of local communities",
             "value-2-content": "Local players can use the protocol to facilitate access to credit by understanding the risk context and defining the right risk model, and social circles play an important role in referring borrowers and supporting them throughout the loan lifecycle.",
-            "value-3": "Real yield from productive loans",
-            "value-3-content": "Investors across the globe can deploy their excess capital through the protocol and generate real yield depending on their risk appetite.",
+            "value-3": "Real-world yield from productive loans",
+            "value-3-content": "Investors across the globe can deploy their excess capital through the protocol and generate yield from real economic activity according to their risk appetite.",
             "value-4": "Revenue growth for suppliers and buyers", 
-            "value-4-content": "Suppliers and buyers can grow their business volume by facilitating value chain credit facilities for their micro-enterprise partners, participating in the origination and collection within the community.",
+            "value-4-content": "Local suppliers and buyers can grow their business volume by facilitating value chain credit facilities for their micro-enterprise partners, participating in the origination and collection within the community.",
             "value-5": "Transparency in capital allocation",
-            "value-5-content": "Growr enforces sustainable micro-lending policies by embedding financial health incentives for borrowers, and enables end-to-end transparency down to the level of each individual borrower how investor’s capital is allocated.",
-            "value-6": "Democratized credit rating",
-            "value-6-content": "Instead of relying on risk data locked within proprietary databases, Growr provides an open credit rating model, which also preserves the privacy of the borrowers through a self-sovereign identity."
+            "value-5-content": "Growr enforces sustainable micro-lending policies by embedding financial health incentives for borrowers, and enables end-to-end transparency of how investor’s capital is deployed down to the level of each individual borrower.",
+            "value-6": "Democratized credit record",
+            "value-6-content": "Instead of relying on risk data locked within proprietary databases, Growr provides an open credit record model, which also preserves the privacy of the borrowers through a self-sovereign identity."
         },
         "video": {
             "title": "How does it work?"
@@ -163,20 +163,20 @@
         "how": {
             "title": "Protocol mechanics",
             "subtitle": "Growr enables institutional and individual investors to fund lending pools according to their risk/reward appetite, and borrowers to apply for and receive unsecured or partially secured loans. ",
-            "how-1": "Self-sovereign credit rating",
-            "how-1-content": "A digital identity, based on W3C’s DID and VC standards, owned and managed by the user, storing their credentials, credit rating and financial health tools for education and personalized advice.",
+            "how-1": "Self-sovereign credit record",
+            "how-1-content": "A digital identity, based on W3C’s DID and VC standards, owned and managed by the user, storing their credentials, credit history and financial health tools for education and personalized advice.",
             "how-2": "Distributor",
-            "how-2-content": "Financial institutions, FinTech companies and non-financial providers such as merchants, telcos and employers, facilitating access to the protocol through a simple and secure way for borrowers to easily apply and obtain fair loans.",
-            "how-3": "Credential issuer",
+            "how-2-content": "Wallets, financial institutions, FinTech companies and non-financial providers such as merchants, telcos and gig economy platforms, facilitating access to the protocol through a simple and secure way for borrowers to easily apply and obtain fair loans.",
+            "how-3": "Trusted party",
             "how-3-content": "Trusted parties (such as value chain partners, financial providers, telcos, merchants, NGOs) issue cryptographically verifiable credentials to the borrowers about their financial and non-financial life that are stored in their self-sovereign financial identity.",
             "how-4": "Risk assessor",
-            "how-4-content": "Risk assessors are third parties trusted—or even owned—by the lenders that perform verification of borrowers’ credentials and assert their eligibility to receive a loan. Risk assessors produce a credit rating for each borrower that is used by the lenders in their automated decisions.",
+            "how-4-content": "Risk assessors are third parties trusted—and most often owned—by the lenders that perform verification of borrowers’ credentials and assert their eligibility to receive a loan. Risk assessors produce a credit score for each project that is used by the lenders in their automated decisions.",
             "how-5": "Decentralized marketplace",
-            "how-5-content": "A decentralized smart contract ecosystem for lending and borrowing on top of the Bitcoin network and Rootstock (RSK), with open access for everyone. The key differentiator of Growr is that loans are provided against verified credentials from borrower’s self-sovereign financial identity and credit rating, instead of requiring over-collateralization.",
+            "how-5-content": "A decentralized smart contract ecosystem for lending and borrowing on top of the Bitcoin network and Rootstock (RSK), with open access for everyone. The key differentiator of Growr is that loans are provided against verified credentials from borrower’s self-sovereign financial identity and credit record, instead of requiring over-collateralization.",
             "how-6": "Lender",
-            "how-6-content": "A traditional finance institution that is providing micro-lending through the global marketplace with specific conditions and eligibility criteria. Lenders make their financing decisions based on the credit rating of the borrower, provided by the Risk assessors.",
-            "how-7": "DeFi protocol",
-            "how-7-content": "A protocol pooling funds from global investors who delegate the actual lending activity to the Lenders. DeFi protocols allocate capital to lending pools and get rewarded with yield based on the pool profitability. Generally, the global pool yield will tend to be lower that the pond yield due to the wholesale lending nature of the pools."
+            "how-6-content": "A traditional finance institution that is providing micro-lending through the global marketplace with specific conditions and eligibility criteria. Lenders make their financing decisions based on the credit record of the borrower, provided by the risk assessors.",
+            "how-7": "Investor",
+            "how-7-content": "A decentralized finance protocol, institutional or individual investor pooling funds who deploy capital as senior tranche and delegate the actual lending activity to the lenders. Investors get rewarded with yield from real economic activity based on the pool profitability. Generally, the global pool yield will tend to be lower that the pond yield due to the wholesale lending nature of the pools."
         },
         "peseta": {
             "title": "Peseta: fair loans made easy.",

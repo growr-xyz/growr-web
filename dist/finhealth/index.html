@@ -82,9 +82,9 @@
               <!-- Mobile navigation -->
               <div x-show="open === true" class="lg:hidden fixed top-0 left-0 h-full pt-24 pb-8 px-8 sm:px-16 flex flex-col w-full z-40 bg-gray-900 bg-opacity-75 backdrop-blur-sm overflow-hidden">
                 <a href="../index.html" class="text-md font-medium text-white py-2 px-2 hover:bg-teal">Home</a>
-                <a href="#what" class="text-md font-medium text-white py-2 px-2 hover:bg-teal">What we do</a>
-                <a class="text-md font-medium text-white py-2 px-2 hover:bg-teal" href="https://finhealth.growr.xyz/login">Sign in</a>
-                <a class="text-md font-medium text-white py-2 px-2 hover:bg-teal" href="https://finhealth.growr.xyz/">Sign up</a>
+                <a x-on:click="open = ! open" href="#what" class="text-md font-medium text-white py-2 px-2 hover:bg-teal">What we do</a>
+                <a x-on:click="open = ! open" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" href="https://finhealth.growr.xyz/login">Sign in</a>
+                <a x-on:click="open = ! open" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" href="https://finhealth.growr.xyz/">Sign up</a>
                 <!-- <a data-attr-t href-t="growr-finhealth.menu.language-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-finhealth.menu.language</a> -->
               </div>
             </div>
