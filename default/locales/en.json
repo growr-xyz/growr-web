@@ -1,6 +1,6 @@
 {
     "growr-home": {
-        "title": "Growr: delivering open financial services to the next billion",
+        "title": "Growr - delivering open financial services to the next billion",
         "heading": "Delivering open financial services to the next billion",
         "subheading": "We are builders enabling a full stack of financial services on top of Bitcoin with open access to anyone.",
         "button": "Learn why it’s needed",
@@ -124,7 +124,7 @@
         }
     },
     "growr-protocol": {
-        "title": "Growr protocol: fair and sustainable micro-lending",
+        "title": "Growr protocol - fair and sustainable micro-lending",
         "heading": "Fair and sustainable micro-lending protocol",
         "subheading": "Growr helps micro-entrepreneurs build their self-sovereign credit record and receive fair productive loans",
         "button": "Learn more",
@@ -216,7 +216,7 @@
         }
     },
     "growr-finhealth" : {
-        "title": "Growr: join the financial health revolution",
+        "title": "Growr - join the financial health revolution",
         "menu" : {
             "home-link": "../index.html",
             "what": "What we do",
