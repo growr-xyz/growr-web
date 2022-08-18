@@ -17,8 +17,9 @@
   </head>
 
   <body class="bg-white dark:bg-gray-darkest text-black dark:text-gray-lighter">
-    <div class="bg-gray-darkest text-gray-lighter relative overflow-hidden min-h-full md:h-700 mb-8">
-      <img src="../images/pexels-quang-nguyen-vinh-2131663-tint.jpg" class="opacity-50 absolute inset-0 object-cover w-full h-full" alt>
+    <a name="top"></a>
+    <div class="bg-gray-600 dark:bg-gray-darkest relative overflow-hidden min-h-full md:h-700 mb-8">
+      <img src="../images/pexels-quang-nguyen-vinh-6871939-1.jpg" class="animate-fadein opacity-90 absolute inset-0 object-cover w-full h-full" alt>
       <header class="absolute top-0 left-0 right-0 z-20">
         <nav class="container mx-auto px-6 md:px-12 py-5" x-data="{ open: false }">
           <div class="lg:flex justify-between items-center">
@@ -71,16 +72,31 @@
                   </g>
                 </svg>
               </a>
-              <div class="lg:hidden">
-                <button @click="open = !open" class="text-white focus:outline-none">
+              <!-- Burger menu-->
+              <div class="lg:hidden fixed top-12 right-8 sm:right-16 z-50">
+                <button @click="open = !open" class="text-white focus:outline-none rounded-full bg-gray-900 bg-opacity-50 p-2">
                   <svg class="h-6 w-6" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path x-show="open === false" d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path x-show="open === true" d="M6 18L18 6M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
                 </button>
               </div>
+              <!-- Mobile navigation -->
+              <div x-show="open === true" class="lg:hidden fixed top-0 left-0 h-full pt-24 pb-8 px-8 sm:px-16 flex flex-col w-full z-40 bg-gray-900 bg-opacity-75 backdrop-blur-sm overflow-hidden">
+                <a href="../index.html" class="text-md font-medium text-white py-2 px-2 hover:bg-teal">Home</a>
+                <a x-on:click="open = ! open" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" href="#why">Why</a>
+                <a x-on:click="open = ! open" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" href="#video">How does it work?</a>
+                <a x-on:click="open = ! open" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" href="#how">Mechanics</a>
+                <a x-on:click="open = ! open" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" href="#peseta">Peseta</a>
+                <a x-on:click="open = ! open" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" href="#resources">Resources</a>
+                <!-- <a data-attr-t href-t="growr-protocol.menu.signin-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-protocol.menu.sign</a>
+                  <a data-attr-t href-t="menu.signup-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-protocol.menu.signup</a>
+                  <a data-attr-t href-t="menu.language-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-protocol.menu.language</a> -->
+              </div>            
             </div>
-            <ul class="flex items-center hidden space-x-8 lg:flex mr-4">
+            <!-- Desktop navigation -->
+            <ul class="hidden items-center space-x-8 lg:flex mr-4">
+              <li><a href="../index.html" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" aria-label="Home" title="Home">Home</a></li>
               <li><a class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" href="#why" aria-label="Why" title="Why">Why</a></li>
               <li><a class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" href="#video" aria-label="Mechanics" title="How does it work?">How does it work?</a></li>
               <li><a class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" href="#how" aria-label="Mechanics" title="Mechanics">Mechanics</a></li>
@@ -88,25 +104,12 @@
                 <li><a class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" href="#resources" aria-label="Resources" title="Resources">Resources</a></li>
               </ul>
           </div>
-
-          <!-- Mobile navigation -->
-          <div x-show="open === true" class="lg:hidden flex flex-col w-full z-40 bg-teal-dark rounded mt-4 py-2 overflow-hidden">
-            <a class="text-md font-medium text-white py-2 px-2 hover:bg-teal" href="#why">Why</a>
-            <a class="text-md font-medium text-white py-2 px-2 hover:bg-teal" href="#video">How does it work?</a>
-            <a class="text-md font-medium text-white py-2 px-2 hover:bg-teal" href="#how">Mechanics</a>
-            <a class="text-md font-medium text-white py-2 px-2 hover:bg-teal" href="#peseta">Peseta</a>
-            <a class="text-md font-medium text-white py-2 px-2 hover:bg-teal" href="#resources">Resources</a>
-            <!-- <a data-attr-t href-t="growr-protocol.menu.signin-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-protocol.menu.sign</a>
-              <a data-attr-t href-t="menu.signup-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-protocol.menu.signup</a>
-              <a data-attr-t href-t="menu.language-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-protocol.menu.language</a> -->
-          </div>
         </nav>
-
       </header>
 
       <!-- Hero -->
       <div class="container mx-auto px-6 md:px-12 relative z-10 flex items-center min-h-screen py-28 md:py-36 xl:py-48">
-        <div class="lg:w-4/5 flex flex-col items-start relative z-10">
+        <div class="sm:w-3/5 lg:w-3/5 flex flex-col items-start relative z-10">
           <h1 class="font-bold text-3xl sm:text-5xl text-white mt-5">Fair and sustainable micro-lending protocol</h1>
 
           <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 tracking-wide" href="#why">Learn more</a>
@@ -118,6 +121,7 @@
     <a name="why"></a>
     <div class="px-6 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
       <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+        <div class="float-right right-0"></div>
         <h2 class="max-w-lg mb-6 text-4xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-5xl md:mx-auto">Why Growr protocol?</h2>
         <p class="text-xl md:text-2xl mb-8">Growr enables micro-entrepreneurs to receive instant productive loans based on their self-sovereign credit rating, without the need for over-collateralization.</p>
       </div>
@@ -141,7 +145,7 @@
           </div>
           <div class="max-w-md sm:mx-auto">
             <h3 class="max-w-3xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto">Transparency in capital allocation</h3>
-            <p class="text-base md:text-lg text-gray-700 dark:text-gray-light">Growr enforces sustainable micro-lending policies by embedding financial health incentives for borrowers, and enables end-to-end transparency down to the level of each individual borrower how investor's capital is allocated.</p>
+            <p class="text-base md:text-lg text-gray-700 dark:text-gray-light">Growr enforces sustainable micro-lending policies by embedding financial health incentives for borrowers, and enables end-to-end transparency down to the level of each individual borrower how investor’s capital is allocated.</p>
           </div>
           <div class="max-w-md sm:mx-auto">
             <h3 class="max-w-3xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto">Democratized credit rating</h3>
@@ -373,7 +377,7 @@
               <path d="M26.663 41.0453V51.4611H39.6697V46.5218H41.6868C42.9852 46.5199 44.2284 46.0012 45.1443 45.0813C46.0475 44.1415 46.549 42.8863 46.5437 41.5832V39.1133H48.3548C49.4254 38.9897 50.3718 37.7551 49.3842 36.2322L46.5437 31.293V31.0871C46.8113 24.2563 41.4901 18.5021 34.6587 18.2345C27.8273 17.9675 22.0731 23.288 21.8055 30.1194C21.7929 30.4415 21.7929 30.765 21.8055 31.0871C21.7915 34.9803 23.586 38.6597 26.663 41.0453ZM28.2749 20.6746C33.7615 17.4156 40.8519 19.2214 44.1109 24.7079C45.2486 26.6233 45.8085 28.8263 45.7228 31.0518V31.5068L45.8324 31.6974L48.6723 36.6367L48.6835 36.656L48.6955 36.6739C48.9625 36.9966 49.0415 37.4356 48.9041 37.8315C48.7872 38.0699 48.5627 38.2386 48.301 38.2838H45.7208V41.5766C45.7254 42.6625 45.3103 43.7079 44.5618 44.4949C43.8027 45.264 42.7673 45.697 41.6868 45.6976H38.8469V50.6369H27.4859V40.6415L27.1665 40.3944C24.2848 38.1675 22.6064 34.7233 22.629 31.0818V31.0665V31.0518C22.4617 26.8179 24.6294 22.8337 28.2749 20.6746Z" fill="#000001"/>          
             </svg>
             <h3 class="max-w-3xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto">Risk assessor</h3>
-            <p class="text-base md:text-lg text-gray-700 dark:text-gray-light">Risk assessors are third parties trusted — or even owned — by the lenders that perform verification of borrowers' credentials and assert their eligibility to receive a loan. Risk assessors produce a credit rating for each borrower that is used by the lenders in their automated decisions.</p>
+            <p class="text-base md:text-lg text-gray-700 dark:text-gray-light">Risk assessors are third parties trusted—or even owned—by the lenders that perform verification of borrowers’ credentials and assert their eligibility to receive a loan. Risk assessors produce a credit rating for each borrower that is used by the lenders in their automated decisions.</p>
           </div>
         </div>
         <div class="p-5 sm:p-10">
@@ -384,7 +388,7 @@
               <path d="M49.8249 10.6097C49.8249 16.1766 45.3027 20.6888 39.7252 20.6888C34.147 20.6888 29.6255 16.1766 29.6255 10.6097C29.6255 5.04279 34.147 0.529907 39.7252 0.529907C45.3027 0.529907 49.8249 5.04279 49.8249 10.6097Z" fill="#A9F4EA"/>          
             </svg>
             <h3 class="max-w-3xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto">Decentralized marketplace</h3>
-            <p class="text-base md:text-lg text-gray-700 dark:text-gray-light">A decentralized smart contract ecosystem for lending and borrowing on top of the Bitcoin network and Rootstock (RSK), with open access for everyone. The key differentiator of Growr is that loans are provided against verified credentials from borrower's self-sovereign financial identity and credit rating, instead of requiring over-collateralization.</p>
+            <p class="text-base md:text-lg text-gray-700 dark:text-gray-light">A decentralized smart contract ecosystem for lending and borrowing on top of the Bitcoin network and Rootstock (RSK), with open access for everyone. The key differentiator of Growr is that loans are provided against verified credentials from borrower’s self-sovereign financial identity and credit rating, instead of requiring over-collateralization.</p>
           </div>
         </div>
         <div class="p-5 sm:p-10">
@@ -400,7 +404,7 @@
               <path d="M49.716 44.8393L50.9506 43.604V34.549L49.716 33.3143H21.3098L19.6634 34.9607V43.1929L21.3098 44.8393H49.716ZM20.4869 35.3021L21.6519 34.1372H49.3753L50.1277 34.8897V43.2646L49.3753 44.0157H21.6519L20.4869 42.8528V35.3021Z" fill="#000001"/>
             </svg>
             <h3 class="max-w-3xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto">Lender</h3>
-            <p class="text-base md:text-lg text-gray-700 dark:text-gray-light">A traditional finance institution that is providing financing through the global micro-lending marketplace with specific conditions and eligibility criteria. Lenders make their financing decisions based on the credit rating of the borrower, provided by the Risk assessors.</p>
+            <p class="text-base md:text-lg text-gray-700 dark:text-gray-light">A traditional finance institution that is providing micro-lending through the global marketplace with specific conditions and eligibility criteria. Lenders make their financing decisions based on the credit rating of the borrower, provided by the Risk assessors.</p>
           </div>
         </div>
         <div class="p-5 sm:p-10">
@@ -744,21 +748,21 @@
         <div class="relative p-5 sm:p-10">
           <div>
             <h3 class="max-w-md mb-6 text-gray-900 dark:text-gray-lighter text-3xl font-extrabold leading-none sm:text-4xl">Litepaper</h3>
-            <p class="mb-6 text-base text-gray-700 dark:text-gray-light md:text-lg sm:mb-8">Growr's litepaper is a short non-technical description of how the protocol works and the main concepts behind it.</p>
+            <p class="mb-6 text-base text-gray-700 dark:text-gray-light md:text-lg sm:mb-8">Growr’s litepaper is a short non-technical description of how the protocol works and the main concepts behind it.</p>
           </div>
           <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60" target="_blank" href="https://growr-xyz.github.io/growr-documentation/litepaper/Growr-litepaper.pdf">Open</a>
         </div>
         <div class="p-5 sm:p-10">
           <div>
             <h3 class="max-w-md mb-6 text-gray-900 dark:text-gray-lighter text-3xl font-extrabold leading-none sm:text-4xl">Documentation</h3>
-            <p class="mb-6 text-base text-gray-700 dark:text-gray-light md:text-lg sm:mb-8">Growr's documentation provides in-depth details about the different components of the protocol – distribution & identity, risk management, liquidity, payments and governance.</p>
+            <p class="mb-6 text-base text-gray-700 dark:text-gray-light md:text-lg sm:mb-8">Growr’s documentation provides in-depth details about the different components of the protocol—distribution & identity, risk management, liquidity, payments and governance.</p>
           </div>
           <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60" target="_blank" href="https://growr-xyz.github.io/growr-documentation/">Open</a>
         </div>
         <div class="p-5 sm:p-10">
           <div>
             <h3 class="max-w-md mb-6 text-gray-900 dark:text-gray-lighter text-3xl font-extrabold leading-none sm:text-4xl">GitHub repositories</h3>
-            <p class="mb-6 text-base text-gray-700 dark:text-gray-light md:text-lg sm:mb-8">Visit Growr's GitHub page to view our open source repositories and contribute.</p>
+            <p class="mb-6 text-base text-gray-700 dark:text-gray-light md:text-lg sm:mb-8">Visit Growr’s GitHub page to view our open source repositories and contribute.</p>
           </div>
           <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60" target="_blank" href="https://github.com/growr-xyz">Open</a>
         </div>

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="h-100">
+<html lang="en" class="h-100 scroll-smooth">
 
   <head profile="http://www.w3.org/2005/10/profile">
     <meta charset="utf-8">
@@ -17,8 +17,8 @@
   </head>
 
   <body class="bg-white dark:bg-gray-darkest text-black dark:text-gray-lighter">
-    <div class="bg-gray-darkest text-gray-lighter relative overflow-hidden min-h-full md:h-700 mb-8">
-      <img src="images/pexels-pixabay-247676.jpg" class="opacity-25 absolute inset-0 object-cover w-full h-full" alt="" />
+    <div class="bg-gray-600 dark:bg-gray-darkest relative overflow-hidden min-h-full md:h-700 mb-8">
+      <img src="images/pexels-pixabay-247676-1.jpg" class="animate-fadein opacity-90 absolute inset-0 object-cover w-full h-full" alt="" />
 
       <header class="absolute top-0 left-0 right-0 z-20">
         <nav class="container mx-auto px-6 md:px-12 py-5" x-data="{ open: false }">
@@ -78,8 +78,9 @@
                   </g>
                 </g>
               </svg>
-              <div class="lg:hidden">
-                <button @click="open = !open" class="text-white focus:outline-none">
+              <!-- Burger menu -->
+              <div class="lg:hidden fixed top-12 right-8 sm:right-16 z-50">
+                <button @click="open = !open" class="text-white focus:outline-none rounded-full bg-gray-900 bg-opacity-50 p-2">
                   <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path x-show="open === false" d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2"
                       stroke-linecap="round" stroke-linejoin="round" />
@@ -88,9 +89,20 @@
                   </svg>
                 </button>
               </div>
+              <!-- Mobile navigation -->
+              <div x-show="open === true" class="lg:hidden fixed top-0 left-0 h-full pt-24 pb-8 px-8 sm:px-16 flex flex-col w-full z-40 bg-gray-900 bg-opacity-75 backdrop-blur-sm overflow-hidden">
+                <a href="#mission" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-home.menu.mission</a>
+                <a href="#what" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-home.menu.what</a>
+                <a data-attr-t href-t="growr-home.menu.finhealth-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-home.menu.finhealth</a>
+                <a data-attr-t href-t="growr-home.menu.protocol-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-home.menu.protocol</a>
+                <a href="#news" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-home.menu.news</a>
+                <!-- <a data-attr-t href-t="growr-home.menu.signin-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-home.menu.sign</a>
+                  <a data-attr-t href-t="menu.signup-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-home.menu.signup</a>
+                  <a data-attr-t href-t="menu.language-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-home.menu.language</a> -->
+              </div>
             </div>
-
-            <ul class="flex items-center hidden space-x-8 lg:flex mr-4">
+            <!-- Desktop navigation -->
+            <ul class="hidden items-center space-x-8 lg:flex mr-4">
               <li><a data-attr-t href="#mission" aria-label-t="growr-home.menu.mission" title-t="growr-home.menu.mission"
                 class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" data-t>growr-home.menu.mission</a></li>
               <li><a data-attr-t href="#what" aria-label-t="growr-home.menu.what" title-t="growr-home.menu.what"
@@ -115,18 +127,6 @@
             </ul>
 
             <!-- </div> -->
-          </div>
-
-          <!-- Mobile navigation -->
-          <div x-show="open === true" class="lg:hidden flex flex-col w-full z-40 bg-teal-dark rounded mt-4 py-2 overflow-hidden">
-            <a href="#mission" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-home.menu.mission</a>
-            <a href="#what" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-home.menu.what</a>
-            <a data-attr-t href-t="growr-home.menu.finhealth-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-home.menu.finhealth</a>
-            <a data-attr-t href-t="growr-home.menu.protocol-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-home.menu.protocol</a>
-            <a href="#news" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-home.menu.news</a>
-            <!-- <a data-attr-t href-t="growr-home.menu.signin-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-home.menu.sign</a>
-              <a data-attr-t href-t="menu.signup-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-home.menu.signup</a>
-              <a data-attr-t href-t="menu.language-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-home.menu.language</a> -->
           </div>
         </nav>
       </header>
@@ -180,7 +180,7 @@
       </div>
     </div> 
 
-    <!-- What we do -->
+    <!-- What are we building? -->
     <a name="what"></a>
     <div class="px-6 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
       <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
@@ -192,29 +192,111 @@
           <p class="mb-8" data-t>growr-home.vision.p-2</p>
           <p class="mb-8" data-t>growr-home.vision.p-3</p>
         </div>
-
-        <div class="max-w-xl py-12 sm:text-left md:mx-auto lg:max-w-2xl text-base md:text-lg text-gray-700 dark:text-gray-light">
-          <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full text-gray-900 dark:text-gray-lighter bg-teal-light dark:bg-teal-dark sm:w-24 sm:h-24">
-            <svg class="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52">
-              <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-            </svg>
-          </div>
-          <h3 class="max-w-3xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto" data-t>growr-home.vision.finhealth.title</h3>
-          <p class="text-base md:text-lg text-gray-700 dark:text-gray-light" data-t>growr-home.vision.finhealth.content</p>
-          <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60" target="_blank" 
-            data-attr-t href-t="growr-home.menu.finhealth-link" data-t>growr-home.vision.finhealth.button</a>
+      </div>
+    </div>
+    
+    <div class="grid gap-10 mx-auto sm:grid-cols-2 lg:grid-cols-2 lg:max-w-screen-lg mb-16 px-4 lg:px-8">
+      <div class="max-w-xl py-12 sm:text-left md:mx-auto lg:max-w-2xl text-base md:text-lg text-gray-700 dark:text-gray-light">
+        <div class="flex items-center justify-center w-16 h-16 sm:w-24 sm:h-24 mb-4 rounded-full text-gray-900 dark:text-gray-lighter bg-teal-light dark:bg-teal-dark">
+          <svg class="text-gray-900 dark:text-gray-lighter w-10 h-10 sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 318 295" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M151.54 121.405C145.8 116.18 138.38 113.201 130.63 113.01C124.58 112.819 118.75 115.325 114.69 119.86C106.38 129.571 109.4 146.015 121.45 156.585C127.19 161.814 134.61 164.796 142.36 164.99C148.41 165.181 154.25 162.675 158.3 158.14C166.62 148.419 163.61 131.975 151.54 121.405ZM153.14 153.656C150.38 156.673 146.43 158.313 142.36 158.14C136.26 157.935 130.43 155.557 125.92 151.43C116.86 143.487 114.08 131.081 119.85 124.344C122.61 121.327 126.56 119.687 130.63 119.86C136.73 120.066 142.56 122.442 147.07 126.567C156.14 134.513 158.92 146.919 153.16 153.656H153.14Z" fill="currentColor"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M178.36 69.5662C176.08 67.9232 173.33 67.0272 170.51 67.0032C167.05 66.9192 163.77 68.5082 161.71 71.2592C158.35 76.8062 160.09 83.9952 165.63 87.4372C167.92 89.0782 170.66 89.9732 173.49 89.9972C176.95 90.0822 180.23 88.4932 182.28 85.7412C185.66 80.1962 183.91 73.0012 178.36 69.5662ZM176.58 81.7372C175.82 82.6402 174.68 83.1402 173.49 83.0882C172.12 83.0622 170.8 82.6202 169.7 81.8202C167.35 80.5372 166.36 77.7022 167.41 75.2562C168.17 74.3532 169.32 73.8532 170.51 73.9062C171.87 73.9332 173.19 74.3772 174.29 75.1772C176.76 76.9142 177.83 79.9792 176.58 81.7202V81.7372Z" fill="currentColor"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M122.93 196.024C120.54 194.103 117.54 193.037 114.44 193.003C111.23 192.935 108.16 194.315 106.12 196.744C102.39 202.034 103.71 209.263 109.07 212.976C111.47 214.896 114.46 215.962 117.56 215.998C120.78 216.066 123.85 214.685 125.88 212.256C129.61 206.966 128.29 199.741 122.93 196.024ZM120.38 207.986C119.67 208.76 118.64 209.183 117.57 209.139C116.08 209.103 114.64 208.573 113.5 207.637C111.23 206.216 110.43 203.363 111.63 201.014C112.34 200.239 113.38 199.817 114.44 199.862C115.93 199.894 117.36 200.418 118.49 201.347C120.79 202.749 121.61 205.63 120.38 207.986Z" fill="currentColor"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M221.9 96.26L223 95.153L221.08 66.616L172.16 31L142.05 36.719L141.3 37.471C124.57 54.165 111.27 73.993 102.18 95.827C96.4099 109.538 91.77 123.699 88.3 138.168C84.06 157.085 76.7101 175.164 66.5701 191.672L66 192.641L68.74 219.322L119.79 265L143.78 259.371L144.53 258.278C149.14 251.457 152.84 244.051 155.5 236.254C160.12 222.894 164 209.292 167.13 195.507C172.1 175.231 176.39 157.705 190.38 134.821C199.37 120.79 209.94 107.85 221.9 96.26ZM160.47 193.902C157.39 207.459 153.57 220.836 149.04 233.975C146.71 240.777 143.54 247.263 139.62 253.285L121.7 257.488L75.3201 215.968L73.0701 194.166C83.2701 177.384 90.66 159.043 94.96 139.869C98.35 125.719 102.89 111.87 108.52 98.459C117.14 77.778 129.66 58.966 145.42 43.059L170.52 38.306L214.45 70.29L215.95 92.507C204.05 104.175 193.51 117.164 184.54 131.223C170 155.024 165.59 173.025 160.47 193.902Z" fill="currentColor"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M316.72 203.048C316.13 201.73 314.78 200.917 313.34 201.014C302.03 201.757 291.93 193.692 282.57 185.358C274.84 178.451 267.81 170.807 261.57 162.535C254.86 153.967 250 147.777 239.05 144.397C225.72 140.266 211.3 145.932 200.5 152.314C202.01 149.46 203.67 146.531 205.54 143.485C226.01 110.094 268.23 78.662 268.23 78.662L159.87 0C129.14 20.049 104.72 48.384 89.4499 81.725C87.8199 75.127 84.5 69.068 79.8 64.152C72.98 57.48 66.4201 56.61 58.1201 55.505C50.1201 54.602 42.23 52.86 34.59 50.307C26.87 47.708 16.1199 43.232 11.9599 34.417C11.1399 32.698 9.09007 31.962 7.37007 32.773C6.71007 33.082 6.17002 33.59 5.82002 34.224C-0.119978 44.999 -2.57995 62.19 3.60005 72.29C7.72005 77.969 13.5399 82.189 20.2199 84.338C20.2399 84.349 20.2399 84.368 20.2299 84.381C20.2299 84.383 20.2199 84.385 20.2199 84.386C17.0299 88.309 16.0699 93.59 17.6699 98.386C19.6099 104.582 26.38 110.779 37.56 112.565C37.57 112.566 37.59 112.581 37.59 112.598C37.59 112.603 37.58 112.609 37.58 112.614C36.8 114.084 36.3898 115.721 36.3798 117.384C36.4198 120.174 37.7399 122.791 39.9599 124.48C46.1599 129.619 57.1299 128.848 62.1999 128.146C64.0799 131.467 66.6901 134.313 69.8501 136.462L70.6499 137.023C66.4999 154.158 59.5099 170.48 49.9799 185.313C44.6899 193.957 37.56 201.331 29.09 206.91L127.89 295.001C127.89 295.001 157.04 284.394 172.04 241.709C176.69 228.446 180.61 214.94 183.79 201.251C184.38 201.4 185 201.387 185.59 201.213L186.51 200.896C189.6 206.666 196.81 218.921 203.71 222.143C206.53 223.659 209.93 223.659 212.76 222.143C214.63 221.058 216.15 219.463 217.14 217.544C217.15 217.53 217.16 217.522 217.18 217.528C217.19 217.53 217.19 217.536 217.19 217.544C226.64 230.952 236.41 233.668 242.77 233.668C243.56 233.669 244.36 233.626 245.15 233.541C248.72 233.219 252.01 231.461 254.26 228.67C256.18 226.126 257.43 223.141 257.9 219.988C257.9 219.957 257.93 219.946 257.95 219.967C263.43 224.546 272.13 230.473 280.72 230.842C294.84 231.53 309.66 218.731 316.52 206.256C317.08 205.277 317.16 204.089 316.72 203.048ZM281.02 223.964C270.03 223.496 257.4 210.112 257.28 209.977C255.98 208.588 253.8 208.513 252.41 209.81C251.61 210.551 251.22 211.624 251.34 212.704C251.78 216.753 250.91 220.838 248.87 224.363C247.77 225.731 246.14 226.576 244.39 226.693C235.43 227.664 226.45 220.883 219.08 207.575C218.15 205.912 216.06 205.311 214.39 206.233C213.43 206.767 212.78 207.728 212.64 208.821C212.1 213.186 210.63 215.454 209.43 216.119C209.16 216.263 208.35 216.711 206.63 215.905C201.8 213.647 194.61 201.898 191.23 195.02C190.39 193.331 188.36 192.624 186.65 193.434C186.65 193.434 186.25 193.619 185.62 193.881C186.65 189.637 187.72 185.544 188.88 181.506C189.54 179.195 188.2 176.787 185.88 176.127C185.49 176.014 185.08 175.958 184.67 175.96C183.67 176.353 182.91 177.183 182.6 178.211C180.97 183.836 179.59 189.526 178.09 195.581L177.37 198.531L177.18 199.306C174.03 212.885 170.14 226.282 165.53 239.437C154.78 270.019 136.72 282.673 129.08 286.832L39.9899 207.365C46.2699 202.095 51.6499 195.839 55.9099 188.841C66.0899 172.868 73.5 155.295 77.82 136.862C78.16 135.567 77.7199 134.197 76.6899 133.336L72.52 129.867C71.56 129.085 70.6999 128.195 69.9499 127.216L69.6298 126.806C68.7198 125.598 67.93 124.306 67.27 122.948C66.62 121.461 65.0199 120.629 63.4199 120.951C59.9099 121.667 48.8601 122.868 44.3601 119.151C43.2901 118.269 43.29 117.588 43.29 117.33C43.71 115.248 44.9499 113.423 46.7299 112.259C48.1899 111.037 48.3799 108.865 47.1599 107.409C46.4999 106.629 45.53 106.179 44.51 106.18H44.5C30.91 106.159 25.36 99.753 24.27 96.31C23.12 92.216 24.99 87.875 28.75 85.89C30.42 84.98 31.0398 82.889 30.1298 81.22C29.6498 80.353 28.8301 79.731 27.8701 79.512C24.0301 78.634 13.25 74.992 9.49995 68.723C5.70995 62.527 6.39986 51.742 9.39986 43.136C9.40986 43.12 9.4299 43.115 9.4399 43.125C9.4499 43.128 9.44992 43.132 9.45992 43.136C15.6299 50.479 25.1798 54.403 32.3898 56.833C40.4398 59.537 48.7599 61.383 57.1999 62.341C65.0499 63.374 69.7799 64.017 74.9699 69.088C80.7899 75.533 84.0401 83.887 84.1001 92.565C84.1101 92.963 84.2 93.355 84.34 93.725C80.23 104.077 77.3699 112.755 75.1799 120.232C74.7599 122.086 75.93 123.928 77.78 124.345C79.48 124.727 81.2 123.78 81.79 122.139C84.85 111.715 88.4899 101.468 92.6799 91.443C106.72 57.994 129.93 29.185 159.63 8.33401L256.79 78.885C243.54 89.625 215.57 113.953 199.66 139.901C196.24 145.443 193.17 151.191 190.47 157.113C189.37 159.471 188.37 161.781 187.47 164.06C187.07 164.991 187.5 166.07 188.43 166.469C188.89 166.668 189.42 166.668 189.88 166.469L194.49 164.59L195.13 164.225C204.5 157.196 222.12 146.397 237.02 151.006C245.92 153.76 249.77 158.669 256.16 166.81C262.65 175.409 269.96 183.354 278 190.531C286.44 198.043 296.19 205.923 307.43 207.637C307.45 207.64 307.47 207.657 307.46 207.676C307.46 207.68 307.46 207.684 307.46 207.688C300.87 216.652 290.35 224.453 281.02 223.964Z" fill="currentColor"/>
+          </svg>            
         </div>
+        <h3 class="max-w-3xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto" data-t>growr-home.vision.finhealth.title</h3>
+        <p class="text-base md:text-lg text-gray-700 dark:text-gray-light" data-t>growr-home.vision.finhealth.content</p>
+        <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60" target="_blank" 
+          data-attr-t href-t="growr-home.menu.finhealth-link" data-t>growr-home.vision.finhealth.button</a>
+      </div>
 
-        <div class="max-w-xl py-12 sm:text-left md:mx-auto lg:max-w-2xl text-base md:text-lg text-gray-700 dark:text-gray-light">
-          <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full text-gray-900 dark:text-gray-lighter bg-teal-light dark:bg-teal-dark sm:w-24 sm:h-24">
-            <svg class="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52">
-              <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-            </svg>
+      <div class="max-w-xl py-12 sm:text-left md:mx-auto lg:max-w-2xl text-base md:text-lg text-gray-700 dark:text-gray-light">
+        <div class="flex items-center justify-center w-16 h-16 sm:w-24 sm:h-24 mb-4 rounded-full text-gray-900 dark:text-gray-lighter bg-teal-light dark:bg-teal-dark">
+          <svg class="text-gray-900 dark:text-gray-lighter w-10 h-10 sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 302 266" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.43998 231C3.95998 230.999 4.46997 230.88 4.92997 230.653L74.5801 196.841C77.7001 194.978 81.2502 193.979 84.8702 193.945H146.13C149.87 193.861 152.97 196.854 153.06 200.633C153.14 204.411 150.18 207.543 146.44 207.628C146.34 207.63 146.23 207.63 146.13 207.628H100.19C98.29 207.628 96.75 209.182 96.75 211.1C96.75 213.017 98.29 214.572 100.19 214.572H146.13C153.67 214.692 159.88 208.619 160 201.005C160.12 193.393 154.1 187.123 146.57 187.002C146.42 186.999 146.28 186.999 146.13 187.002H84.8702C80.1302 187.035 75.4899 188.308 71.3799 190.696L1.93998 224.4C0.229984 225.236 -0.479869 227.312 0.340131 229.038C0.920131 230.232 2.10997 230.993 3.42997 230.997L3.43998 231Z" fill="currentColor"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M148.82 236.597C147.64 237.491 146.19 237.98 144.7 237.99H96.9797C71.6097 237.99 50.7898 245.429 35.0798 260.097C33.6998 261.388 33.6297 263.549 34.9297 264.924C36.2297 266.298 38.4098 266.365 39.7898 265.074C54.1798 251.631 73.4197 244.834 96.9797 244.834H144.7C147.63 244.825 150.49 243.884 152.85 242.148L223.02 191.171L223.42 190.83C226.26 188.149 227.91 184.452 228 180.558C227.99 173.076 221.89 167.012 214.36 167.003C211.86 166.952 209.4 167.638 207.29 168.976L163.64 193.821C162 194.759 161.43 196.845 162.37 198.482C163.32 200.118 165.42 200.685 167.06 199.747L210.89 174.779C211.92 174.121 213.13 173.789 214.36 173.83C218.09 173.836 221.12 176.845 221.13 180.558C221.02 182.554 220.17 184.438 218.72 185.829L148.82 236.597Z" fill="currentColor"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M106.87 106.997C112.29 106.82 117.41 104.486 121.07 100.524C128.08 93.2782 129 82.9262 123.16 77.4052C120.71 75.1502 117.47 73.9292 114.13 74.0032C108.71 74.1762 103.59 76.5082 99.9303 80.4702C92.9303 87.7152 92.0004 98.0502 97.8404 103.588C100.28 105.848 103.52 107.072 106.87 106.997ZM104.97 85.2382C107.32 82.6472 110.62 81.0882 114.13 80.9042C115.68 80.8462 117.19 81.3782 118.34 82.3912C121.35 85.2352 120.29 91.3632 116.04 95.7522C113.69 98.3462 110.39 99.9082 106.87 100.096C105.33 100.153 103.82 99.6192 102.67 98.6052C99.6603 95.7592 100.72 89.6382 104.97 85.2382Z" fill="currentColor"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M77.5 53C73.91 53 71 55.91 71 59.5C71 63.09 73.91 66 77.5 66C81.09 66 84 63.091 84 59.5C84 57.727 83.28 56.03 81.99 54.804C80.79 53.645 79.18 52.998 77.5 53Z" fill="currentColor"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M202.07 118.808L182.92 101.81L203.01 90.837L223.16 84.864L299.11 72.375C300.99 72.066 302.26 70.296 301.95 68.422C301.64 66.548 299.87 65.278 297.99 65.587L221.83 78.114C221.68 78.137 221.54 78.17 221.41 78.21L200.7 84.348C200.46 84.415 200.23 84.509 200.01 84.627L146.17 114.052C142.86 115.839 138.72 114.608 136.93 111.302C136.72 110.907 136.54 110.492 136.41 110.063C135.59 106.72 137.22 103.258 140.33 101.765L177.72 76.429C179.29 75.35 179.68 73.209 178.6 71.646C177.89 70.625 176.69 70.062 175.45 70.174L153.24 72.323L120.04 40.601L153.51 28.538C158.19 26.414 163.42 25.788 168.47 26.746L210.98 39.153C230.21 44.765 251.12 41.319 276.8 28.301C278.49 27.433 279.16 25.36 278.29 23.671C277.43 21.992 275.37 21.322 273.68 22.17C249.67 34.346 230.36 37.644 212.92 32.551L170.37 20.12C163.95 18.71 157.24 19.379 151.22 22.032L114.47 35.274L77.5601 0L18 62.1L142.43 181L202.07 118.808ZM136.74 95.913C130.87 99 127.99 105.781 129.85 112.136C132.09 119.347 139.76 123.379 146.99 121.142C147.85 120.874 148.69 120.52 149.49 120.087L164.66 111.8L168.93 115.878L168.84 123.622L145.68 147.772L137.91 148.116L51.1001 65.171L51.1299 57.389L74.28 33.263L82.1599 32.96L143.35 91.436L136.74 95.913ZM27.74 61.886L77.77 9.72501L155 83.53L149.17 87.485L84.8101 25.973L71.23 26.495L44.25 54.617L44.2 68.097L135.27 155.131L148.74 154.519L175.69 126.414L175.83 114.461L175.79 112.921L170.99 108.344L176.5 105.338L192.15 119.214L142.21 171.272L27.74 61.886Z" fill="currentColor"/>
+          </svg>            
+        </div>
+        <h3 class="max-w-3xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto" data-t>growr-home.vision.protocol.title</h3>
+        <p class="text-base md:text-lg text-gray-700 dark:text-gray-light" data-t>growr-home.vision.protocol.content</p>
+        <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60" target="_blank" 
+          data-attr-t href-t="growr-home.menu.protocol-link" data-t>growr-home.vision.protocol.button</a>
+      </div>
+    </div>
+
+    <!-- Team -->
+    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div class="mb-10 md:mb-12">
+        <h2
+          class="text-center max-w-lg mb-2 text-4xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-5xl md:mx-auto"
+          data-t>growr-home.team.who</h2>
+        <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+          <div class="grid gap-10 mx-auto sm:grid-cols-2 lg:grid-cols-3 lg:max-w-screen-lg">
+            <div>
+              <img class="object-cover w-36 h-36 rounded-full shadow" data-attr-t src-t="growr-home.team.rs-photo" alt="Photo" />
+              <div class="flex flex-col justify-center mt-4 text-gray-900 dark:text-gray-lighter">
+                <h3 class="text-xl sm:text-2xl mb-2 font-bold text-gray-900 dark:text-gray-lighter" data-t>growr-home.team.rs</h3>
+                <p class="text-base md:text-lg mb-2 text-gray-700 dark:text-gray-light" data-t>growr-home.team.rs-role</p>
+                <!-- <p class="text-base md:text-lg mb-2 text-gray-700 dark:text-gray-light">
+                  <a class="underline text-teal-dark" data-attr-t href-t="growr-home.team.rs-story-link" target="_blank" rel="noreferrer"
+                    data-t>growr-home.team.rs-story</a>
+                </p> -->
+                <div class="flex items-start space-x-3 sm:justify-start">
+                  <a href="https://linkedin.com/in/radoystoyanov/" target="_blank" class="text-gray-700 dark:text-gray-light transition-colors duration-300 hover:text-deep-purple-accent-400">
+                    <svg viewBox="0 0 42 42" fill="currentColor" class="h-5">
+                      <path d="M37 0H5C2.24 0 0 2.24 0 5V37C0 39.76 2.24 42 5 42H37C39.76 42 42 39.76 42 37V5C42 2.24 39.76 0 37 0ZM13 16V35H7V16H13ZM7 10.47C7 9.07 8.2 8 10 8C11.8 8 12.93 9.07 13 10.47C13 11.87 11.88 13 10 13C8.2 13 7 11.87 7 10.47ZM35 35H29C29 35 29 25.74 29 25C29 23 28 21 25.5 20.96H25.42C23 20.96 22 23.02 22 25C22 25.91 22 35 22 35H16V16H22V18.56C22 18.56 23.93 16 27.81 16C31.78 16 35 18.73 35 24.26V35Z"/>
+                    </svg>
+                  </a>
+                  <a href="https://twitter.com/radoystoyanov" target="_blank" class="text-gray-700 dark:text-gray-light transition-colors duration-300 hover:text-deep-purple-accent-400">
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
+                      <path d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z"></path>
+                    </svg>
+                  </a>
+                </div>                        
+              </div>
+            </div>
+            <div>
+              <img class="object-cover w-36 h-36 rounded-full shadow" data-attr-t src-t="growr-home.team.za-photo" alt="Photo" />
+              <div class="flex flex-col justify-center mt-4 text-gray-900 dark:text-gray-lighter">
+                <h3 class="text-xl sm:text-2xl mb-2 font-bold text-gray-900 dark:text-gray-lighter" data-t>growr-home.team.za</h3>
+                <p class="text-base md:text-lg mb-2 text-gray-700 dark:text-gray-light" data-t>growr-home.team.za-role</p>
+                <!-- <p class="text-base md:text-lg mb-2 text-gray-700 dark:text-gray-light">
+                  <a class="underline text-teal-dark" data-attr-t href-t="growr-home.team.za-story-link" target="_blank" rel="noreferrer"
+                    data-t>growr-home.team.za-story</a>
+                </p> -->
+                <div class="flex items-start space-x-3 sm:justify-start">
+                  <a href="https://linkedin.com/in/zhivko-angelov/" target="_blank" class="text-gray-700 dark:text-gray-light transition-colors duration-300 hover:text-deep-purple-accent-400">
+                    <svg viewBox="0 0 42 42" fill="currentColor" class="h-5">
+                      <path d="M37 0H5C2.24 0 0 2.24 0 5V37C0 39.76 2.24 42 5 42H37C39.76 42 42 39.76 42 37V5C42 2.24 39.76 0 37 0ZM13 16V35H7V16H13ZM7 10.47C7 9.07 8.2 8 10 8C11.8 8 12.93 9.07 13 10.47C13 11.87 11.88 13 10 13C8.2 13 7 11.87 7 10.47ZM35 35H29C29 35 29 25.74 29 25C29 23 28 21 25.5 20.96H25.42C23 20.96 22 23.02 22 25C22 25.91 22 35 22 35H16V16H22V18.56C22 18.56 23.93 16 27.81 16C31.78 16 35 18.73 35 24.26V35Z"/>
+                    </svg>
+                  </a>
+                </div>                        
+              </div>
+            </div>
+            <div>
+              <img class="object-cover w-36 h-36 rounded-full shadow" data-attr-t src-t="growr-home.team.vg-photo" alt="Photo" />
+              <div class="flex flex-col justify-center mt-4 text-gray-900 dark:text-gray-lighter">
+                <h3 class="text-xl sm:text-2xl mb-2 font-bold text-gray-900 dark:text-gray-lighter" data-t>growr-home.team.vg</h3>
+                <p class="text-base md:text-lg mb-2 text-gray-700 dark:text-gray-light" data-t>growr-home.team.vg-role</p>
+                <!-- <p class="text-base md:text-lg mb-2 text-gray-700 dark:text-gray-light">
+                  <a class="underline text-teal-dark" data-attr-t href-t="growr-home.team.vg-story-link" target="_blank" rel="noreferrer"
+                    data-t>growr-home.team.vg-story</a>
+                </p> -->
+                <div class="flex items-start space-x-3 sm:justify-start">
+                  <a href="https://www.linkedin.com/in/valentin-genev-bab03318/" target="_blank" class="text-gray-700 dark:text-gray-light transition-colors duration-300 hover:text-deep-purple-accent-400">
+                    <svg viewBox="0 0 42 42" fill="currentColor" class="h-5">
+                      <path d="M37 0H5C2.24 0 0 2.24 0 5V37C0 39.76 2.24 42 5 42H37C39.76 42 42 39.76 42 37V5C42 2.24 39.76 0 37 0ZM13 16V35H7V16H13ZM7 10.47C7 9.07 8.2 8 10 8C11.8 8 12.93 9.07 13 10.47C13 11.87 11.88 13 10 13C8.2 13 7 11.87 7 10.47ZM35 35H29C29 35 29 25.74 29 25C29 23 28 21 25.5 20.96H25.42C23 20.96 22 23.02 22 25C22 25.91 22 35 22 35H16V16H22V18.56C22 18.56 23.93 16 27.81 16C31.78 16 35 18.73 35 24.26V35Z"/>
+                    </svg>
+                  </a>
+                </div>                        
+              </div>
+            </div>
           </div>
-          <h3 class="max-w-3xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto" data-t>growr-home.vision.protocol.title</h3>
-          <p class="text-base md:text-lg text-gray-700 dark:text-gray-light" data-t>growr-home.vision.protocol.content</p>
-          <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60" target="_blank" 
-            data-attr-t href-t="growr-home.menu.protocol-link" data-t>growr-home.vision.protocol.button</a>
         </div>
       </div>
 
@@ -224,59 +306,55 @@
           class="max-w-3xl mb-12 text-3xl md:text-center font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto"
           data-t>growr-home.values.title</h2>
         <div class="grid gap-8 row-gap-10 lg:grid-cols-2">
-          <div class="max-w-md sm:mx-auto sm:text-center">
-            <div
-              class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-light dark:bg-teal-dark sm:mx-auto sm:w-24 sm:h-24">
-              <svg class="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16" stroke="currentColor"
-                viewBox="0 0 52 52">
-                <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"
-                  points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-              </svg>
+          <div class="max-w-md">
+            <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-light dark:bg-teal-dark sm:w-24 sm:h-24">
+              <svg class="text-gray-900 dark:text-gray-lighter w-10 h-10 sm:w-16 sm:h-16" stroke="currentColor" fill="currentColor" viewBox="0 0 274 267" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M241.508 105.948C240.078 100.033 237.668 94.399 234.378 89.279C230.418 82.886 223.448 78.999 215.948 79.001C202.368 79.525 191.088 89.713 189.148 103.221C187.858 108.098 185.278 112.537 181.698 116.075C180.578 117.245 179.368 118.314 178.058 119.267L167.878 125.933C165.398 127.423 161.058 129.521 161.058 129.521C161.058 129.521 161.148 123.821 161.098 121.74C160.338 94.532 146.868 78.09 119.908 71.843C87.0981 64.245 81.0781 66.422 50.9181 51.721C38.7481 45.791 21.7581 37.167 9.63811 23.446C7.77811 21.308 4.54814 21.0901 2.41814 22.9571C1.38814 23.8571 0.758151 25.131 0.678151 26.497C-0.981849 53.379 -0.261844 90.157 10.5582 109.98C28.8782 143.552 48.8081 147.012 76.8781 158.136C85.0081 161.177 91.3782 163.361 100.558 166.801C92.8382 172.095 85.628 177.509 78.818 181.547C58.828 193.022 37.0481 201.023 14.3981 205.213C13.0481 205.498 11.9781 206.537 11.6581 207.882C10.6781 211.679 11.2581 215.709 13.2681 219.072C15.7481 223.116 19.988 225.75 24.698 226.178C21.6481 233.93 25.4481 242.691 33.1681 245.747C34.4981 246.275 35.9081 246.609 37.3381 246.738C35.4881 251.487 36.1481 256.856 39.1081 261.006C41.6981 264.464 45.7181 266.553 50.0381 266.688H50.3082C51.4282 266.689 52.4781 266.161 53.1381 265.264C68.6581 243.872 78.2681 215.825 105.408 215.044C115.348 214.758 125.288 213.905 135.188 213.905C136.428 213.905 137.668 213.905 138.908 213.95C139.538 213.95 140.178 213.971 140.808 213.971C169.508 213.971 196.268 198.794 207.418 172.986C213.508 158.883 210.068 145.124 212.808 129.896C214.898 118.294 218.178 115.208 228.688 112.147C231.738 111.367 234.898 111.152 238.028 111.511L246.718 114.345C246.718 114.345 248.828 111.844 241.508 105.948ZM153.318 141.481C153.148 143.373 154.538 145.046 156.418 145.217C156.528 145.217 156.628 145.217 156.738 145.217C158.518 145.224 160.008 143.862 160.158 142.083L160.578 137.402L164.058 135.716C164.248 135.627 168.698 133.467 171.408 131.84L171.518 131.771L171.638 131.698L181.828 125.032L181.978 124.936L182.118 124.829C183.728 123.655 185.228 122.343 186.598 120.908C191.028 116.516 194.198 111.019 195.798 104.985L195.888 104.642L195.938 104.297C197.368 94.1441 205.758 86.423 215.958 85.864C221.138 85.841 225.948 88.548 228.638 92.994C230.928 96.564 232.738 100.425 234.018 104.476C231.658 104.556 229.308 104.892 227.018 105.477L226.798 105.536C213.438 109.433 208.588 114.823 206.098 128.668C205.118 134.765 204.638 140.931 204.658 147.105C205.048 154.982 203.848 162.855 201.138 170.258C191.468 192.641 167.798 207.101 140.828 207.101C140.248 207.101 139.658 207.101 139.078 207.081C137.788 207.053 136.498 207.036 135.208 207.036C129.088 207.036 122.938 207.352 116.988 207.662C113.128 207.858 109.108 208.065 105.228 208.178C80.5181 208.9 68.658 228.025 57.188 246.535C54.468 250.934 51.6581 255.478 48.7481 259.606C47.0981 259.217 45.6381 258.269 44.6081 256.923C43.0381 254.676 42.698 251.789 43.698 249.235L47.0281 240.701L37.938 239.875C33.438 239.458 30.1281 235.461 30.5481 230.947C30.6181 230.174 30.7981 229.415 31.0881 228.693L34.438 220.145L25.3281 219.316C22.7981 219.088 20.5181 217.689 19.1581 215.532C18.4381 214.315 18.058 212.924 18.068 211.508C40.648 207.066 62.348 198.944 82.318 187.464C87.288 184.512 92.3081 180.976 97.6181 177.234C99.8481 175.666 102.118 174.062 104.438 172.474L108.348 169.794L119.198 173.753C120.988 174.368 122.938 173.41 123.548 171.612C124.148 169.864 123.258 167.955 121.538 167.29L102.968 160.348C98.1681 158.553 94.1381 157.098 90.2281 155.688C86.6481 154.394 83.1681 153.135 79.4081 151.732C75.6981 150.263 72.138 148.925 68.688 147.635C46.158 139.19 31.2781 133.611 16.5781 106.667C8.89805 92.637 5.55813 65.2081 7.27813 31.0651C7.27813 31.0241 7.30806 31.013 7.33806 31.045C20.6581 44.618 38.1781 53.1651 47.9181 57.9051C63.1881 65.8931 79.6481 71.334 96.6581 74.014C102.678 75.176 109.508 76.497 118.358 78.5471C142.178 84.051 153.578 97.848 154.248 121.933C154.288 123.515 154.248 127.87 154.208 129.415L153.318 141.481Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M244.998 101.179L251.478 102.689C253.118 94.491 253.958 86.138 253.998 77.759L247.368 77.688C247.338 85.584 246.538 93.456 244.998 101.179Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M222.998 137.656L224.678 140.667L226.348 143.688C226.778 143.454 237.028 137.759 244.998 121.737L238.768 118.688C235.368 126.328 229.918 132.892 222.998 137.656Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M270.448 81.9589C273.568 78.8229 274.738 74.2879 273.528 70.0679C266.858 68.4019 260.078 72.3709 258.378 78.9319C257.838 81.0329 257.868 83.2389 258.478 85.3229C262.798 86.3819 267.358 85.0999 270.448 81.9589Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M259.438 93.9272C255.728 96.4952 253.658 100.902 254.048 105.452C260.308 108.475 267.808 105.764 270.788 99.3982C271.718 97.3942 272.128 95.1762 271.958 92.9632C267.928 90.9672 263.138 91.3352 259.438 93.9272Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M235.238 83.7269C237.378 84.5829 239.708 84.8749 241.998 84.5719C244.778 77.9669 241.578 70.3999 234.838 67.6689C232.668 66.7909 230.308 66.4949 227.978 66.8109C225.218 73.4469 228.468 81.0199 235.238 83.7269Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M250.998 72.688C257.368 69.441 259.838 61.753 256.528 55.516C255.478 53.551 253.938 51.887 252.028 50.688C245.668 53.896 243.158 61.552 246.438 67.787C247.488 69.788 249.058 71.48 250.998 72.688Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M117.818 66.8667C119.678 67.1927 121.458 65.9508 121.778 64.0928C121.778 64.0908 121.778 64.0867 121.778 64.0867C126.118 39.2177 143.848 22.2368 162.598 7.72276C162.638 7.69176 162.668 7.70576 162.648 7.75276C161.938 11.7808 161.218 16.6348 160.728 20.0508C157.498 43.8968 159.378 68.1558 166.238 91.2228L167.258 94.8098C168.308 98.4508 169.808 103.664 171.278 109.157C171.678 110.649 173.028 111.687 174.578 111.688C174.878 111.688 175.168 111.649 175.468 111.572C177.288 111.084 178.368 109.211 177.878 107.388C176.398 101.854 174.888 96.5957 173.828 92.9237L172.808 89.3608C166.208 67.2128 164.398 43.9167 167.498 21.0177C167.968 17.7347 168.648 13.0618 169.348 9.15775C169.808 6.86875 169.128 4.49975 167.528 2.79975C165.028 0.234752 160.998 -0.0262513 158.188 2.19575C138.578 17.6767 119.778 35.7577 115.048 62.9107C114.718 64.7677 115.958 66.5377 117.818 66.8667Z" />
+              </svg>              
             </div>
             <h3 class="mb-3 text-xl font-bold leading-5" data-t>growr-home.values.value1</h3>
             <p class="mb-3 text-md text-gray-700 dark:text-gray-light" data-t>growr-home.values.value1-content</p>
           </div>
-          <div class="max-w-md sm:mx-auto sm:text-center">
-            <div
-              class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-light dark:bg-teal-dark sm:mx-auto sm:w-24 sm:h-24">
-              <svg class="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16" stroke="currentColor"
-                viewBox="0 0 52 52">
-                <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"
-                  points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-              </svg>
+          <div class="max-w-md">
+            <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-light dark:bg-teal-dark sm:w-24 sm:h-24">
+              <svg class="text-gray-900 dark:text-gray-lighter w-10 h-10 sm:w-16 sm:h-16" stroke="currentColor" fill="currentColor" viewBox="0 0 291 281" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M159.748 251.782L186.268 235.873V212.154L159.748 228.063V251.782ZM166.628 231.944L179.388 224.282V231.978L166.628 239.637V231.944Z" />
+                <path d="M192.548 0.812988L151.048 38.502L145.998 35.439L140.878 38.533L99.348 0.812988L0.937988 60.471L42.3981 98.225L40.9081 99.129V105.801L0.937988 142.201L40.9281 166.435V216.967L145.998 280.657L251.088 216.977V166.374L290.958 142.201L251.088 105.894V99.129L249.538 98.187L290.978 60.471L192.548 0.812988ZM12.358 61.581L98.5181 9.35498L134.748 42.256L63.3781 85.513L48.478 94.451L12.358 61.581ZM12.358 141.091L48.5381 108.159L134.748 160.409L98.5181 193.313L12.358 141.091ZM142.558 270.544L47.7881 213.103V170.602L99.348 201.855L140.888 164.125L142.558 165.157V270.544ZM145.998 158.832L50.5381 101.329L67.238 91.213L145.978 43.937L241.488 101.48L240.708 101.948L240.638 101.831L212.048 119.159L145.998 158.832ZM244.208 213.103L149.438 270.544V165.157L151.048 164.177L192.548 201.855L244.208 170.543V213.103ZM279.538 141.094L193.368 193.313L157.188 160.447L215.408 125.161L243.508 108.29L279.538 141.094ZM243.408 94.471L157.188 42.221L193.368 9.35898L279.538 61.581L243.408 94.471Z" />
+              </svg>                
             </div>
             <h6 class="mb-3 text-xl font-bold leading-5" data-t>growr-home.values.value2</h6>
             <p class="mb-3 text-md text-gray-700 dark:text-gray-light" data-t>growr-home.values.value2-content</p>
           </div>
-          <div class="max-w-md sm:mx-auto sm:text-center">
-            <div
-              class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-light dark:bg-teal-dark sm:mx-auto sm:w-24 sm:h-24">
-              <svg class="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16" stroke="currentColor"
-                viewBox="0 0 52 52">
-                <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"
-                  points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-              </svg>
+          <div class="max-w-md">
+            <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-light dark:bg-teal-dark sm:w-24 sm:h-24">
+              <svg class="text-gray-900 dark:text-gray-lighter w-10 h-10 sm:w-16 sm:h-16" stroke="currentColor" fill="currentColor" viewBox="0 0 310 245" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.74792 196.407C1.84792 196.403 0.317871 194.861 0.317871 192.963C0.317871 191.647 1.06793 190.449 2.25793 189.875L99.538 143.125C104.898 140.011 110.978 138.344 117.188 138.285H199.688C209.178 138.285 216.878 145.981 216.878 155.473C216.878 164.965 209.178 172.66 199.688 172.66H137.808C135.908 172.66 134.378 171.121 134.378 169.223C134.378 167.324 135.908 165.785 137.808 165.785H199.688C205.378 165.785 209.998 161.168 209.998 155.473C209.998 149.777 205.378 145.16 199.688 145.16H117.188C112.108 145.206 107.128 146.591 102.748 149.175L5.23792 196.063C4.77792 196.289 4.26792 196.407 3.74792 196.407Z" />
+                <path d="M51.8778 244.532C49.9778 244.531 48.4379 242.992 48.4379 241.093C48.4379 240.182 48.7979 239.308 49.4379 238.664C70.6379 217.461 99.2178 206.719 134.378 206.719H198.658C200.908 206.708 203.098 205.969 204.908 204.612L299.198 135.673C301.388 133.551 302.678 130.672 302.808 127.626C302.808 121.93 298.198 117.313 292.498 117.313C290.618 117.259 288.768 117.777 287.188 118.798L228.218 152.613C226.548 153.522 224.458 152.908 223.548 151.241C222.668 149.624 223.218 147.598 224.798 146.649L283.578 112.961C286.238 111.253 289.338 110.373 292.498 110.435C301.988 110.446 309.678 118.134 309.688 127.622C309.568 132.586 307.488 137.3 303.888 140.719L303.478 141.063L208.948 210.177C205.968 212.385 202.358 213.582 198.658 213.594H134.378C101.098 213.594 74.158 223.669 54.298 243.535C53.658 244.175 52.7778 244.533 51.8778 244.532Z" />
+                <path d="M197.968 7.68799C209.998 7.68799 220.308 20.379 220.308 30.771C220.308 55.404 186.278 88.4 168.748 102.776C151.218 88.418 117.188 55.442 117.188 30.771C117.448 24.851 119.898 19.239 124.058 15.024C128.008 10.577 133.588 7.92899 139.528 7.68799C148.268 7.68799 156.248 14.364 162.608 26.989L168.718 39.11C168.738 39.144 168.758 39.144 168.778 39.11L174.888 26.989C181.248 14.364 189.228 7.68799 197.968 7.68799ZM197.968 0.812988C187.998 0.812988 177.238 7.08999 168.778 23.844C168.758 23.875 168.738 23.875 168.718 23.844C160.258 7.09299 149.498 0.812988 139.528 0.812988C123.968 0.812988 110.308 16.11 110.308 30.771C110.308 66.864 168.748 111.552 168.748 111.552C168.748 111.552 227.188 66.864 227.188 30.771C227.188 16.113 213.528 0.812988 197.968 0.812988Z" />
+              </svg>                
             </div>
             <h6 class="mb-3 text-xl font-bold leading-5" data-t>growr-home.values.value3</h6>
             <p class="mb-3 text-md text-gray-700 dark:text-gray-light" data-t>growr-home.values.value3-content</p>
           </div>
-          <div class="max-w-md sm:mx-auto sm:text-center">
-            <div
-              class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-light dark:bg-teal-dark sm:mx-auto sm:w-24 sm:h-24">
-              <svg class="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16" stroke="currentColor"
-                viewBox="0 0 52 52">
-                <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"
-                  points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-              </svg>
+          <div class="max-w-md">
+            <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-light dark:bg-teal-dark sm:w-24 sm:h-24">
+              <svg class="text-gray-900 dark:text-gray-lighter w-10 h-10 sm:w-16 sm:h-16" stroke="currentColor" fill="currentColor" viewBox="0 0 221 272" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M49.8083 158.125C58.0583 158.469 66.3083 157.094 74.2183 154.344C80.0583 152.282 85.5582 148.5 89.6882 143.688C103.438 149.532 118.558 149.532 132.308 143.688C132.308 143.688 132.308 143.688 132.658 144.032C136.778 148.844 141.938 152.625 147.778 154.688C160.158 159.844 180.088 158.125 181.128 158.125L187.658 157.438L183.188 152.282C179.408 147.813 176.998 142.657 176.658 136.813C176.658 132 177.338 126.844 178.378 122.032C181.128 107.25 184.218 88.688 171.498 69.438C169.778 66.688 167.718 64.282 165.658 61.875L168.748 0L137.808 22.344L110.998 2.75L83.8384 22.344L52.9082 0L55.9983 61.532C53.9383 63.938 52.2183 66.688 50.4983 69.438C38.1283 88.688 41.2183 107.25 43.9683 122.032C44.9983 126.844 45.3384 131.657 45.3384 136.813C44.6584 142.657 42.2483 148.157 38.4683 152.282L33.9983 157.438L40.5283 158.125C41.5583 157.782 44.9984 158.125 49.8083 158.125ZM110.998 140.938C84.5283 140.938 62.8782 119.625 62.8782 92.813C62.8782 84.219 65.2782 75.969 69.4082 68.75H152.588C165.998 91.782 158.088 121 135.058 134.407C127.838 138.875 119.588 140.938 110.998 140.938ZM171.498 120.657C170.468 126.157 169.778 131.657 169.778 137.157C170.128 141.969 171.838 146.782 174.248 151.25C165.998 151.594 158.088 150.563 150.188 148.157C145.718 146.438 141.938 144.032 138.498 140.25C163.248 125.813 172.878 94.532 160.158 68.75H162.558C163.588 70.125 164.628 71.5 165.658 73.219C176.998 90.063 173.908 106.907 171.498 120.657ZM83.8384 30.938L110.998 11L138.158 30.594L161.188 13.75L158.778 61.875H63.2183L60.8083 13.75L83.8384 30.938ZM50.8384 121C48.4384 107.25 45.6882 90.407 56.6882 73.219C57.7182 71.5 58.7482 70.125 59.4382 68.75H61.4983C48.7783 94.532 58.4082 125.813 83.1582 140.25C80.0582 143.688 75.9383 146.438 71.4683 148.157C63.9083 150.563 55.6583 151.594 47.7483 151.25C50.1583 146.782 51.8783 141.969 52.2183 137.157C52.5583 131.657 51.8784 126.5 50.8384 121Z" />
+                <path d="M208.968 194.219C193.158 182.188 175.278 173.25 155.688 168.438C151.218 167.063 146.748 166.032 142.278 165L140.558 164.657L139.188 166.032C125.438 178.75 116.158 178.75 110.998 178.75C105.838 178.75 96.2183 178.75 82.4683 166.032L81.0884 165H79.3782C75.2482 166.032 70.7783 167.063 65.9683 168.094C47.0583 173.594 28.8382 182.532 12.6882 193.875C5.12823 199.719 0.998203 208.313 0.658203 217.938V271.563H7.52832V218.282C7.52832 211.063 10.9683 204.188 16.8083 199.719C32.2784 188.719 49.4682 180.469 67.6882 174.969C71.4682 173.938 75.2482 172.907 78.6882 172.219C92.0882 183.907 102.408 185.625 110.658 185.625C118.908 185.625 129.218 183.907 142.628 172.219C146.408 172.907 149.838 173.938 153.628 174.969C172.188 179.782 189.378 188.032 204.498 199.719C210.338 204.188 213.778 211.063 213.778 218.282V271.563H220.658V218.282C220.998 209 216.528 200.063 208.968 194.219Z" />
+              </svg>                
             </div>
             <h6 class="mb-3 text-xl font-bold leading-5" data-t>growr-home.values.value4</h6>
             <p class="mb-3 text-md text-gray-700 dark:text-gray-light" data-t>growr-home.values.value4-content</p>
           </div>
         </div>
       </div>
-      <!-- <a data-attr-t href-t="menu.signup-link"
-        class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 md:w-80 mx-auto"
-        data-t>growr-home.values.join</a> -->
     </div>
 
     <a name="recognitions"></a>
@@ -352,6 +430,8 @@
         </div>
       </div>
     </div>
+
+
 
     <!-- Footer -->
     <footer class="text-sm bg-gray-200 text-gray-500 dark:bg-gray-darker dark:text-gray-400">    

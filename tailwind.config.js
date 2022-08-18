@@ -28,11 +28,11 @@ module.exports = {
       keyframes: {
         'fadein': {
           from: { opacity: 0 },
-          to: { opacity: 1 }
-        },
-        animation: {
-          'fadein': 'fade-in 2s 2s forwards',
-        }  
+          to: { opacity: 0.9 }
+        }
+      },
+      animation: {
+        'fadein': 'fadein 1s',
       }
     },
   },
