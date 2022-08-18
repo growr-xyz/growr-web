@@ -1600,8 +1600,8 @@ body {
 }
 
 @media (min-width: 1280px) {
-  .xl\:w-4\/5 {
-    width: 80%;
+  .xl\:w-3\/5 {
+    width: 60%;
   }
 
   .xl\:w-2\/5 {
