@@ -775,20 +775,20 @@ body {
   width: 1px;
 }
 
-.max-w-md {
-  max-width: 28rem;
+.max-w-lg {
+  max-width: 32rem;
 }
 
 .max-w-xl {
   max-width: 36rem;
 }
 
-.max-w-lg {
-  max-width: 32rem;
-}
-
 .max-w-3xl {
   max-width: 48rem;
+}
+
+.max-w-md {
+  max-width: 28rem;
 }
 
 .max-w-xs {
