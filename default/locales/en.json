@@ -172,12 +172,12 @@
             "how-3-content": "Trusted parties (such as value chain partners, financial providers, telcos, merchants, NGOs) issue cryptographically verifiable credentials to the borrowers about their financial and non-financial life that are stored in their self-sovereign financial identity.",
             "how-4": "Risk assessor",
             "how-4-content": "Risk assessors are third parties trusted—and most often owned—by the lenders that perform verification of borrowers’ credentials and assert their eligibility to receive a loan. Risk assessors produce a credit score for each project that is used by the lenders in their automated decisions, and that investors receive yield from real economic activty.",
-            "how-5": "Global marketplace",
+            "how-5": "Decentralized marketplace",
             "how-5-content": "A decentralized smart contract infrastructure for lending and borrowing on top of the Bitcoin network and Rootstock (RSK), with open access for everyone. The key differentiators of the Growr protocol are that loans are provided against verified credentials from borrower’s self-sovereign financial identity and credit record, instead of requiring over-collateralization.",
             "how-6": "Lender",
-            "how-6-content": "A traditional finance institution or a FinTech that is providing micro-lending through the global marketplace with specific conditions and eligibility criteria. Lenders make their financing decisions based on the credit record of the borrower, provided by the risk assessors.",
+            "how-6-content": "A traditional finance institution or a FinTech that is providing micro-lending through the decentralized marketplace with specific conditions and eligibility criteria. Lenders make their financing decisions based on the credit record of the borrower, provided by the risk assessors.",
             "how-7": "Investor",
-            "how-7-content": "A decentralized finance protocol, institutional or individual investor pooling funds who deploy capital as senior tranche and delegate the actual lending activity to the lenders. Investors get rewarded with yield from real economic activity based on the pool profitability. Generally, the global pool yield will tend to be lower that the pond yield due to the wholesale lending nature of the pools."
+            "how-7-content": "A decentralized finance protocol, institutional or individual investor pooling funds who deploy capital as senior tranche and delegate the actual lending activity to the lenders. Investors get rewarded with yield from real economic activity based on the pool profitability. Generally, a pool yield will tend to be lower that the project yield due to the wholesale lending nature of the pools."
         },
         "peseta": {
             "title": "Peseta: fair loans made easy.",
@@ -197,10 +197,10 @@
         },
         "resources": {
             "title": "Resources",
-            "litepaper-title": "Litepaper",
-            "litepaper-content": "Growr’s litepaper is a short non-technical description of how the protocol works and the main concepts behind it.",
-            "litepaper-button": "Open",
-            "litepaper-link": "https://growr-xyz.github.io/growr-documentation/litepaper/Growr-litepaper.pdf",
+            "whitepaper-title": "Whitepaper",
+            "whitepaper-content": "Growr’s whitepaper is a short non-technical description of how the protocol works and the main concepts behind it.",
+            "whitepaper-button": "Open",
+            "whitepaper-link": "https://growr-xyz.github.io/growr-documentation/growr-whitepaper.pdf",
             "docs-title": "Documentation",
             "docs-content": "Growr’s documentation provides in-depth details about the different components of the protocol—distribution & identity, risk management, liquidity, payments and governance.",
             "docs-button": "Open",
