@@ -1,6 +1,7 @@
 {
     "growr-home": {
         "title": "Growr - delivering open financial services to the next billion",
+        "description": "Growr is building services for financial inclusion on top of Bitcoin – that is what we call Bitcoin inclusion. Bitcoin is open, permissionless and enables low-cost transactions, which makes it the best foundation for providing financial services to the next billion. We have started with financial health, and we are adding a self-sovereign credit record and micro-lending as part of the Bitcoin inclusion stack.",
         "heading": "Delivering open financial services to the next billion",
         "subheading": "We are builders enabling a full stack of financial services on top of Bitcoin with open access to anyone.",
         "button": "Learn why it’s needed",
