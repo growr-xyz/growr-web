@@ -1,0 +1,30 @@
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+tap "homebrew/services"
+tap "mongodb/brew"
+brew "autoconf"
+brew "automake"
+brew "python@3.9", link: false
+brew "awscli"
+brew "glib"
+brew "clarinet"
+brew "curl"
+brew "libtool"
+brew "tesseract"
+brew "ffmpeg"
+brew "unixodbc"
+brew "freetds"
+brew "httpd", link: false
+brew "imagemagick"
+brew "krb5"
+brew "libzip"
+brew "n"
+brew "node", link: false
+brew "python@3.8", link: false
+brew "php@7.3", restart_service: true, link: true
+brew "pyenv"
+brew "wget"
+brew "yarn"
+brew "youtube-dl"
+cask "fontforge"
