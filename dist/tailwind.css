@@ -803,16 +803,6 @@ body {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 0.9;
-  }
-}
-
 @keyframes fadein {
   from {
     opacity: 0;
@@ -824,8 +814,7 @@ body {
 }
 
 .animate-fadein {
-  -webkit-animation: fadein 1s;
-          animation: fadein 1s;
+  animation: fadein 1s;
 }
 
 .list-outside {

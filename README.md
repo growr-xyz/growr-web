@@ -1,6 +1,6 @@
 # Growr Landing Page
 
-(c) 2021-2022, dmakr d/b/a Growr.
+(c) 2021-2024, Growr Limited.
 
 The Growr landing page is created using Tailwind CSS and static-i18n.
 
