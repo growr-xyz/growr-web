@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content-t="growr-home.description">
-    <title>Growr - delivering open financial services to the next billion</title>
+    <title>Growr: строим бъдещето на финансовите услуги</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link href="tailwind.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link href="../tailwind.css" rel="stylesheet">
     <script defer src="https://unpkg.com/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script defer data-domain="growr.xyz" src="https://plausible.io/js/plausible.js"></script>
@@ -17,13 +17,13 @@
 
   <body class="bg-white dark:bg-gray-darkest text-black dark:text-gray-lighter">
     <div class="bg-gray-600 dark:bg-gray-darkest relative overflow-hidden min-h-full md:h-700 mb-8">
-      <img loading="lazy" src="images/pexels-pixabay-247676-1.webp" class="animate-fadein opacity-90 absolute inset-0 object-cover w-full h-full" alt="A photo showing multiple concentric circles">
+      <img loading="lazy" src="../images/pexels-pixabay-247676-1.webp" class="animate-fadein opacity-90 absolute inset-0 object-cover w-full h-full" alt="A photo showing multiple concentric circles">
 
       <header class="absolute top-0 left-0 right-0 z-20">
         <nav class="container mx-auto px-6 md:px-12 py-5" x-data="{ open: false }">
           <div class="lg:flex justify-between items-center">
             <div class="relative flex items-center justify-between">
-              <img alt="Growr logo" class="pt-2 w-24 h-24 md:w-32 md:h-32 flex-no-shrink fill-current" src="./images/growr-logo.svg">
+              <img alt="Growr logo" class="pt-2 w-24 h-24 md:w-32 md:h-32 flex-no-shrink fill-current" src=".././images/growr-logo.svg">
               <!-- Burger menu -->
               <div class="lg:hidden fixed top-12 right-8 sm:right-16 z-50">
                 <button @click="open = !open" class="text-white focus:outline-none rounded-full bg-gray-900 bg-opacity-50 p-2">
@@ -35,11 +35,11 @@
               </div>
               <!-- Mobile navigation -->
               <div x-show="open === true" class="lg:hidden fixed top-0 left-0 h-full pt-24 pb-8 px-8 sm:px-16 flex flex-col w-full z-40 bg-gray-900 bg-opacity-75 backdrop-blur-sm overflow-hidden">
-                <a x-on:click="open = ! open" href="#mission" class="text-md font-medium text-white py-2 px-2 hover:bg-teal">Our mission</a>
-                <a x-on:click="open = ! open" href="#what" class="text-md font-medium text-white py-2 px-2 hover:bg-teal">What are we building?</a>
-                <a x-on:click="open = ! open" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" href="finhealth/index.html">Financial health</a>
-                <a x-on:click="open = ! open" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" href="protocol/index.html">Micro-lending protocol</a>
-                <a x-on:click="open = ! open" href="#news" class="text-md font-medium text-white py-2 px-2 hover:bg-teal">News</a>
+                <a x-on:click="open = ! open" href="#mission" class="text-md font-medium text-white py-2 px-2 hover:bg-teal">growr-home.menu.mission</a>
+                <a x-on:click="open = ! open" href="#what" class="text-md font-medium text-white py-2 px-2 hover:bg-teal">growr-home.menu.what</a>
+                <a x-on:click="open = ! open" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" href="growr-home.menu.finhealth-link">growr-home.menu.finhealth</a>
+                <a x-on:click="open = ! open" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" href="growr-home.menu.protocol-link">growr-home.menu.protocol</a>
+                <a x-on:click="open = ! open" href="#news" class="text-md font-medium text-white py-2 px-2 hover:bg-teal">growr-home.menu.news</a>
                 <!-- <a data-attr-t href-t="growr-home.menu.signin-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-home.menu.sign</a>
                   <a data-attr-t href-t="menu.signup-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-home.menu.signup</a>
                   <a data-attr-t href-t="menu.language-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-home.menu.language</a> -->
@@ -48,19 +48,19 @@
             <!-- Desktop navigation -->
             <ul class="hidden items-center space-x-8 lg:flex mr-4">
               <li>
-                <a href="#mission" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" aria-label="Our mission" title="Our mission">Our mission</a>
+                <a href="#mission" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" aria-label="growr-home.menu.mission" title="growr-home.menu.mission">growr-home.menu.mission</a>
               </li>
               <li>
-                <a href="#what" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" aria-label="What are we building?" title="What are we building?">What are we building?</a>
+                <a href="#what" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" aria-label="growr-home.menu.what" title="growr-home.menu.what">growr-home.menu.what</a>
               </li>
               <li>
-                <a class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" href="finhealth/index.html" aria-label="Financial health" title="Financial health">Financial health</a>
+                <a class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" href="growr-home.menu.finhealth-link" aria-label="growr-home.menu.finhealth" title="growr-home.menu.finhealth">growr-home.menu.finhealth</a>
               </li>
               <li>
-                <a class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" href="protocol/index.html" aria-label="Micro-lending protocol" title="Micro-lending protocol">Micro-lending protocol</a>
+                <a class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" href="growr-home.menu.protocol-link" aria-label="growr-home.menu.protocol" title="growr-home.menu.protocol">growr-home.menu.protocol</a>
               </li>
               <li>
-                <a href="#news" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" aria-label="News" title="News">News</a>
+                <a href="#news" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" aria-label="growr-home.menu.news" title="growr-home.menu.news">growr-home.menu.news</a>
               </li>
               <!-- <li><a data-attr-t href-t="menu.signin-link" aria-label="Sign in" title="Sign in" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" data-t>growr-home.menu.sign</a></li>
               <li><a data-attr-t href-t="menu.language-link" aria-label="Change language" title="Change language" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" data-t>growr-home.menu.language</a></li>
@@ -95,7 +95,7 @@
             </p>
           </div>
 
-          <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 tracking-wide" href="#mission">Learn why it’s needed</a>
+          <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 tracking-wide" href="growr-home.button-link">growr-home.button</a>
         </div>
       </div>
     </div>
@@ -119,13 +119,13 @@
         </div>
         <div class="max-w-xl sm:text-left md:mx-auto lg:max-w-2xl text-base md:text-lg text-gray-700 dark:text-gray-light">
           <p class="mb-8">
-            <span>Today, a quarter of the world’s adult population </span>
-            <a class="underline text-teal-dark" target="_blank" rel="noreferrer" href="https://www.worldbank.org/en/publication/globalfindex">does not have an account</a><span> with a formal financial institution. In some countries of the Global South, financial exclusion is as high as 90%. We believe that every person—no matter their walk of life—has the right to use simple financial services. The ability to pay and get paid, save for their short- and long-term goals, finance their personal and business projects, and protect their family against life’s surprises, can be available to all at a fair price, thanks to digital technology.</span>
+            <span>growr-home.mission.p-1-1</span>
+            <a class="underline text-teal-dark" target="_blank" rel="noreferrer" href="growr-home.mission.p-1-2-link">growr-home.mission.p-1-2</a><span>growr-home.mission.p-1-3</span>
           </p>
           <p class="mb-8">
-            <span>Money is not an end goal; it’s a means to help people achieve their life dreams. Unfortunately, </span>
-            <a class="underline text-teal-dark" target="_blank" rel="noreferrer" href="https://gflec.org/wp-content/uploads/2015/11/Finlit_paper_16_F2_singles.pdf">only 33% of people</a><span> globally are financially literate, and more than half of the world’s population lives </span>
-            <a class="underline text-teal-dark" target="_blank" rel="noreferrer" href="https://globalfindex.worldbank.org/sites/globalfindex/files/chapters/2017%20Findex%20full%20report_chapter5.pdf">without savings</a><span>. We believe that every person can plan their goals and work towards reaching them without being afraid of losing their hard-earned savings to inflation and other crimes, only by using the right financial tools.</span>
+            <span>growr-home.mission.p-2-1</span>
+            <a class="underline text-teal-dark" target="_blank" rel="noreferrer" href="growr-home.mission.p-2-2-link">growr-home.mission.p-2-2</a><span>growr-home.mission.p-2-3</span>
+            <a class="underline text-teal-dark" target="_blank" rel="noreferrer" href="growr-home.mission.p-2-4-link">growr-home.mission.p-2-4</a><span>growr-home.mission.p-2-5</span>
           </p>
         </div>
       </div>
@@ -139,9 +139,9 @@
           growr-home.vision.title
         </h2>
         <div class="max-w-xl sm:text-left md:mx-auto lg:max-w-2xl text-base md:text-lg text-gray-700 dark:text-gray-light">
-          <p class="mb-8">We imagine the world in 2040 with 1 billion people—currently considered unbanked—having fair and secure access to the financial services they deserve.</p>
-          <p class="mb-8">Bitcoin is a global open network that provides free access to the soundest money that has ever existed, and the ability to pay and get paid instantly with nearly zero fees, thanks to its second-layer Lightning network.</p>
-          <p class="mb-8">Growr is building on top of that to complete the stack of financial services that every person deserves, starting from sustainable productive lending and financial health tools that provide personalized guidance.</p>
+          <p class="mb-8">growr-home.vision.p-1</p>
+          <p class="mb-8">growr-home.vision.p-2</p>
+          <p class="mb-8">growr-home.vision.p-3</p>
         </div>
       </div>
     </div>
@@ -163,7 +163,7 @@
         <p class="text-base md:text-lg text-gray-700 dark:text-gray-light">
           growr-home.vision.finhealth.content
         </p>
-        <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60" href="finhealth/index.html">Learn more</a>
+        <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60" href="growr-home.menu.finhealth-link">growr-home.vision.finhealth.button</a>
       </div>
 
       <div class="max-w-xl py-12 sm:text-left md:mx-auto lg:max-w-2xl text-base md:text-lg text-gray-700 dark:text-gray-light">
@@ -182,7 +182,7 @@
         <p class="text-base md:text-lg text-gray-700 dark:text-gray-light">
           growr-home.vision.protocol.content
         </p>
-        <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60" href="protocol/index.html">Learn more</a>
+        <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60" href="growr-home.menu.protocol-link">growr-home.vision.protocol.button</a>
       </div>
     </div>
 
@@ -269,7 +269,7 @@
       </div>
       <div class="grid gap-12 row-gap-5 md:grid-cols-2">
         <div class="relative p-5 sm:p-10">
-          <a target="_blank" href="https://devpost.com/software/growr-on-chain"><svg class="hidden dark:block max-h-32 mx-auto" viewbox="0 0 398 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <a target="_blank" href="growr-home.recognitions.bitcoin-bankathon-link"><svg class="hidden dark:block max-h-32 mx-auto" viewbox="0 0 398 170" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0.0025925 8.78482V3.22975C0.0025925 0.91292 2.51707 -0.529503 4.51703 0.640061L84.3187 47.3077C85.0861 47.7564 85.69 48.4454 85.955 49.2938C86.2093 50.1083 86.4805 51.1604 86.5026 52C86.5286 52.9899 86.2235 54.2524 85.9436 55.188C85.6864 56.0477 85.0827 56.7484 84.3103 57.2051L43.3297 81.441C41.3749 82.5971 41.3637 85.4218 43.3092 86.5933L84.6616 111.494C85.208 111.823 85.6388 112.315 85.8458 112.919C86.1352 113.762 86.5026 115.024 86.5026 116C86.5026 116.976 86.1352 118.238 85.8458 119.082C85.6387 119.685 85.2081 120.177 84.6619 120.506L4.5505 168.761C2.55102 169.965 0.0025925 168.525 0.0025925 166.191V159.705C0.0025925 158.648 0.558985 157.669 1.46718 157.128L69.0282 116.878C69.6865 116.486 69.6772 115.53 69.0114 115.15L29.038 92.3749C28.0905 91.835 26.9246 91.8519 25.9931 92.4189L17.3722 97.6664C16.7402 98.051 16.7303 98.965 17.3537 99.3633L33.1756 109.472C33.7129 109.815 34.1298 110.319 34.3242 110.926C34.6277 111.875 35.0324 113.366 35.0026 114.5C34.9772 115.465 34.6227 116.711 34.343 117.554C34.1373 118.174 33.7001 118.682 33.141 119.02L4.55163 136.257C2.55218 137.463 0.0025925 136.023 0.0025925 133.688V127.176C0.0025925 126.135 0.543059 125.167 1.4303 124.621L18.1548 114.329C18.7805 113.944 18.7913 113.039 18.1749 112.639L1.64994 101.92C1.22528 101.644 0.87378 101.268 0.668609 100.805C0.390525 100.178 0.0348774 99.2426 0.0025925 98.5C-0.0375474 97.5768 0.397086 96.3749 0.706187 95.6467C0.889116 95.2158 1.19922 94.8558 1.57674 94.579L14.8772 84.8253C15.4295 84.4203 15.4204 83.5925 14.8593 83.1997L1.6454 73.95C1.22395 73.655 0.882486 73.2579 0.691314 72.7803C0.397798 72.047 0.0025925 70.8937 0.0025925 70C0.0025925 69.1274 0.379408 68.0073 0.67042 67.2723C0.873036 66.7606 1.24683 66.3416 1.70857 66.0421L18.1749 55.3612C18.7913 54.9614 18.7805 54.0557 18.1548 53.6706L1.4303 43.3786C0.543058 42.8326 0.0025925 41.8654 0.0025925 40.8237V35.312C0.0025925 32.9772 2.55218 31.5373 4.55163 32.7428L33.1627 49.9936C33.7084 50.3227 34.1386 50.8152 34.3455 51.4178C34.635 52.2609 35.0026 53.5238 35.0026 54.5C35.0026 55.492 34.623 56.78 34.3316 57.6227C34.132 58.1998 33.7269 58.6762 33.2123 59.005L17.3081 69.166C16.696 69.557 16.6918 70.4495 17.3002 70.8463L25.9391 76.4804C26.8963 77.1047 28.1251 77.1309 29.1081 76.5479L69.0468 52.8633C69.7013 52.4752 69.6997 51.5274 69.044 51.1414L1.48073 11.3701C0.564868 10.831 0.0025925 9.84758 0.0025925 8.78482Z" fill="white"/>
               <path d="M131.415 32.586C134.645 32.586 137.348 32.892 139.524 33.504C141.734 34.082 143.383 35.051 144.471 36.411C145.593 37.737 146.154 39.539 146.154 41.817C146.154 43.177 145.933 44.418 145.491 45.54C145.049 46.662 144.403 47.58 143.553 48.294C142.737 49.008 141.734 49.467 140.544 49.671V49.926C141.768 50.164 142.873 50.589 143.859 51.201C144.845 51.813 145.627 52.697 146.205 53.853C146.783 55.009 147.072 56.539 147.072 58.443C147.072 60.653 146.528 62.557 145.44 64.155C144.386 65.719 142.856 66.926 140.85 67.776C138.844 68.592 136.464 69 133.71 69H120.093V32.586H131.415ZM132.282 47.019C134.526 47.019 136.073 46.662 136.923 45.948C137.807 45.234 138.249 44.197 138.249 42.837C138.249 41.443 137.739 40.44 136.719 39.828C135.699 39.216 134.084 38.91 131.874 38.91H127.794V47.019H132.282ZM127.794 53.139V62.625H132.843C135.155 62.625 136.77 62.183 137.688 61.299C138.606 60.381 139.065 59.174 139.065 57.678C139.065 56.76 138.861 55.961 138.453 55.281C138.079 54.601 137.416 54.074 136.464 53.7C135.512 53.326 134.22 53.139 132.588 53.139H127.794Z" fill="white"/>
               <path d="M161.6 41.154V69H154.001V41.154H161.6ZM157.826 30.24C158.948 30.24 159.917 30.512 160.733 31.056C161.549 31.566 161.957 32.535 161.957 33.963C161.957 35.357 161.549 36.326 160.733 36.87C159.917 37.414 158.948 37.686 157.826 37.686C156.67 37.686 155.684 37.414 154.868 36.87C154.086 36.326 153.695 35.357 153.695 33.963C153.695 32.535 154.086 31.566 154.868 31.056C155.684 30.512 156.67 30.24 157.826 30.24Z" fill="white"/>
@@ -288,7 +288,7 @@
               <path d="M323.361 127.51C320.267 127.51 317.734 126.303 315.762 123.889C313.824 121.441 312.855 117.854 312.855 113.128C312.855 108.368 313.841 104.764 315.813 102.316C317.785 99.868 320.369 98.644 323.565 98.644C324.891 98.644 326.064 98.831 327.084 99.205C328.104 99.545 328.971 100.021 329.685 100.633C330.433 101.245 331.062 101.942 331.572 102.724H331.827C331.725 102.18 331.606 101.398 331.47 100.378C331.334 99.324 331.266 98.253 331.266 97.165V88.24H338.865V127H333.051L331.572 123.379H331.266C330.79 124.127 330.178 124.824 329.43 125.47C328.716 126.082 327.866 126.575 326.88 126.949C325.894 127.323 324.721 127.51 323.361 127.51ZM326.013 121.441C328.121 121.441 329.6 120.829 330.45 119.605C331.3 118.347 331.742 116.477 331.776 113.995V113.179C331.776 110.459 331.351 108.385 330.501 106.957C329.685 105.529 328.155 104.815 325.911 104.815C324.245 104.815 322.936 105.546 321.984 107.008C321.032 108.436 320.556 110.51 320.556 113.23C320.556 115.95 321.032 118.007 321.984 119.401C322.936 120.761 324.279 121.441 326.013 121.441Z" fill="white"/>
               <path d="M372.362 113.026C372.362 115.338 372.039 117.395 371.393 119.197C370.781 120.999 369.88 122.529 368.69 123.787C367.534 125.011 366.123 125.946 364.457 126.592C362.791 127.204 360.904 127.51 358.796 127.51C356.858 127.51 355.056 127.204 353.39 126.592C351.758 125.946 350.347 125.011 349.157 123.787C347.967 122.529 347.032 120.999 346.352 119.197C345.706 117.395 345.383 115.338 345.383 113.026C345.383 109.932 345.927 107.331 347.015 105.223C348.103 103.081 349.667 101.449 351.707 100.327C353.747 99.205 356.161 98.644 358.949 98.644C361.567 98.644 363.879 99.205 365.885 100.327C367.891 101.449 369.472 103.081 370.628 105.223C371.784 107.331 372.362 109.932 372.362 113.026ZM353.135 113.026C353.135 114.862 353.322 116.409 353.696 117.667C354.104 118.891 354.733 119.826 355.583 120.472C356.433 121.084 357.538 121.39 358.898 121.39C360.258 121.39 361.346 121.084 362.162 120.472C363.012 119.826 363.624 118.891 363.998 117.667C364.406 116.409 364.61 114.862 364.61 113.026C364.61 111.19 364.406 109.66 363.998 108.436C363.624 107.212 363.012 106.294 362.162 105.682C361.312 105.07 360.207 104.764 358.847 104.764C356.841 104.764 355.379 105.461 354.461 106.855C353.577 108.215 353.135 110.272 353.135 113.026Z" fill="white"/>
               <path d="M394.452 98.644C394.826 98.644 395.268 98.661 395.778 98.695C396.288 98.729 396.696 98.78 397.002 98.848L396.441 105.988C396.203 105.92 395.846 105.869 395.37 105.835C394.928 105.767 394.537 105.733 394.197 105.733C393.211 105.733 392.259 105.869 391.341 106.141C390.423 106.379 389.59 106.77 388.842 107.314C388.128 107.858 387.55 108.589 387.108 109.507C386.7 110.391 386.496 111.496 386.496 112.822V127H378.897V99.154H384.66L385.782 103.846H386.139C386.683 102.894 387.363 102.027 388.179 101.245C388.995 100.463 389.93 99.834 390.984 99.358C392.072 98.882 393.228 98.644 394.452 98.644Z" fill="white"/></svg></a>
-          <a target="_blank" href="https://devpost.com/software/growr-on-chain"><svg class="block dark:hidden max-h-32 mx-auto" viewbox="0 0 398 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <a target="_blank" href="growr-home.recognitions.bitcoin-bankathon-link"><svg class="block dark:hidden max-h-32 mx-auto" viewbox="0 0 398 170" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0.499999 8.78482V3.22975C0.499999 0.91292 3.01448 -0.529503 5.01443 0.640061L84.8162 47.3077C85.5835 47.7564 86.1874 48.4454 86.4524 49.2938C86.7067 50.1083 86.9779 51.1604 87 52C87.026 52.9899 86.7209 54.2524 86.441 55.188C86.1838 56.0477 85.5801 56.7484 84.8077 57.2051L43.8271 81.441C41.8723 82.5971 41.8611 85.4218 43.8066 86.5933L85.159 111.494C85.7054 111.823 86.1362 112.315 86.3432 112.919C86.6327 113.762 87 115.024 87 116C87 116.976 86.6326 118.238 86.3432 119.082C86.1361 119.685 85.7055 120.177 85.1593 120.506L5.0479 168.761C3.04842 169.965 0.499999 168.525 0.499999 166.191V159.705C0.499999 158.648 1.05639 157.669 1.96458 157.128L69.5256 116.878C70.1839 116.486 70.1746 115.53 69.5089 115.15L29.5355 92.3749C28.5879 91.835 27.422 91.8519 26.4905 92.4189L17.8696 97.6664C17.2376 98.051 17.2277 98.965 17.8511 99.3633L33.673 109.472C34.2103 109.815 34.6272 110.319 34.8216 110.926C35.1251 111.875 35.5298 113.366 35.5 114.5C35.4746 115.465 35.1201 116.711 34.8404 117.554C34.6347 118.174 34.1975 118.682 33.6384 119.02L5.04904 136.257C3.04958 137.463 0.499999 136.023 0.499999 133.688V127.176C0.499999 126.135 1.04046 125.167 1.92771 124.621L18.6522 114.329C19.2779 113.944 19.2887 113.039 18.6723 112.639L2.14734 101.92C1.72269 101.644 1.37119 101.268 1.16602 100.805C0.887931 100.178 0.532283 99.2426 0.499999 98.5C0.459859 97.5768 0.894492 96.3749 1.20359 95.6467C1.38652 95.2158 1.69662 94.8558 2.07415 94.579L15.3746 84.8253C15.9269 84.4203 15.9178 83.5925 15.3567 83.1997L2.14281 73.95C1.72136 73.655 1.37989 73.2579 1.18872 72.7803C0.895204 72.047 0.499999 70.8937 0.499999 70C0.499999 69.1274 0.876814 68.0073 1.16783 67.2723C1.37044 66.7606 1.74424 66.3416 2.20598 66.0421L18.6723 55.3612C19.2887 54.9614 19.2779 54.0557 18.6522 53.6706L1.92771 43.3786C1.04046 42.8326 0.499999 41.8654 0.499999 40.8237V35.312C0.499999 32.9772 3.04958 31.5373 5.04904 32.7428L33.6601 49.9936C34.2058 50.3227 34.636 50.8152 34.8429 51.4178C35.1324 52.2609 35.5 53.5238 35.5 54.5C35.5 55.492 35.1204 56.78 34.829 57.6227C34.6294 58.1998 34.2243 58.6762 33.7097 59.005L17.8055 69.166C17.1934 69.557 17.1892 70.4495 17.7976 70.8463L26.4365 76.4804C27.3937 77.1047 28.6225 77.1309 29.6055 76.5479L69.5442 52.8633C70.1987 52.4752 70.1971 51.5274 69.5414 51.1414L1.97814 11.3701C1.06227 10.831 0.499999 9.84758 0.499999 8.78482Z" fill="#3183FF"/>
               <path d="M131.912 32.586C135.142 32.586 137.845 32.892 140.021 33.504C142.231 34.082 143.88 35.051 144.968 36.411C146.09 37.737 146.651 39.539 146.651 41.817C146.651 43.177 146.43 44.418 145.988 45.54C145.546 46.662 144.9 47.58 144.05 48.294C143.234 49.008 142.231 49.467 141.041 49.671V49.926C142.265 50.164 143.37 50.589 144.356 51.201C145.342 51.813 146.124 52.697 146.702 53.853C147.28 55.009 147.569 56.539 147.569 58.443C147.569 60.653 147.025 62.557 145.937 64.155C144.883 65.719 143.353 66.926 141.347 67.776C139.341 68.592 136.961 69 134.207 69H120.59V32.586H131.912ZM132.779 47.019C135.023 47.019 136.57 46.662 137.42 45.948C138.304 45.234 138.746 44.197 138.746 42.837C138.746 41.443 138.236 40.44 137.216 39.828C136.196 39.216 134.581 38.91 132.371 38.91H128.291V47.019H132.779ZM128.291 53.139V62.625H133.34C135.652 62.625 137.267 62.183 138.185 61.299C139.103 60.381 139.562 59.174 139.562 57.678C139.562 56.76 139.358 55.961 138.95 55.281C138.576 54.601 137.913 54.074 136.961 53.7C136.009 53.326 134.717 53.139 133.085 53.139H128.291Z" fill="#021A3B"/>
               <path d="M162.098 41.154V69H154.499V41.154H162.098ZM158.324 30.24C159.446 30.24 160.415 30.512 161.231 31.056C162.047 31.566 162.455 32.535 162.455 33.963C162.455 35.357 162.047 36.326 161.231 36.87C160.415 37.414 159.446 37.686 158.324 37.686C157.168 37.686 156.182 37.414 155.366 36.87C154.584 36.326 154.193 35.357 154.193 33.963C154.193 32.535 154.584 31.566 155.366 31.056C156.182 30.512 157.168 30.24 158.324 30.24Z" fill="#021A3B"/>
@@ -309,7 +309,7 @@
               <path d="M394.95 98.644C395.324 98.644 395.766 98.661 396.276 98.695C396.786 98.729 397.194 98.78 397.5 98.848L396.939 105.988C396.701 105.92 396.344 105.869 395.868 105.835C395.426 105.767 395.035 105.733 394.695 105.733C393.709 105.733 392.757 105.869 391.839 106.141C390.921 106.379 390.088 106.77 389.34 107.314C388.626 107.858 388.048 108.589 387.606 109.507C387.198 110.391 386.994 111.496 386.994 112.822V127H379.395V99.154H385.158L386.28 103.846H386.637C387.181 102.894 387.861 102.027 388.677 101.245C389.493 100.463 390.428 99.834 391.482 99.358C392.57 98.882 393.726 98.644 394.95 98.644Z" fill="#021A3B"/></svg></a>
         </div>
         <div class="p-5 sm:p-10">
-          <a target="_blank" href="https://www.finastra.com/press-media/finastra-names-hack-future-4-winners"><svg class="hidden dark:block max-h-32 mx-auto" version="1.1" id="AW" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 278.9 139.6" style="enable-background: new 0 0 278.9 139.6" xml:space="preserve">
+          <a target="_blank" href="growr-home.recognitions.httf4-link"><svg class="hidden dark:block max-h-32 mx-auto" version="1.1" id="AW" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 278.9 139.6" style="enable-background: new 0 0 278.9 139.6" xml:space="preserve">
               <g id="COL_x5F_B"/>
               <g id="COL_x5F_T"/>
               <g id="WHITE_x5F_R"/>
@@ -325,7 +325,7 @@
                 <stop offset="0.8928" style="stop-color: #c7c7c7"/>
                 <stop offset="0.9033" style="stop-color: #c2c2c2"/>
               </lineargradient>
-              <path style="fill: url('#SVGID_1_')" d="M186.8,60.5c0.6-2.2,1-4.5,1.1-6.9c0.2-4.7-0.6-9.4-2.2-13.7c-1.4-3.6-3.4-6.8-6-9.7	c-0.6-0.7-1.2-1.3-1.9-1.9c-0.3-0.3-0.6-0.5-0.8-0.8c-7.3-6.5-17.8-10.5-29.4-11.8c-2.8-0.3-5.6-0.5-8.4-0.5	c-6.3,0-12.8,0.8-19.3,2.2c-6.9,1.6-13.7,3.9-20.1,7C91,28.5,82.6,35.1,77.9,38.4c-6,4.4-9,4-12.5,2.4c4.9,2.7,11.1,3.9,19.3,2.8	c3.4-0.5,7-0.9,10.5-1.1c5.3-0.4,10.6-0.5,15.9-0.2c10,0.7,22.4,2.9,28.5,11.7c1.6,2.3,2.4,4.9,2.9,8.2c0.8,6-1,11.9-4,17.1	c-1.9,3.2-4.2,6.2-6.7,8.9c-3.3,3.5-7,6.6-10.9,9.4c-2,1.5-4.1,2.9-6.2,4.2c-5,3.3-11.8,7.6-19.6,12.1	c-24.4,13.9-57.9,28.5-73.8,16.6c4,3.4,8.7,6,13.8,7.5c5.6,1.6,11.5,1.8,17.3,1.3c10.3-0.9,20.3-4,29.9-7.8	c9.8-3.8,19.2-8.5,28.5-13.3c2.4-1.2,4.9-2.5,7.3-3.8c13.4-6.9,27.4-14,39.2-21.8c7.3-4.8,14.4-10.1,20.2-16.6	c2.5-2.8,4.7-5.8,6.5-9L186.8,60.5z"/>
+              <path style="fill: url('../#SVGID_1_')" d="M186.8,60.5c0.6-2.2,1-4.5,1.1-6.9c0.2-4.7-0.6-9.4-2.2-13.7c-1.4-3.6-3.4-6.8-6-9.7	c-0.6-0.7-1.2-1.3-1.9-1.9c-0.3-0.3-0.6-0.5-0.8-0.8c-7.3-6.5-17.8-10.5-29.4-11.8c-2.8-0.3-5.6-0.5-8.4-0.5	c-6.3,0-12.8,0.8-19.3,2.2c-6.9,1.6-13.7,3.9-20.1,7C91,28.5,82.6,35.1,77.9,38.4c-6,4.4-9,4-12.5,2.4c4.9,2.7,11.1,3.9,19.3,2.8	c3.4-0.5,7-0.9,10.5-1.1c5.3-0.4,10.6-0.5,15.9-0.2c10,0.7,22.4,2.9,28.5,11.7c1.6,2.3,2.4,4.9,2.9,8.2c0.8,6-1,11.9-4,17.1	c-1.9,3.2-4.2,6.2-6.7,8.9c-3.3,3.5-7,6.6-10.9,9.4c-2,1.5-4.1,2.9-6.2,4.2c-5,3.3-11.8,7.6-19.6,12.1	c-24.4,13.9-57.9,28.5-73.8,16.6c4,3.4,8.7,6,13.8,7.5c5.6,1.6,11.5,1.8,17.3,1.3c10.3-0.9,20.3-4,29.9-7.8	c9.8-3.8,19.2-8.5,28.5-13.3c2.4-1.2,4.9-2.5,7.3-3.8c13.4-6.9,27.4-14,39.2-21.8c7.3-4.8,14.4-10.1,20.2-16.6	c2.5-2.8,4.7-5.8,6.5-9L186.8,60.5z"/>
               <lineargradient id="SVGID_2_" gradientunits="userSpaceOnUse" x1="-12.2297" y1="35.8024" x2="111.1178" y2="159.1499">
                 <stop offset="0.2002" style="stop-color: #f50039"/>
                 <stop offset="0.2403" style="stop-color: #ff3665"/>
@@ -339,7 +339,7 @@
                 <stop offset="0.7003" style="stop-color: #af5be7"/>
                 <stop offset="0.7279" style="stop-color: #895efd"/>
               </lineargradient>
-              <path style="fill: url('#SVGID_2_')" d="M21.4,130.4c20.9,15.9,72.3-14.6,93.4-28.7c-20.7,13.8-48.9,21.9-66.8,20	C18.9,118.6,13.1,69,17.6,34.9C16.4,42.2-2.4,110.4,21.4,130.4z"/>
+              <path style="fill: url('../#SVGID_2_')" d="M21.4,130.4c20.9,15.9,72.3-14.6,93.4-28.7c-20.7,13.8-48.9,21.9-66.8,20	C18.9,118.6,13.1,69,17.6,34.9C16.4,42.2-2.4,110.4,21.4,130.4z"/>
               <lineargradient id="_x3C_Path_x3E__1_1_" gradientunits="userSpaceOnUse" x1="32.3167" y1="-16.8734" x2="90.4476" y2="41.2575">
                 <stop offset="0.2803" style="stop-color: #fc6ea6"/>
                 <stop offset="0.4651" style="stop-color: #e069d2"/>
@@ -350,7 +350,7 @@
                 <stop offset="0.8291" style="stop-color: #8466fc"/>
                 <stop offset="0.9351" style="stop-color: #5978f9"/>
               </lineargradient>
-              <path id="_x3C_Path_x3E__1" style="fill: url('#_x3C_Path_x3E__1_1_')" d="M44,0.4c-3.8,0-7.5,0.5-13.2,2.5l0,0	C47-3,45.7,28.8,64.1,40.1c0.1,0.1,0.2,0.1,0.3,0.2c0.1,0.1,0.2,0.1,0.3,0.2c9.8,5.5,13.1-5,35.1-16.1c-3.8,1.9-7.2,3.4-11.4,4	c-6.4,0.8-10.1-4.6-12.7-7.7C73.6,18,63.7,0.5,44.3,0.4H44z"/>
+              <path id="_x3C_Path_x3E__1" style="fill: url('../#_x3C_Path_x3E__1_1_')" d="M44,0.4c-3.8,0-7.5,0.5-13.2,2.5l0,0	C47-3,45.7,28.8,64.1,40.1c0.1,0.1,0.2,0.1,0.3,0.2c0.1,0.1,0.2,0.1,0.3,0.2c9.8,5.5,13.1-5,35.1-16.1c-3.8,1.9-7.2,3.4-11.4,4	c-6.4,0.8-10.1-4.6-12.7-7.7C73.6,18,63.7,0.5,44.3,0.4H44z"/>
               <path style="fill: #ffffff" d="M61.4,65.8v5.1h11.7v6.7H61.4v11.9h-7.9V59.1H74v6.7H61.4z"/>
               <path style="fill: #ffffff" d="M80.2,89.5V59.1h7.9v30.4H80.2z"/>
               <path style="fill: #ffffff" d="M118,89.5l-14.5-18.6v18.6h-7.9V59.1h7.9L118,77.7V59.1h7.9v30.4H118z"/>
@@ -366,8 +366,8 @@
                 <stop offset="0.4777" style="stop-color: #cbcaca"/>
                 <stop offset="0.5304" style="stop-color: #c3c2c2"/>
               </lineargradient>
-              <path style="fill: url('#SVGID_3_')" d="M13.8,120.8c0.4,0.7,0.8,1.4,1.3,2.1c0.4,0.7,0.9,1.3,1.3,1.9s0.9,1.2,1.4,1.8	c0.5,0.6,0.9,1.2,1.4,1.7c-6.7-7.5-9.1-19.7-9.5-32.9c0-0.8,0-1.6,0-2.5c-0.1-16.3,2.5-32.4,5.9-48.3c1-4.6,2-9.1,2.8-13.7	c0.6-3.2,1.4-6.9,2.1-10.1c2.1-10,6.4-15.2,7.3-16.1c0.9-0.9,1.9-1.5,3-1.9l0,0c-1.7,0.7-4.1,1.7-5.7,2.5c-3.2,1.6-6.4,3.5-9.1,5.8	c-1.3,1-2.4,2.1-3.5,3.3C7.1,20,4,26.6,2.3,33.8c-1,4.1-1.5,8.3-1.6,12.5C0,61.7,3.1,77,5.3,92.1C6.7,102,8.8,112,13.8,120.8z"/></svg></a>
-          <a target="_blank" href="https://www.finastra.com/press-media/finastra-names-hack-future-4-winners"><svg class="block dark:hidden max-h-32 mx-auto" viewbox="0 0 279 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path style="fill: url('../#SVGID_3_')" d="M13.8,120.8c0.4,0.7,0.8,1.4,1.3,2.1c0.4,0.7,0.9,1.3,1.3,1.9s0.9,1.2,1.4,1.8	c0.5,0.6,0.9,1.2,1.4,1.7c-6.7-7.5-9.1-19.7-9.5-32.9c0-0.8,0-1.6,0-2.5c-0.1-16.3,2.5-32.4,5.9-48.3c1-4.6,2-9.1,2.8-13.7	c0.6-3.2,1.4-6.9,2.1-10.1c2.1-10,6.4-15.2,7.3-16.1c0.9-0.9,1.9-1.5,3-1.9l0,0c-1.7,0.7-4.1,1.7-5.7,2.5c-3.2,1.6-6.4,3.5-9.1,5.8	c-1.3,1-2.4,2.1-3.5,3.3C7.1,20,4,26.6,2.3,33.8c-1,4.1-1.5,8.3-1.6,12.5C0,61.7,3.1,77,5.3,92.1C6.7,102,8.8,112,13.8,120.8z"/></svg></a>
+          <a target="_blank" href="growr-home.recognitions.httf4-link"><svg class="block dark:hidden max-h-32 mx-auto" viewbox="0 0 279 140" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_1241_45)">
                 <path d="M186.7 60.5C187.3 58.3 187.7 55.9999 187.8 53.5999C188 48.8999 187.2 44.2 185.6 39.9C184.2 36.3 182.2 33.1 179.6 30.2C179 29.5 178.4 28.9 177.7 28.3C177.4 28 177.1 27.8 176.9 27.5C169.6 21 159.1 17 147.5 15.7C144.7 15.4 141.9 15.2 139.1 15.2C132.8 15.2 126.3 16 119.8 17.4C112.9 19 106.1 21.3 99.7 24.4C90.9 28.6 82.5 35.1 77.8 38.5C71.8 42.9 68.8 42.5 65.3 40.9C70.2 43.6 76.4 44.8 84.6 43.7C88 43.2 91.6 42.7999 95.1 42.5999C100.4 42.1999 105.7 42.1 111 42.4C121 43.1 133.4 45.2999 139.5 54.0999C141.1 56.3999 141.9 58.9999 142.4 62.2999C143.2 68.2999 141.4 74.2 138.4 79.4C136.5 82.6 134.2 85.6 131.7 88.3C128.4 91.8 124.7 94.9 120.8 97.7C118.8 99.2 116.7 100.6 114.6 101.9C109.6 105.2 102.8 109.5 95 114C70.6 127.9 37.1 142.5 21.2 130.6C25.2 134 29.9 136.6 35 138.1C40.6 139.7 46.5 139.9 52.3 139.4C62.6 138.5 72.6 135.4 82.2 131.6C92 127.8 101.4 123.1 110.7 118.3C113.1 117.1 115.6 115.8 118 114.5C131.4 107.6 145.4 100.5 157.2 92.7C164.5 87.9 171.6 82.5999 177.4 76.0999C179.9 73.2999 182.1 70.2999 183.9 67.0999L186.7 60.5Z" fill="url(#paint0_linear_1241_45)"/>
                 <path d="M21.2 130.4C42.1 146.3 93.5 115.8 114.6 101.7C93.9 115.5 65.7 123.6 47.8 121.7C18.7 118.6 12.9 69 17.5 34.9C16.2 42.2 -2.50001 110.4 21.2 130.4Z" fill="url(#paint1_linear_1241_45)"/>
@@ -449,7 +449,7 @@
               growr-home.news.news-20231020-content
             </p>
           </div>
-          <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60" target="_blank" href="https://eventornado.com/submission/bitcoin-street-store">Read more</a>
+          <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60" target="_blank" href="growr-home.news.news-20231020-link">growr-home.news.news-20231020-button</a>
         </div>
         <div class="relative p-5 sm:p-10">
           <div>
@@ -463,7 +463,7 @@
               growr-home.news.news-20230518-content
             </p>
           </div>
-          <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60" target="_blank" href="https://www.youtube.com/watch?v=2D87hqV9AUc&t=2287s">View pitch</a>
+          <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60" target="_blank" href="growr-home.news.news-20230518-link">growr-home.news.news-20230518-button</a>
         </div>
         <div class="relative p-5 sm:p-10">
           <div>
@@ -477,7 +477,7 @@
               growr-home.news.news-20221207-content
             </p>
           </div>
-          <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60" target="_blank" href="https://twitter.com/boltfun_btc/status/1600585894855323648">Read more</a>
+          <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60" target="_blank" href="growr-home.news.news-20221207-link">growr-home.news.news-20221207-button</a>
         </div>
         <div class="relative p-5 sm:p-10">
           <div>
@@ -491,7 +491,7 @@
               growr-home.news.news-20221012-content
             </p>
           </div>
-          <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60" target="_blank" href="https://twitter.com/MadGrowr/status/1579352887360380928">Read more</a>
+          <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60" target="_blank" href="growr-home.news.news-20221012-link">growr-home.news.news-20221012-button</a>
         </div>
         <div class="relative p-5 sm:p-10">
           <div>
@@ -505,7 +505,7 @@
               growr-home.news.news-20220725-content
             </p>
           </div>
-          <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60" target="_blank" href="https://github.com/growr-xyz/growr-protocol-app/releases/tag/v0.3">Read more</a>
+          <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60" target="_blank" href="growr-home.news.news-20220725-link">growr-home.news.news-20220725-button</a>
         </div>
         <div class="relative p-5 sm:p-10">
           <div>
@@ -519,7 +519,7 @@
               growr-home.news.news-20220629-content
             </p>
           </div>
-          <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60" target="_blank" href="https://www.finextra.com/videoarticle/2736/enabling-fair-instant-and-unsecured-loans-based-on-self-sovereign-identity--defi">Read more</a>
+          <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60" target="_blank" href="growr-home.news.news-20220629-link">growr-home.news.news-20220629-button</a>
         </div>
         <div class="relative p-5 sm:p-10">
           <div>
@@ -533,7 +533,7 @@
               growr-home.news.news-20220428-content
             </p>
           </div>
-          <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60" target="_blank" href="https://www.finastra.com/press-media/finastra-names-hack-future-4-winners">Read more</a>
+          <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60" target="_blank" href="growr-home.news.news-20220428-link">growr-home.news.news-20220428-button</a>
         </div>
         <div class="relative p-5 sm:p-10">
           <div>
@@ -547,7 +547,7 @@
               growr-home.news.news-20220410-content
             </p>
           </div>
-          <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60" target="_blank" href="https://github.com/growr-xyz/growr-protocol-app/releases/tag/httf4">Read more</a>
+          <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60" target="_blank" href="growr-home.news.news-20220410-link">growr-home.news.news-20220410-button</a>
         </div>
         <div class="p-5 sm:p-10">
           <div>
@@ -561,7 +561,7 @@
               growr-home.news.news-20211209-content
             </p>
           </div>
-          <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60" target="_blank" href="https://devpost.com/software/growr-on-chain">Read more</a>
+          <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60" target="_blank" href="growr-home.news.news-20211209-link">growr-home.news.news-20211209-button</a>
         </div>
         <div class="p-5 sm:p-10">
           <div>
@@ -575,7 +575,7 @@
               growr-home.news.news-20211115-content
             </p>
           </div>
-          <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60" target="_blank" href="https://growr.xyz/finhealth">Read more</a>
+          <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60" target="_blank" href="growr-home.news.news-20211115-link">growr-home.news.news-20211115-button</a>
         </div>
       </div>
     </div>
@@ -584,7 +584,7 @@
     <footer class="text-sm bg-gray-200 text-gray-500 dark:bg-gray-darker dark:text-gray-400">
       <div class="flex flex-col justify-between px-6 py-5 sm:flex-row">
         <p class="text-sm">
-          <span>&copy; Growr Limited, 2021-2024. All rights reserved.</span>
+          <span>&copy; dmakr d/b/a Growr, 2021-2024. Всички права запазени.</span>
           <!-- •
           <a href="terms/index.html" data-t>footer.terms</a> •
           <a href="privacy/index.html" data-t>footer.privacy</a> -->

@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content>
-    <title>Growr protocol - fair and sustainable micro-lending</title>
+    <title>Growr: отворен, честен и усточив протокол за кредитиране върху Биткойн</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="../favicon.png">
-    <link href="../tailwind.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../../favicon.png">
+    <link href="../../tailwind.css" rel="stylesheet">
     <script defer src="https://unpkg.com/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script defer data-domain="growr.xyz" src="https://plausible.io/js/plausible.js"></script>
@@ -18,7 +18,7 @@
   <body class="bg-white dark:bg-gray-darkest text-black dark:text-gray-lighter">
     <a name="top"></a>
     <div class="bg-gray-600 dark:bg-gray-darkest relative overflow-hidden min-h-full md:h-700 mb-8">
-      <img loading="lazy" src="../images/pexels-quang-nguyen-vinh-6871939-1.webp" class="animate-fadein opacity-90 absolute inset-0 object-cover w-full h-full" alt="A smiling Asian woman in a field">
+      <img loading="lazy" src="../../images/pexels-quang-nguyen-vinh-6871939-1.webp" class="animate-fadein opacity-90 absolute inset-0 object-cover w-full h-full" alt="A smiling Asian woman in a field">
       <header class="absolute top-0 left-0 right-0 z-20">
         <nav class="container mx-auto px-6 md:px-12 py-5" x-data="{ open: false }">
           <div class="lg:flex justify-between items-center">
@@ -82,12 +82,12 @@
               </div>
               <!-- Mobile navigation -->
               <div x-show="open === true" class="lg:hidden fixed top-0 left-0 h-full pt-24 pb-8 px-8 sm:px-16 flex flex-col w-full z-40 bg-gray-900 bg-opacity-75 backdrop-blur-sm overflow-hidden">
-                <a href="../index.html" class="text-md font-medium text-white py-2 px-2 hover:bg-teal">Home</a>
-                <a x-on:click="open = ! open" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" href="#why">Why</a>
-                <a x-on:click="open = ! open" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" href="#video">How does it work?</a>
-                <a x-on:click="open = ! open" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" href="#how">Mechanics</a>
-                <a x-on:click="open = ! open" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" href="#peseta">Peseta</a>
-                <a x-on:click="open = ! open" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" href="#resources">Resources</a>
+                <a href="../index.html" class="text-md font-medium text-white py-2 px-2 hover:bg-teal">growr-protocol.menu.home</a>
+                <a x-on:click="open = ! open" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" href="growr-protocol.menu.why-link">growr-protocol.menu.why</a>
+                <a x-on:click="open = ! open" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" href="growr-protocol.menu.video-link">growr-protocol.menu.video</a>
+                <a x-on:click="open = ! open" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" href="growr-protocol.menu.how-link">growr-protocol.menu.how</a>
+                <a x-on:click="open = ! open" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" href="growr-protocol.menu.peseta-link">growr-protocol.menu.peseta</a>
+                <a x-on:click="open = ! open" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" href="growr-protocol.menu.resources-link">growr-protocol.menu.resources</a>
                 <!-- <a data-attr-t href-t="growr-protocol.menu.signin-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-protocol.menu.sign</a>
                   <a data-attr-t href-t="menu.signup-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-protocol.menu.signup</a>
                   <a data-attr-t href-t="menu.language-link" class="text-md font-medium text-white py-2 px-2 hover:bg-teal" data-t>growr-protocol.menu.language</a> -->
@@ -95,12 +95,12 @@
             </div>
             <!-- Desktop navigation -->
             <ul class="hidden items-center space-x-8 lg:flex mr-4">
-              <li><a href="../index.html" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" aria-label="Home" title="Home">Home</a></li>
-              <li><a class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" href="#why" aria-label="Why" title="Why">Why</a></li>
-              <li><a class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" href="#video" aria-label="Mechanics" title="How does it work?">How does it work?</a></li>
-              <li><a class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" href="#how" aria-label="Mechanics" title="Mechanics">Mechanics</a></li>
-              <li><a class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" href="#peseta" aria-label="Peseta" title="Peseta">Peseta</a></li>
-                <li><a class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" href="#resources" aria-label="Resources" title="Resources">Resources</a></li>
+              <li><a href="../index.html" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" aria-label="growr-protocol.menu.home" title="growr-protocol.menu.home">growr-protocol.menu.home</a></li>
+              <li><a class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" href="growr-protocol.menu.why-link" aria-label="growr-protocol.menu.why" title="growr-protocol.menu.why">growr-protocol.menu.why</a></li>
+              <li><a class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" href="growr-protocol.menu.video-link" aria-label="growr-protocol.menu.how" title="growr-protocol.menu.video">growr-protocol.menu.video</a></li>
+              <li><a class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" href="growr-protocol.menu.how-link" aria-label="growr-protocol.menu.how" title="growr-protocol.menu.how">growr-protocol.menu.how</a></li>
+              <li><a class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" href="growr-protocol.menu.peseta-link" aria-label="growr-protocol.menu.peseta" title="growr-protocol.menu.peseta">growr-protocol.menu.peseta</a></li>
+                <li><a class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-lighter" href="growr-protocol.menu.resources-link" aria-label="growr-protocol.menu.resources" title="growr-protocol.menu.resources">growr-protocol.menu.resources</a></li>
               </ul>
           </div>
         </nav>
@@ -109,13 +109,13 @@
       <!-- Hero -->
       <div class="container mx-auto px-6 md:px-12 relative z-10 flex items-center min-h-screen py-28 md:py-36 xl:py-48">
         <div class="sm:w-3/5 lg:w-3/5 flex flex-col items-start relative z-10">
-          <h1 class="font-bold text-3xl sm:text-5xl text-white mt-5">A fair and sustainable micro-lending protocol</h1>
+          <h1 class="font-bold text-3xl sm:text-5xl text-white mt-5">Oтворен, честен и усточив протокол за кредитиране върху Биткойн</h1>
 
           <div class="max-w-lg">
-            <p class="text-white mt-3 text-base md:text-lg">Growr helps micro-entrepreneurs build their self-sovereign credit record and receive fair productive loans</p>
+            <p class="text-white mt-3 text-base md:text-lg">Growr ускорява финансовото включване като дава възможност на кредитополучателите да получат незадавни кредити без обезпечение чрез децентрализирана идентичност</p>
           </div>
 
-          <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 tracking-wide" href="#why">Learn more</a>
+          <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 tracking-wide" href="growr-protocol.button-link">growr-protocol.button</a>
         </div>
       </div>
     </div>
@@ -125,34 +125,34 @@
     <div class="px-6 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
       <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
         <div class="float-right right-0"></div>
-        <h2 class="max-w-lg mb-6 text-4xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-5xl md:mx-auto">Why Growr protocol?</h2>
-        <p class="text-xl md:text-2xl mb-8">Growr helps micro-entrepreneurs build their self-sovereign credit record and receive fair productive loans without over-collateralization, bringing real-world yield to the decentralized finance protocols in the Bitcoin ecosystem.</p>
+        <h2 class="max-w-lg mb-6 text-4xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-5xl md:mx-auto">growr-protocol.value-prop.title</h2>
+        <p class="text-xl md:text-2xl mb-8">growr-protocol.value-prop.subtitle</p>
       </div>
       <div class="py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-4">
         <div class="grid gap-8 row-gap-10 lg:grid-cols-2">
           <div class="max-w-md sm:mx-auto">
-            <h3 class="max-w-3xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto">Micro-loans with fair conditions</h3>
-            <p class="text-base md:text-lg text-gray-700 dark:text-gray-light">Growr creates a global decentralized marketplace to match supply and demand at the best possible price. This open free market creates fair conditions by enforcing the same rules for everyone.</p>
+            <h3 class="max-w-3xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto">growr-protocol.value-prop.value-1</h3>
+            <p class="text-base md:text-lg text-gray-700 dark:text-gray-light">growr-protocol.value-prop.value-1-content</p>
           </div>
           <div class="max-w-md sm:mx-auto">
-            <h3 class="max-w-3xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto">Empowerment of local communities</h3>
-            <p class="text-base md:text-lg text-gray-700 dark:text-gray-light">Local players can use the protocol to facilitate access to credit by understanding the risk context and defining the right risk model, and social circles play an important role in referring borrowers and supporting them throughout the loan lifecycle.</p>
+            <h3 class="max-w-3xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto">growr-protocol.value-prop.value-2</h3>
+            <p class="text-base md:text-lg text-gray-700 dark:text-gray-light">growr-protocol.value-prop.value-2-content</p>
           </div>
           <div class="max-w-md sm:mx-auto">
-            <h3 class="max-w-3xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto">Real-world yield from productive loans</h3>
-            <p class="text-base md:text-lg text-gray-700 dark:text-gray-light">Investors across the globe can deploy their excess capital through the protocol and generate yield from real economic activity according to their risk appetite.</p>
+            <h3 class="max-w-3xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto">growr-protocol.value-prop.value-3</h3>
+            <p class="text-base md:text-lg text-gray-700 dark:text-gray-light">growr-protocol.value-prop.value-3-content</p>
           </div>
           <div class="max-w-md sm:mx-auto ">
-            <h3 class="max-w-3xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto">Revenue growth for suppliers and buyers</h3>
-            <p class="text-base md:text-lg text-gray-700 dark:text-gray-light">Local suppliers and buyers can grow their business volume by facilitating value chain credit facilities for their micro-enterprise partners, participating in the origination and collection within the community.</p>
+            <h3 class="max-w-3xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto">growr-protocol.value-prop.value-4</h3>
+            <p class="text-base md:text-lg text-gray-700 dark:text-gray-light">growr-protocol.value-prop.value-4-content</p>
           </div>
           <div class="max-w-md sm:mx-auto">
-            <h3 class="max-w-3xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto">Transparency in capital allocation</h3>
-            <p class="text-base md:text-lg text-gray-700 dark:text-gray-light">Growr enforces sustainable micro-lending policies by embedding financial health incentives for borrowers, and enables end-to-end transparency of how investor’s capital is deployed down to the level of each individual borrower.</p>
+            <h3 class="max-w-3xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto">growr-protocol.value-prop.value-5</h3>
+            <p class="text-base md:text-lg text-gray-700 dark:text-gray-light">growr-protocol.value-prop.value-5-content</p>
           </div>
           <div class="max-w-md sm:mx-auto">
-            <h3 class="max-w-3xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto">Democratized credit record</h3>
-            <p class="text-base md:text-lg text-gray-700 dark:text-gray-light">Instead of relying on risk data locked within proprietary databases, Growr provides an open credit record model, which also preserves the privacy of the borrowers through a self-sovereign identity.</p>
+            <h3 class="max-w-3xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto">growr-protocol.value-prop.value-6</h3>
+            <p class="text-base md:text-lg text-gray-700 dark:text-gray-light">growr-protocol.value-prop.value-6-content</p>
           </div>
         </div>
       </div>
@@ -162,7 +162,7 @@
     <a name="video"></a>
     <div class="px-6 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10" x-data="{ shown: false }" x-intersect:enter="shown = true" x-intersect:leave="shown = false">
       <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-        <h2 class="max-w-lg mb-6 text-4xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-5xl md:mx-auto">How does it work?</h2>
+        <h2 class="max-w-lg mb-6 text-4xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-5xl md:mx-auto">growr-protocol.video.title</h2>
       </div>
 
       <div class="w-full h-full object-center object-cover aspect-w-16 aspect-h-9">
@@ -174,7 +174,7 @@
     <a name="how"></a>
     <div class="px-6 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10" x-data="{ shown: false }" x-intersect:enter="shown = true" x-intersect:leave="shown = false">
       <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-        <h2 class="max-w-lg mb-6 text-4xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-5xl md:mx-auto">Protocol mechanics</h2>
+        <h2 class="max-w-lg mb-6 text-4xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-5xl md:mx-auto">growr-protocol.how.title</h2>
         <!-- <p class="text-xl md:text-2xl mb-8" data-t>growr-protocol.how.subtitle</p> -->
       </div>
     
@@ -331,8 +331,8 @@
               <path d="M38.4215 45.9771H48.3007V45.1536H38.4215V45.9771Z" fill="#000001"/>
               <path d="M49.9471 26.6319H38.0104V23.3391C38.0104 22.4298 37.2732 21.6926 36.3633 21.6926H33.894C32.9848 21.6926 32.2476 22.4298 32.2476 23.3391V26.6319H20.3102C19.401 26.6319 18.6638 27.3691 18.6638 28.2783V48.0354C18.6638 48.9446 19.401 49.6818 20.3102 49.6818H49.9471C50.8563 49.6818 51.5935 48.9446 51.5935 48.0354V28.2783C51.5935 27.3691 50.8563 26.6319 49.9471 26.6319ZM33.0704 23.3391C33.0704 22.8848 33.439 22.5162 33.894 22.5162H36.3633C36.8182 22.5162 37.1868 22.8848 37.1868 23.3391V27.8666C37.1868 28.3215 36.8182 28.6901 36.3633 28.6901H33.894C33.439 28.6901 33.0704 28.3215 33.0704 27.8666V23.3391ZM50.77 48.0354C50.77 48.4896 50.4014 48.8583 49.9471 48.8583H20.3102C19.8559 48.8583 19.4873 48.4896 19.4873 48.0354V28.2783C19.4873 27.824 19.8559 27.4554 20.3102 27.4554H32.2476V27.8666C32.2476 28.7758 32.9848 29.513 33.894 29.513H36.3633C37.2732 29.513 38.0104 28.7758 38.0104 27.8666V27.4554H49.9471C50.4014 27.4554 50.77 27.824 50.77 28.2783V48.0354Z" fill="#000001"/>
             </svg>
-            <h3 class="max-w-3xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto">Self-sovereign credit record</h3>
-            <p class="text-base md:text-lg text-gray-700 dark:text-gray-light">A digital identity, based on W3C’s DID and VC standards, owned and managed by the user, storing their credentials, credit history and financial health tools for education and personalized advice.</p>
+            <h3 class="max-w-3xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto">growr-protocol.how.how-1</h3>
+            <p class="text-base md:text-lg text-gray-700 dark:text-gray-light">growr-protocol.how.how-1-content</p>
           </div>
         </div>
         <div class="p-5 sm:p-10">
@@ -343,8 +343,8 @@
               <path d="M44.9855 16.802H26.0506C25.597 16.8033 25.2291 17.1713 25.2278 17.6249V52.2097C25.2291 52.6633 25.597 53.0312 26.0506 53.0326H44.9855C45.4391 53.0312 45.8064 52.6633 45.8084 52.2097V17.6249C45.807 17.1713 45.4391 16.8033 44.9855 16.802ZM44.9855 52.2097H26.0506V17.6249H44.9855V52.2097Z" fill="#000001"/>
               <path d="M33.8716 19.6831H37.5763C37.8034 19.6831 37.988 19.4984 37.988 19.2713C37.988 19.0441 37.8034 18.8595 37.5763 18.8595H33.8716C33.6445 18.8595 33.4599 19.0441 33.4599 19.2713C33.4599 19.4984 33.6445 19.6831 33.8716 19.6831Z" fill="#000001"/>
             </svg>          
-            <h3 class="max-w-3xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto">Distributor</h3>
-            <p class="text-base md:text-lg text-gray-700 dark:text-gray-light">Wallets, financial institutions, FinTech companies and non-financial providers such as merchants, telcos and gig economy platforms, facilitating access to the protocol through a simple and secure way for borrowers to easily apply and obtain fair loans.</p>
+            <h3 class="max-w-3xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto">growr-protocol.how.how-2</h3>
+            <p class="text-base md:text-lg text-gray-700 dark:text-gray-light">growr-protocol.how.how-2-content</p>
           </div>
         </div>
         <div class="p-5 sm:p-10">
@@ -354,8 +354,8 @@
               <path d="M51.0984 35.4522C52.0866 35.4522 52.677 34.4148 52.677 32.6787C52.677 29.9789 51.194 25.9854 48.0107 25.9854H41.6708C41.3991 25.8021 41.0857 25.6918 40.7589 25.6633C40.5324 25.2548 40.1678 24.9394 39.7301 24.7733C39.3363 24.6192 38.9032 24.5927 38.4928 24.6976C38.1547 24.4532 37.749 24.3217 37.3319 24.321C36.8643 24.321 36.4107 24.4798 36.0461 24.7727C35.1628 24.523 34.2224 24.8975 33.7528 25.6865C33.4851 25.735 33.2294 25.8366 33.0016 25.9854H23.3137C21.0058 25.9854 19.1973 28.8778 19.1973 32.5704C19.1973 36.2485 20.9912 39.1302 23.2858 39.1541L32.987 39.1561V45.7418L37.1028 42.5519L41.2192 45.7418V39.1561H50.8925C51.1196 39.1561 51.3035 38.9721 51.3035 38.745C51.3035 38.5172 51.1196 38.3332 50.8925 38.3332C49.4732 38.3857 48.2777 37.2825 48.2166 35.8633V35.4522H51.0984ZM34.304 26.4662L34.403 26.2265C34.5219 25.9515 34.7424 25.7337 35.0187 25.6175C35.3268 25.4833 35.6768 25.4846 35.9843 25.6215L36.2493 25.733L36.4452 25.5232C36.9028 25.045 37.6593 25.0211 38.1468 25.4694L38.3381 25.6341L38.5712 25.5378C38.8488 25.4288 39.1576 25.4302 39.4346 25.5417C39.7461 25.656 39.9925 25.9011 40.1074 26.2119L40.2116 26.4955L40.5131 26.4809C40.8492 26.457 41.1786 26.5838 41.4117 26.8275C41.6223 27.0394 41.7458 27.3223 41.7591 27.6205L41.773 27.8789L42.0128 27.9778C42.2878 28.0967 42.5063 28.3172 42.6218 28.5935C42.756 28.9017 42.7546 29.2523 42.6178 29.5592L42.5063 29.8235L42.7168 30.0194C42.9612 30.2492 43.098 30.5713 43.0947 30.9067C43.0947 31.2049 42.9818 31.4912 42.7792 31.7097L42.6012 31.903L42.7015 32.1454C42.8098 32.4236 42.8084 32.7325 42.6969 33.0088C42.5833 33.3209 42.3382 33.5666 42.0274 33.6815L41.7438 33.7858L41.7584 34.0873C41.7803 34.4234 41.6535 34.7522 41.4117 34.9859C41.1992 35.1958 40.9169 35.3193 40.6187 35.3333L40.3597 35.3472L40.2614 35.587C40.1426 35.8619 39.9214 36.0804 39.6458 36.196C39.3376 36.3302 38.987 36.3288 38.6801 36.192L38.4151 36.0804L38.2192 36.2903C37.7609 36.7685 37.0044 36.7924 36.5176 36.3434L36.3264 36.1801L36.0932 36.2757C35.815 36.3846 35.5061 36.3826 35.2292 36.2717C34.9177 36.1575 34.672 35.9124 34.5571 35.6016L34.4528 35.318L34.1506 35.3326C33.8152 35.3552 33.4865 35.2283 33.252 34.9859C33.0421 34.7741 32.9186 34.4911 32.9053 34.1929L32.8907 33.9339L32.651 33.8356C32.3767 33.7161 32.1582 33.4956 32.0426 33.2199C31.9078 32.9118 31.9091 32.5611 32.0459 32.2543L32.1575 31.9893L31.9476 31.7934C31.7032 31.5642 31.5657 31.2421 31.5691 30.9067C31.5744 30.6046 31.6899 30.315 31.8945 30.0925L32.0585 29.9012L31.9629 29.6681C31.854 29.3905 31.8553 29.081 31.9669 28.8047C32.0805 28.4926 32.3255 28.2468 32.6363 28.1319L32.9199 28.0276L32.906 27.7261C32.8834 27.3901 33.0103 27.0613 33.2527 26.8269C33.4646 26.6177 33.7468 26.4948 34.045 26.4809L34.304 26.4662ZM32.2697 26.8083C32.1695 27.0195 32.1083 27.2466 32.0884 27.4797C31.6793 27.7069 31.3639 28.0715 31.1985 28.5085C31.0444 28.903 31.0185 29.3354 31.1228 29.7458C30.8784 30.0839 30.7468 30.4897 30.7462 30.9067C30.7455 31.3743 30.9049 31.8279 31.1971 32.1925C31.0656 32.6441 31.0988 33.127 31.2908 33.556C31.4595 33.9452 31.7471 34.2706 32.1117 34.4858C32.1203 34.5343 32.1363 34.5808 32.1482 34.6286H26.4571C26.9645 33.906 27.2329 33.042 27.2242 32.1593C27.2242 29.7551 26.5182 27.8364 25.3752 26.8083H32.2697ZM23.3137 38.3332C21.5291 38.3332 20.0209 35.6946 20.0209 32.5704C20.0209 29.4469 21.5291 26.8083 23.3137 26.8083C25.1315 26.8083 26.4013 29.0086 26.4013 32.1586C26.4007 32.2596 26.3748 34.6286 24.7549 34.6286C23.8623 34.6286 23.1078 33.4033 23.1078 31.9534C23.1078 31.6539 23.1397 31.355 23.2041 31.0628C23.2539 30.841 23.1138 30.6212 22.892 30.5713C22.6701 30.5222 22.4503 30.6617 22.4005 30.8835C22.3228 31.2348 22.2843 31.5935 22.2849 31.9534C22.2849 33.9153 23.3702 35.4522 24.7549 35.4522H32.5706C32.6038 35.4907 32.6337 35.5319 32.6702 35.5684C32.7672 35.664 32.8735 35.7497 32.987 35.8248V38.3332H23.3137ZM37.6075 41.9017L37.1034 41.5105L36.5987 41.9017L33.8106 44.0622V36.1336C33.8424 36.1376 33.8724 36.1475 33.9049 36.1502C34.132 36.5593 34.496 36.8748 34.9336 37.0401C35.3281 37.1942 35.7605 37.2208 36.171 37.1159C36.509 37.3603 36.9148 37.4918 37.3319 37.4924C37.7994 37.4931 38.253 37.3337 38.6177 37.0415C39.0693 37.173 39.5521 37.1398 39.9812 36.9478C40.1286 36.8807 40.2681 36.7964 40.3963 36.6968V44.0622L37.6075 41.9017ZM48.5859 38.3332H41.2192V36.0479C41.5107 35.9496 41.7757 35.7856 41.9935 35.5684C42.0307 35.5319 42.0593 35.4907 42.0925 35.4515H47.3937V35.8633C47.401 36.8236 47.838 37.7302 48.5859 38.3332ZM42.5242 34.6286C42.5488 34.5316 42.566 34.4333 42.576 34.3337C42.9851 34.1073 43.3006 33.7426 43.466 33.305C43.6187 32.9125 43.6459 32.4821 43.543 32.0736C43.7867 31.7336 43.9182 31.3258 43.9176 30.9067C43.9182 30.4392 43.7595 29.9856 43.4666 29.6209C43.7163 28.7376 43.3411 27.7972 42.5521 27.3283C42.5195 27.1483 42.4631 26.9736 42.384 26.8083H48.0107C50.5185 26.8083 51.8535 30.2174 51.8535 32.6787C51.8535 33.827 51.5433 34.6286 51.0984 34.6286H42.5242Z" fill="#000001"/>
               <path d="M37.2416 34.9301C39.4638 34.9301 41.265 33.1289 41.265 30.9067C41.265 28.6851 39.4638 26.8839 37.2416 26.8839C35.0194 26.8839 33.2182 28.6851 33.2182 30.9067C33.2209 33.1276 35.0207 34.9274 37.2416 34.9301ZM37.2416 27.7068C39.0089 27.7068 40.4415 29.1394 40.4415 30.9067C40.4415 32.674 39.0089 34.1065 37.2416 34.1065C35.4743 34.1065 34.0418 32.674 34.0418 30.9067C34.0438 29.1407 35.475 27.7088 37.2416 27.7068Z" fill="#000001"/>          
             </svg>  
-            <h3 class="max-w-3xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto">Trusted party</h3>
-            <p class="text-base md:text-lg text-gray-700 dark:text-gray-light">Trusted parties (such as value chain partners, financial providers, telcos, merchants, NGOs) issue cryptographically verifiable credentials to the borrowers about their financial and non-financial life that are stored in their self-sovereign financial identity.</p>
+            <h3 class="max-w-3xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto">growr-protocol.how.how-3</h3>
+            <p class="text-base md:text-lg text-gray-700 dark:text-gray-light">growr-protocol.how.how-3-content</p>
           </div>
         </div>
         <div class="p-5 sm:p-10">
@@ -368,8 +368,8 @@
               <path d="M31.9364 27.8275L31.5837 28.847L32.3661 29.6313L33.3849 29.278C33.6545 29.4354 33.9448 29.5543 34.247 29.6313L34.7172 30.6109H35.815L36.2853 29.6698C36.5881 29.5935 36.8796 29.4746 37.1493 29.3172L38.1681 29.6698L38.9525 28.8862L38.5998 27.8667C38.7692 27.5991 38.9014 27.3088 38.9917 27.0046L39.9713 26.5344V25.3582L38.9917 24.888C38.9146 24.5852 38.7964 24.2949 38.639 24.0253L38.9917 23.0058L38.2093 22.2241L37.1905 22.5768C36.9208 22.4193 36.6306 22.3005 36.3277 22.2241L35.8562 21.281H34.7584L34.2881 22.2613C33.9846 22.3377 33.6937 22.4565 33.4234 22.6139L32.4046 22.2613L31.6229 23.0457L31.9364 24.0644C31.779 24.3341 31.6601 24.6243 31.5837 24.9272L30.6041 25.3974V26.4952L31.5837 26.9655C31.6601 27.2676 31.779 27.5585 31.9364 27.8275ZM31.427 25.9154L31.9404 25.6684L32.289 25.501L32.382 25.1258C32.4405 24.896 32.5308 24.6761 32.6517 24.4722L32.8283 24.1627L32.7234 23.822L32.5554 23.2761L32.6244 23.207L33.1564 23.391L33.5098 23.5145L33.8345 23.3292C34.0384 23.209 34.2582 23.118 34.4874 23.0602L34.8633 22.9666L35.03 22.6179L35.2771 22.1052H35.3481L35.5905 22.5907L35.7599 22.9274L36.1265 23.0198C36.3563 23.0775 36.5761 23.1679 36.78 23.2881L37.1048 23.474L37.4581 23.3505L37.9901 23.1659L38.0446 23.221L37.8586 23.7563L37.7351 24.1089L37.9204 24.4337C38.0413 24.6376 38.1316 24.8575 38.19 25.0872L38.283 25.4625L38.6317 25.6298L39.1444 25.8769V26.0144L38.6317 26.2615L38.283 26.4288L38.19 26.804C38.1156 27.0345 38.0121 27.2543 37.8812 27.4576L37.6966 27.7823L37.8194 28.135L38.0034 28.6677L37.9483 28.7228L37.417 28.5388L37.0636 28.4153L36.7389 28.6006C36.535 28.7208 36.3151 28.8118 36.0853 28.8696L35.7181 28.9612L35.5487 29.2999L35.3063 29.7861H35.2359L34.9888 29.2727L34.8208 28.924L34.4462 28.8297C34.2164 28.7719 33.9966 28.6816 33.7927 28.5614L33.4679 28.3761L33.1146 28.4996L32.5826 28.6836L32.5282 28.6285L32.7121 28.0965L32.8356 27.7431L32.6503 27.4184C32.5301 27.2145 32.4391 26.9947 32.3807 26.7649L32.2877 26.3896L31.939 26.2223L31.4256 25.9758L31.427 25.9154Z" fill="#000001"/>
               <path d="M26.663 41.0453V51.4611H39.6697V46.5218H41.6868C42.9852 46.5199 44.2284 46.0012 45.1443 45.0813C46.0475 44.1415 46.549 42.8863 46.5437 41.5832V39.1133H48.3548C49.4254 38.9897 50.3718 37.7551 49.3842 36.2322L46.5437 31.293V31.0871C46.8113 24.2563 41.4901 18.5021 34.6587 18.2345C27.8273 17.9675 22.0731 23.288 21.8055 30.1194C21.7929 30.4415 21.7929 30.765 21.8055 31.0871C21.7915 34.9803 23.586 38.6597 26.663 41.0453ZM28.2749 20.6746C33.7615 17.4156 40.8519 19.2214 44.1109 24.7079C45.2486 26.6233 45.8085 28.8263 45.7228 31.0518V31.5068L45.8324 31.6974L48.6723 36.6367L48.6835 36.656L48.6955 36.6739C48.9625 36.9966 49.0415 37.4356 48.9041 37.8315C48.7872 38.0699 48.5627 38.2386 48.301 38.2838H45.7208V41.5766C45.7254 42.6625 45.3103 43.7079 44.5618 44.4949C43.8027 45.264 42.7673 45.697 41.6868 45.6976H38.8469V50.6369H27.4859V40.6415L27.1665 40.3944C24.2848 38.1675 22.6064 34.7233 22.629 31.0818V31.0665V31.0518C22.4617 26.8179 24.6294 22.8337 28.2749 20.6746Z" fill="#000001"/>          
             </svg>
-            <h3 class="max-w-3xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto">Risk assessor</h3>
-            <p class="text-base md:text-lg text-gray-700 dark:text-gray-light">Risk assessors are third parties trusted—and most often owned—by the lenders that perform verification of borrowers’ credentials and assert their eligibility to receive a loan. Risk assessors produce a credit score for each project that is used by the lenders in their automated decisions, and that investors receive yield from real economic activty.</p>
+            <h3 class="max-w-3xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto">growr-protocol.how.how-4</h3>
+            <p class="text-base md:text-lg text-gray-700 dark:text-gray-light">growr-protocol.how.how-4-content</p>
           </div>
         </div>
         <div class="p-5 sm:p-10">
@@ -379,8 +379,8 @@
               <path d="M65.6276 31.1019C65.6276 38.7602 59.4072 44.968 51.7336 44.968C44.0601 44.968 37.8397 38.7602 37.8397 31.1019C37.8397 23.4436 44.0601 17.2358 51.7336 17.2358C59.4072 17.2358 65.6276 23.4436 65.6276 31.1019Z" fill="#18D0BA"/>
               <path d="M49.8249 10.6097C49.8249 16.1766 45.3027 20.6888 39.7252 20.6888C34.147 20.6888 29.6255 16.1766 29.6255 10.6097C29.6255 5.04279 34.147 0.529907 39.7252 0.529907C45.3027 0.529907 49.8249 5.04279 49.8249 10.6097Z" fill="#A9F4EA"/>          
             </svg>
-            <h3 class="max-w-3xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto">Decentralized marketplace</h3>
-            <p class="text-base md:text-lg text-gray-700 dark:text-gray-light">A decentralized infrastructure for lending and borrowing on top of the Bitcoin network, with open access for everyone. The key differentiators of the Growr protocol are that loans are provided against verified credentials from borrower’s self-sovereign financial identity and credit record, instead of requiring over-collateralization.</p>
+            <h3 class="max-w-3xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto">growr-protocol.how.how-5</h3>
+            <p class="text-base md:text-lg text-gray-700 dark:text-gray-light">growr-protocol.how.how-5-content</p>
           </div>
         </div>
         <div class="p-5 sm:p-10">
@@ -390,8 +390,8 @@
               <path d="M70 40.0059C67.79 40.0059 66 41.7969 66 44.0059C66 46.2149 67.79 48.0059 70 48.0059C72.21 48.0059 74 46.2149 74 44.0059C73.99 41.7999 72.21 40.0129 70 40.0059ZM70 46.0059C68.9 46.0059 68 45.1109 68 44.0059C68 42.9009 68.9 42.0059 70 42.0059C71.1 42.0059 72 42.9009 72 44.0059C72 45.1109 71.11 46.0068 70 46.0078V46.0059Z" fill="black"/>
               <path d="M101 94.021V91H97V60H101V55H106V53L70 31L34 53V55H39V60H43V91H39V94.021L32 99.021V103H108V99.022L101 94.021ZM95 91H93V60H95V91ZM49 60H55V91H49V60ZM57 60H59V91H57V60ZM61 60H67V91H61V60ZM69 60H71V91H69V60ZM73 60H79V91H73V60ZM81 60H83V91H81V60ZM85 60H91V91H85V60ZM37.87 52.981L70 33.347L102.13 52.981C102.14 52.983 102.14 52.988 102.14 52.994C102.14 52.997 102.14 52.999 102.13 53H37.87C37.87 52.999 37.86 52.994 37.86 52.988C37.86 52.985 37.86 52.983 37.87 52.981ZM41 55H99V58H41V55ZM45 60H47V91H45V60ZM41 95.05V93H99V95.05L99.84 95.65L100.33 96.002H39.67L40.16 95.65L41 95.05ZM106 101H34V100.052L36.87 98H103.13L106 100.052V101Z" fill="black"/>
             </svg>              
-            <h3 class="max-w-3xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto">Lender</h3>
-            <p class="text-base md:text-lg text-gray-700 dark:text-gray-light">A traditional finance institution or a FinTech that is providing micro-lending through the decentralized marketplace with specific conditions and eligibility criteria. Lenders make their financing decisions based on the credit record of the borrower, provided by the risk assessors.</p>
+            <h3 class="max-w-3xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto">growr-protocol.how.how-6</h3>
+            <p class="text-base md:text-lg text-gray-700 dark:text-gray-light">growr-protocol.how.how-6-content</p>
           </div>
         </div>
         <div class="p-5 sm:p-10">
@@ -406,8 +406,8 @@
               <path d="M45.935 40.6903C46.716 40.5083 47.2633 39.8043 47.246 39.0027C47.2566 38.4595 46.9737 37.9521 46.5048 37.6758C45.7245 37.1876 44.6958 37.4241 44.207 38.2044C44.0436 38.4661 43.9559 38.7676 43.9532 39.0751C43.9532 39.9863 44.6918 40.7242 45.6023 40.7242C45.7145 40.7242 45.8261 40.7129 45.935 40.6903ZM45.5996 38.2536C46.0539 38.2536 46.4225 38.6222 46.4225 39.0765C46.4225 39.5314 46.0539 39.9 45.5996 39.9C45.1447 39.9 44.7761 39.5314 44.7761 39.0765C44.7761 38.6222 45.1447 38.2536 45.5996 38.2536Z" fill="#000001"/>
               <path d="M49.716 44.8393L50.9506 43.604V34.549L49.716 33.3143H21.3098L19.6634 34.9607V43.1929L21.3098 44.8393H49.716ZM20.4869 35.3021L21.6519 34.1372H49.3753L50.1277 34.8897V43.2646L49.3753 44.0157H21.6519L20.4869 42.8528V35.3021Z" fill="#000001"/>
             </svg>
-            <h3 class="max-w-3xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto">Investor</h3>
-            <p class="text-base md:text-lg text-gray-700 dark:text-gray-light">A decentralized finance protocol, institutional or individual investor pooling funds who deploy capital as senior tranche and delegate the actual lending activity to the lenders. Investors get rewarded with yield from real economic activity based on the pool profitability. Generally, a pool yield will tend to be lower that the project yield due to the wholesale lending nature of the pools.</p>
+            <h3 class="max-w-3xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto">growr-protocol.how.how-7</h3>
+            <p class="text-base md:text-lg text-gray-700 dark:text-gray-light">growr-protocol.how.how-7-content</p>
           </div>
         </div>
       </div>
@@ -418,8 +418,8 @@
     <a name="peseta"></a>
     <div class="px-6 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-16">
       <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-        <h2 class="max-w-lg mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-5xl md:mx-auto">Peseta: fair loans made easy.</h2>
-        <p class="text-xl md:text-2xl mb-8">The Peseta app was designed for El Salvador, as a simple and secure way for consumers and merchants to easily apply for loans on top of the Bitcoin network.</p>
+        <h2 class="max-w-lg mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-5xl md:mx-auto">growr-protocol.peseta.title</h2>
+        <p class="text-xl md:text-2xl mb-8">growr-protocol.peseta.subtitle</p>
       </div>
       <div class="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-16">
         <div class="grid gap-6 row-gap-10 lg:grid-cols-2">
@@ -437,8 +437,8 @@
                 <div class="w-px h-full bg-gray-300"></div>
               </div>
               <div class="pt-1 pb-8">
-                <p class="mb-2 text-lg font-bold text-gray-900 dark:text-gray-lighter">Link account</p>
-                <p class="text-gray-700 dark:text-gray-light">Link your bank account and social profiles to Peseta to create your personal financial identity.</p>
+                <p class="mb-2 text-lg font-bold text-gray-900 dark:text-gray-lighter">growr-protocol.peseta.step-1</p>
+                <p class="text-gray-700 dark:text-gray-light">growr-protocol.peseta.step-1-content</p>
               </div>
             </div>
             <div class="flex">
@@ -454,8 +454,8 @@
                 <div class="w-px h-full bg-gray-300"></div>
               </div>
               <div class="pt-1 pb-8">
-                <p class="mb-2 text-lg font-bold text-gray-900 dark:text-gray-lighter">Apply for loans</p>
-                <p class="text-gray-700 dark:text-gray-light">Use the Peseta app and your financial identity to apply for a loan and get an instant response.</p>
+                <p class="mb-2 text-lg font-bold text-gray-900 dark:text-gray-lighter">growr-protocol.peseta.step-2</p>
+                <p class="text-gray-700 dark:text-gray-light">growr-protocol.peseta.step-2-content</p>
               </div>
             </div>
             <div class="flex">
@@ -471,8 +471,8 @@
                 <div class="w-px h-full bg-gray-300"></div>
               </div>
               <div class="pt-1 pb-8">
-                <p class="mb-2 text-lg font-bold text-gray-900 dark:text-gray-lighter">Pay</p>
-                <p class="text-gray-700 dark:text-gray-light">Through integration with the Lightning network, Peseta enables instant payments to any merchant in El Salvador.</p>
+                <p class="mb-2 text-lg font-bold text-gray-900 dark:text-gray-lighter">growr-protocol.peseta.step-3</p>
+                <p class="text-gray-700 dark:text-gray-light">growr-protocol.peseta.step-3-content</p>
               </div>
             </div>
             <div class="flex">
@@ -488,8 +488,8 @@
                 <div class="w-px h-full bg-gray-300"></div>
               </div>
               <div class="pt-1 pb-8">
-                <p class="mb-2 text-lg font-bold text-gray-900 dark:text-gray-lighter">Manage your loans</p>
-                <p class="text-gray-700 dark:text-gray-light">The Peseta app has all the tools to manage every aspect of your loan transactions, withraw the amount to your Chivo wallet and easily pay it off to build your credit score.</p>
+                <p class="mb-2 text-lg font-bold text-gray-900 dark:text-gray-lighter">growr-protocol.peseta.step-4</p>
+                <p class="text-gray-700 dark:text-gray-light">growr-protocol.peseta.step-4-content</p>
               </div>
             </div>
             <div class="flex">
@@ -503,11 +503,11 @@
                 </div>
               </div>
               <div class="pt-1 pb-8">
-                <p class="mb-2 text-lg font-bold text-gray-900 dark:text-gray-lighter">Learn and earn</p>
-                <p class="text-gray-700 dark:text-gray-light">Learning the features and benefits of Bitcoin through short tutorials earns you fractional bitcoin to build wealth and pay off loans.</p>
+                <p class="mb-2 text-lg font-bold text-gray-900 dark:text-gray-lighter">growr-protocol.peseta.step-5</p>
+                <p class="text-gray-700 dark:text-gray-light">growr-protocol.peseta.step-5-content</p>
               </div>
             </div>
-            <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full mx-auto md:w-60" href="https://www.peseta.xyz/">Learn more</a>
+            <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full mx-auto md:w-60" href="growr-protocol.peseta.button-link">growr-protocol.peseta.button</a>
           </div>
           <div class="relative">
             <div class="align-top max-w-xs mx-auto">
@@ -729,36 +729,36 @@
     <a name="resources"></a>
     <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-        <h2 class="max-w-lg mb-6 text-3xl font-bold leading-none tracking-tight text-black dark:text-gray-lighter sm:text-5xl md:mx-auto">Resources</h2>
+        <h2 class="max-w-lg mb-6 text-3xl font-bold leading-none tracking-tight text-black dark:text-gray-lighter sm:text-5xl md:mx-auto">growr-protocol.resources.title</h2>
       </div>
       <div class="grid gap-12 row-gap-5 md:grid-cols-2">
         <div class="relative p-5 sm:p-10">
           <div>
-            <h3 class="max-w-md mb-6 text-gray-900 dark:text-gray-lighter text-3xl font-extrabold leading-none sm:text-4xl">Whitepaper</h3>
-            <p class="mb-6 text-base text-gray-700 dark:text-gray-light md:text-lg sm:mb-8">Growr’s whitepaper is a short non-technical description of how the protocol works and the main concepts behind it.</p>
+            <h3 class="max-w-md mb-6 text-gray-900 dark:text-gray-lighter text-3xl font-extrabold leading-none sm:text-4xl">growr-protocol.resources.whitepaper-title</h3>
+            <p class="mb-6 text-base text-gray-700 dark:text-gray-light md:text-lg sm:mb-8">growr-protocol.resources.whitepaper-content</p>
           </div>
-          <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60" target="_blank" href="https://growr-xyz.github.io/growr-documentation/growr-whitepaper.pdf">Open</a>
+          <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60" target="_blank" href="growr-protocol.resources.whitepaper-link">growr-protocol.resources.whitepaper-button</a>
         </div>
         <div class="p-5 sm:p-10">
           <div>
-            <h3 class="max-w-md mb-6 text-gray-900 dark:text-gray-lighter text-3xl font-extrabold leading-none sm:text-4xl">Documentation</h3>
-            <p class="mb-6 text-base text-gray-700 dark:text-gray-light md:text-lg sm:mb-8">Growr’s documentation provides in-depth details about the different components of the protocol—distribution & identity, risk management, liquidity, payments and governance.</p>
+            <h3 class="max-w-md mb-6 text-gray-900 dark:text-gray-lighter text-3xl font-extrabold leading-none sm:text-4xl">growr-protocol.resources.docs-title</h3>
+            <p class="mb-6 text-base text-gray-700 dark:text-gray-light md:text-lg sm:mb-8">growr-protocol.resources.docs-content</p>
           </div>
-          <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60" target="_blank" href="https://growr-xyz.github.io/growr-documentation/">Open</a>
+          <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60" target="_blank" href="growr-protocol.resources.docs-link">growr-protocol.resources.docs-button</a>
         </div>
         <div class="p-5 sm:p-10">
           <div>
-            <h3 class="max-w-md mb-6 text-gray-900 dark:text-gray-lighter text-3xl font-extrabold leading-none sm:text-4xl">GitHub repositories</h3>
-            <p class="mb-6 text-base text-gray-700 dark:text-gray-light md:text-lg sm:mb-8">Visit Growr’s GitHub page to view our open source repositories and contribute.</p>
+            <h3 class="max-w-md mb-6 text-gray-900 dark:text-gray-lighter text-3xl font-extrabold leading-none sm:text-4xl">growr-protocol.resources.github-title</h3>
+            <p class="mb-6 text-base text-gray-700 dark:text-gray-light md:text-lg sm:mb-8">growr-protocol.resources.github-content</p>
           </div>
-          <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60" target="_blank" href="https://github.com/growr-xyz">Open</a>
+          <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60" target="_blank" href="growr-protocol.resources.github-link">growr-protocol.resources.github-button</a>
         </div>
         <div class="p-5 sm:p-10">
           <div>
-            <h3 class="max-w-md mb-6 text-gray-900 dark:text-gray-lighter text-3xl font-extrabold leading-none sm:text-4xl">Video tutorial</h3>
-            <p class="mb-6 text-base text-gray-700 dark:text-gray-light md:text-lg sm:mb-8">For an visual overview of Growr, its concepts and borrowing and lending apps, check our playlist on YouTube.</p>
+            <h3 class="max-w-md mb-6 text-gray-900 dark:text-gray-lighter text-3xl font-extrabold leading-none sm:text-4xl">growr-protocol.resources.video-title</h3>
+            <p class="mb-6 text-base text-gray-700 dark:text-gray-light md:text-lg sm:mb-8">growr-protocol.resources.video-content</p>
           </div>
-          <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60" target="_blank" href="https://www.youtube.com/watch?v=dzzadU2suGw&list=PL2-XQBmXVGxzQf1z-2MISs7aJuX-91bQ6">Open</a>
+          <a class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60" target="_blank" href="growr-protocol.resources.video-link">growr-protocol.resources.video-button</a>
         </div>
       </div>
     </div>
@@ -766,7 +766,7 @@
     <!-- Footer -->
     <footer class="text-sm bg-gray-200 text-gray-500 dark:bg-gray-darker dark:text-gray-400">    
       <div class="flex flex-col justify-between px-6 py-5 sm:flex-row">
-        <p class="text-sm"><span>&copy; Growr Limited, 2021-2024. All rights reserved.</span>
+        <p class="text-sm"><span>&copy; dmakr d/b/a Growr, 2021-2024. Всички права запазени.</span>
           <!-- •
           <a href="terms/index.html" data-t>footer.terms</a> •
           <a href="privacy/index.html" data-t>footer.privacy</a> -->
