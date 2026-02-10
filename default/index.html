@@ -7,31 +7,16 @@
     <title data-t>growr-home.title</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;700&display=swap" rel="stylesheet" />
     <link rel="icon" type="image/png" href="favicon.png" />
     <link href="tailwind.css" rel="stylesheet" />
-    <script
-      defer
-      src="https://unpkg.com/@alpinejs/intersect@3.x.x/dist/cdn.min.js"
-    ></script>
-    <script
-      defer
-      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
-    ></script>
-    <script
-      defer
-      data-domain="growr.xyz"
-      src="https://plausible.io/js/plausible.js"
-    ></script>
+    <script defer src="https://unpkg.com/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer data-domain="growr.xyz" src="https://plausible.io/js/plausible.js"></script>
   </head>
 
   <body class="bg-white dark:bg-gray-darkest text-black dark:text-gray-lighter">
-    <div
-      class="bg-gray-600 dark:bg-gray-darkest relative overflow-hidden min-h-full md:h-700 mb-8"
-    >
+    <div class="bg-gray-600 dark:bg-gray-darkest relative overflow-hidden min-h-full md:h-700 mb-8">
       <img
         loading="lazy"
         src="images/pexels-pixabay-247676-1.webp"
@@ -40,10 +25,7 @@
       />
 
       <header class="absolute top-0 left-0 right-0 z-20">
-        <nav
-          class="container mx-auto px-6 md:px-12 py-5"
-          x-data="{ open: false }"
-        >
+        <nav class="container mx-auto px-6 md:px-12 py-5" x-data="{ open: false }">
           <div class="lg:flex justify-between items-center">
             <div class="relative flex items-center justify-between">
               <img
@@ -57,12 +39,7 @@
                   @click="open = !open"
                   class="text-white focus:outline-none rounded-full bg-gray-900 bg-opacity-50 p-2"
                 >
-                  <svg
-                    class="h-6 w-6"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
+                  <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       x-show="open === false"
                       d="M4 6H20M4 12H20M4 18H20"
@@ -208,20 +185,14 @@
       </header>
 
       <!-- Hero -->
-      <div
-        class="container mx-auto px-6 md:px-12 relative z-10 flex items-center min-h-screen py-28 md:py-36 xl:py-48"
-      >
+      <div class="container mx-auto px-6 md:px-12 relative z-10 flex items-center min-h-screen py-28 md:py-36 xl:py-48">
         <div class="lg:w-4/5 xl:w-3/5 flex flex-col items-start relative z-10">
           <!-- <span class="uppercase text-indigo-500">Lorem ipsum</span> -->
 
-          <h1 class="font-bold text-3xl sm:text-5xl text-white mt-5" data-t>
-            growr-home.heading
-          </h1>
+          <h1 class="font-bold text-3xl sm:text-5xl text-white mt-5" data-t>growr-home.heading</h1>
 
           <div class="max-w-lg">
-            <p class="text-white mt-3 text-base md:text-lg" data-t>
-              growr-home.subheading
-            </p>
+            <p class="text-white mt-3 text-base md:text-lg" data-t>growr-home.subheading</p>
           </div>
 
           <a
@@ -237,28 +208,16 @@
 
     <!-- Mission -->
     <a name="mission"></a>
-    <div
-      class="px-6 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10"
-    >
-      <div
-        class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12"
-      >
+    <div class="px-6 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
+      <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
         <h2
           class="max-w-lg mb-6 text-4xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-5xl md:mx-auto"
           data-t
+          >growr-home.mission.title</h2
         >
-          growr-home.mission.title
-        </h2>
-        <p class="text-xl md:text-2xl mb-8" data-t>
-          growr-home.mission.subtitle
-        </p>
+        <p class="text-xl md:text-2xl mb-8" data-t>growr-home.mission.subtitle</p>
         <div class="container mx-auto mb-10">
-          <svg
-            class="h-14 md:h-20 mx-auto"
-            viewBox="0 0 332 165"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+          <svg class="h-14 md:h-20 mx-auto" viewBox="0 0 332 165" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M82.5 165C128.063 165 165 128.063 165 82.5C165 36.9365 128.063 0 82.5 0C36.9365 0 0 36.9365 0 82.5C0 128.063 36.9365 165 82.5 165Z"
               fill="#6AE7DA"
@@ -286,7 +245,8 @@
               rel="noreferrer"
               data-t
               >growr-home.mission.p-1-2</a
-            ><span data-t>growr-home.mission.p-1-3</span>
+            >
+            <span data-t>growr-home.mission.p-1-3</span>
           </p>
           <p class="mb-8">
             <span data-t>growr-home.mission.p-2-1</span>
@@ -298,7 +258,8 @@
               rel="noreferrer"
               data-t
               >growr-home.mission.p-2-2</a
-            ><span data-t>growr-home.mission.p-2-3</span>
+            >
+            <span data-t>growr-home.mission.p-2-3</span>
             <a
               class="underline text-teal-dark"
               data-attr-t
@@ -307,7 +268,8 @@
               rel="noreferrer"
               data-t
               >growr-home.mission.p-2-4</a
-            ><span data-t>growr-home.mission.p-2-5</span>
+            >
+            <span data-t>growr-home.mission.p-2-5</span>
           </p>
         </div>
       </div>
@@ -315,18 +277,13 @@
 
     <!-- What are we building? -->
     <a name="what"></a>
-    <div
-      class="px-6 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10"
-    >
-      <div
-        class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12"
-      >
+    <div class="px-6 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
+      <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
         <h2
           class="max-w-lg mb-6 text-4xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-5xl md:mx-auto"
           data-t
+          >growr-home.vision.title</h2
         >
-          growr-home.vision.title
-        </h2>
         <div
           class="max-w-xl sm:text-left md:mx-auto lg:max-w-2xl text-base md:text-lg text-gray-700 dark:text-gray-light"
         >
@@ -337,9 +294,7 @@
       </div>
     </div>
 
-    <div
-      class="grid gap-10 mx-auto sm:grid-cols-2 lg:grid-cols-2 lg:max-w-screen-lg mb-16 px-4 lg:px-8"
-    >
+    <div class="grid gap-10 mx-auto sm:grid-cols-2 lg:grid-cols-2 lg:max-w-screen-lg mb-16 px-4 lg:px-8">
       <div
         class="max-w-xl py-12 sm:text-left md:mx-auto lg:max-w-2xl text-base md:text-lg text-gray-700 dark:text-gray-light"
       >
@@ -388,15 +343,11 @@
         <h3
           class="max-w-3xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto"
           data-t
+          >growr-home.vision.finhealth.title</h3
         >
-          growr-home.vision.finhealth.title
-        </h3>
-        <p
-          class="text-base md:text-lg text-gray-700 dark:text-gray-light"
-          data-t
+        <p class="text-base md:text-lg text-gray-700 dark:text-gray-light" data-t
+          >growr-home.vision.finhealth.content</p
         >
-          growr-home.vision.finhealth.content
-        </p>
         <a
           class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60"
           data-attr-t
@@ -454,15 +405,9 @@
         <h3
           class="max-w-3xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto"
           data-t
+          >growr-home.vision.protocol.title</h3
         >
-          growr-home.vision.protocol.title
-        </h3>
-        <p
-          class="text-base md:text-lg text-gray-700 dark:text-gray-light"
-          data-t
-        >
-          growr-home.vision.protocol.content
-        </p>
+        <p class="text-base md:text-lg text-gray-700 dark:text-gray-light" data-t>growr-home.vision.protocol.content</p>
         <a
           class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60"
           data-attr-t
@@ -474,18 +419,13 @@
     </div>
 
     <!-- Values -->
-    <div
-      class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
-    >
-      <div
-        class="py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-4"
-      >
+    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div class="py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-4">
         <h2
-          class="max-w-3xl mb-12 text-3xl md:text-center font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-4xl md:mx-auto"
+          class="max-w-3xl mb-12 text-3xl md:text-center font-bold leading-none tracking-tight text-gray-900 dark:text-gray-lighter sm:text-5xl md:mx-auto"
           data-t
+          >growr-home.values.title</h2
         >
-          growr-home.values.title
-        </h2>
         <div class="grid gap-8 row-gap-10 lg:grid-cols-2">
           <div class="max-w-md">
             <div
@@ -541,18 +481,12 @@
                 />
               </svg>
             </div>
-            <h3
-              class="text-xl sm:text-2xl mb-2 font-bold text-gray-900 dark:text-gray-lighter"
-              data-t
+            <h3 class="text-xl sm:text-2xl mb-2 font-bold text-gray-900 dark:text-gray-lighter" data-t
+              >growr-home.values.value1</h3
             >
-              growr-home.values.value1
-            </h3>
-            <p
-              class="text-base md:text-lg mb-2 text-gray-700 dark:text-gray-light"
-              data-t
+            <p class="text-base md:text-lg mb-2 text-gray-700 dark:text-gray-light" data-t
+              >growr-home.values.value1-content</p
             >
-              growr-home.values.value1-content
-            </p>
           </div>
           <div class="max-w-md">
             <div
@@ -574,18 +508,12 @@
                 />
               </svg>
             </div>
-            <h3
-              class="text-xl sm:text-2xl mb-2 font-bold text-gray-900 dark:text-gray-lighter"
-              data-t
+            <h3 class="text-xl sm:text-2xl mb-2 font-bold text-gray-900 dark:text-gray-lighter" data-t
+              >growr-home.values.value2</h3
             >
-              growr-home.values.value2
-            </h3>
-            <p
-              class="text-base md:text-lg mb-2 text-gray-700 dark:text-gray-light"
-              data-t
+            <p class="text-base md:text-lg mb-2 text-gray-700 dark:text-gray-light" data-t
+              >growr-home.values.value2-content</p
             >
-              growr-home.values.value2-content
-            </p>
           </div>
           <div class="max-w-md">
             <div
@@ -610,18 +538,12 @@
                 />
               </svg>
             </div>
-            <h3
-              class="text-xl sm:text-2xl mb-2 font-bold text-gray-900 dark:text-gray-lighter"
-              data-t
+            <h3 class="text-xl sm:text-2xl mb-2 font-bold text-gray-900 dark:text-gray-lighter" data-t
+              >growr-home.values.value3</h3
             >
-              growr-home.values.value3
-            </h3>
-            <p
-              class="text-base md:text-lg mb-2 text-gray-700 dark:text-gray-light"
-              data-t
+            <p class="text-base md:text-lg mb-2 text-gray-700 dark:text-gray-light" data-t
+              >growr-home.values.value3-content</p
             >
-              growr-home.values.value3-content
-            </p>
           </div>
           <div class="max-w-md">
             <div
@@ -643,44 +565,30 @@
                 />
               </svg>
             </div>
-            <h3
-              class="text-xl sm:text-2xl mb-2 font-bold text-gray-900 dark:text-gray-lighter"
-              data-t
+            <h3 class="text-xl sm:text-2xl mb-2 font-bold text-gray-900 dark:text-gray-lighter" data-t
+              >growr-home.values.value4</h3
             >
-              growr-home.values.value4
-            </h3>
-            <p
-              class="text-base md:text-lg mb-2 text-gray-700 dark:text-gray-light"
-              data-t
+            <p class="text-base md:text-lg mb-2 text-gray-700 dark:text-gray-light" data-t
+              >growr-home.values.value4-content</p
             >
-              growr-home.values.value4-content
-            </p>
           </div>
         </div>
       </div>
     </div>
 
     <a name="recognitions"></a>
-    <div
-      class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
-    >
-      <div
-        class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12"
-      >
+    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
         <h2
           class="max-w-lg mb-6 text-3xl font-bold leading-none tracking-tight text-black dark:text-gray-lighter sm:text-5xl md:mx-auto"
           data-t
+          >growr-home.recognitions.title</h2
         >
-          growr-home.recognitions.title
-        </h2>
       </div>
       <div class="grid gap-12 row-gap-5 md:grid-cols-2">
         <div class="relative p-5 sm:p-10">
-          <a
-            data-attr-t
-            href-t="growr-home.recognitions.bitcoin-bankathon-link"
-            target="_blank"
-            ><svg
+          <a data-attr-t href-t="growr-home.recognitions.bitcoin-bankathon-link" target="_blank">
+            <svg
               class="hidden dark:block max-h-32 mx-auto"
               viewBox="0 0 398 170"
               fill="none"
@@ -751,13 +659,11 @@
               <path
                 d="M394.452 98.644C394.826 98.644 395.268 98.661 395.778 98.695C396.288 98.729 396.696 98.78 397.002 98.848L396.441 105.988C396.203 105.92 395.846 105.869 395.37 105.835C394.928 105.767 394.537 105.733 394.197 105.733C393.211 105.733 392.259 105.869 391.341 106.141C390.423 106.379 389.59 106.77 388.842 107.314C388.128 107.858 387.55 108.589 387.108 109.507C386.7 110.391 386.496 111.496 386.496 112.822V127H378.897V99.154H384.66L385.782 103.846H386.139C386.683 102.894 387.363 102.027 388.179 101.245C388.995 100.463 389.93 99.834 390.984 99.358C392.072 98.882 393.228 98.644 394.452 98.644Z"
                 fill="white"
-              /></svg
-          ></a>
-          <a
-            data-attr-t
-            href-t="growr-home.recognitions.bitcoin-bankathon-link"
-            target="_blank"
-            ><svg
+              />
+            </svg>
+          </a>
+          <a data-attr-t href-t="growr-home.recognitions.bitcoin-bankathon-link" target="_blank">
+            <svg
               class="block dark:hidden max-h-32 mx-auto"
               viewBox="0 0 398 170"
               fill="none"
@@ -808,10 +714,7 @@
                 d="M219.305 98.593C223.045 98.593 225.901 99.409 227.873 101.041C229.879 102.639 230.882 105.104 230.882 108.436V127H225.578L224.099 123.226H223.895C223.113 124.212 222.297 125.028 221.447 125.674C220.631 126.32 219.679 126.779 218.591 127.051C217.537 127.357 216.228 127.51 214.664 127.51C213.032 127.51 211.553 127.204 210.227 126.592C208.935 125.946 207.915 124.977 207.167 123.685C206.419 122.359 206.045 120.693 206.045 118.687C206.045 115.729 207.082 113.553 209.156 112.159C211.23 110.731 214.341 109.949 218.489 109.813L223.334 109.66V108.436C223.334 106.974 222.943 105.903 222.161 105.223C221.413 104.543 220.359 104.203 218.999 104.203C217.639 104.203 216.313 104.407 215.021 104.815C213.729 105.189 212.437 105.665 211.145 106.243L208.646 101.092C210.142 100.31 211.791 99.698 213.593 99.256C215.429 98.814 217.333 98.593 219.305 98.593ZM220.376 114.199C217.928 114.267 216.228 114.709 215.276 115.525C214.324 116.341 213.848 117.412 213.848 118.738C213.848 119.894 214.188 120.727 214.868 121.237C215.548 121.713 216.432 121.951 217.52 121.951C219.152 121.951 220.529 121.475 221.651 120.523C222.773 119.537 223.334 118.16 223.334 116.392V114.097L220.376 114.199Z"
                 fill="#021A3B"
               />
-              <path
-                d="M246.515 127H238.916V88.24H246.515V127Z"
-                fill="#021A3B"
-              />
+              <path d="M246.515 127H238.916V88.24H246.515V127Z" fill="#021A3B" />
               <path
                 d="M261.34 127L250.732 99.154H258.688L264.043 115.015C264.247 115.627 264.417 116.273 264.553 116.953C264.723 117.633 264.842 118.296 264.91 118.942C265.012 119.588 265.08 120.183 265.114 120.727H265.318C265.352 120.149 265.42 119.537 265.522 118.891C265.624 118.245 265.743 117.599 265.879 116.953C266.049 116.273 266.236 115.627 266.44 115.015L271.795 99.154H279.751L269.143 127H261.34Z"
                 fill="#021A3B"
@@ -831,15 +734,13 @@
               <path
                 d="M394.95 98.644C395.324 98.644 395.766 98.661 396.276 98.695C396.786 98.729 397.194 98.78 397.5 98.848L396.939 105.988C396.701 105.92 396.344 105.869 395.868 105.835C395.426 105.767 395.035 105.733 394.695 105.733C393.709 105.733 392.757 105.869 391.839 106.141C390.921 106.379 390.088 106.77 389.34 107.314C388.626 107.858 388.048 108.589 387.606 109.507C387.198 110.391 386.994 111.496 386.994 112.822V127H379.395V99.154H385.158L386.28 103.846H386.637C387.181 102.894 387.861 102.027 388.677 101.245C389.493 100.463 390.428 99.834 391.482 99.358C392.57 98.882 393.726 98.644 394.95 98.644Z"
                 fill="#021A3B"
-              /></svg
-          ></a>
+              />
+            </svg>
+          </a>
         </div>
         <div class="p-5 sm:p-10">
-          <a
-            data-attr-t
-            href-t="growr-home.recognitions.httf4-link"
-            target="_blank"
-            ><svg
+          <a data-attr-t href-t="growr-home.recognitions.httf4-link" target="_blank">
+            <svg
               class="hidden dark:block max-h-32 mx-auto"
               version="1.1"
               id="AW"
@@ -923,23 +824,14 @@
                 style="fill: url(#_x3C_Path_x3E__1_1_)"
                 d="M44,0.4c-3.8,0-7.5,0.5-13.2,2.5l0,0	C47-3,45.7,28.8,64.1,40.1c0.1,0.1,0.2,0.1,0.3,0.2c0.1,0.1,0.2,0.1,0.3,0.2c9.8,5.5,13.1-5,35.1-16.1c-3.8,1.9-7.2,3.4-11.4,4	c-6.4,0.8-10.1-4.6-12.7-7.7C73.6,18,63.7,0.5,44.3,0.4H44z"
               />
-              <path
-                style="fill: #ffffff"
-                d="M61.4,65.8v5.1h11.7v6.7H61.4v11.9h-7.9V59.1H74v6.7H61.4z"
-              />
+              <path style="fill: #ffffff" d="M61.4,65.8v5.1h11.7v6.7H61.4v11.9h-7.9V59.1H74v6.7H61.4z" />
               <path style="fill: #ffffff" d="M80.2,89.5V59.1h7.9v30.4H80.2z" />
-              <path
-                style="fill: #ffffff"
-                d="M118,89.5l-14.5-18.6v18.6h-7.9V59.1h7.9L118,77.7V59.1h7.9v30.4H118z"
-              />
+              <path style="fill: #ffffff" d="M118,89.5l-14.5-18.6v18.6h-7.9V59.1h7.9L118,77.7V59.1h7.9v30.4H118z" />
               <path
                 style="fill: #ffffff"
                 d="M153.5,89.5l-2-5.3h-10.9l-2.1,5.3h-8.2l11.5-30.4h8.6L162,89.5H153.5z M146.2,68.5l-3.3,9.7h6.6	L146.2,68.5z"
               />
-              <path
-                style="fill: #ffffff"
-                d="M206.9,65.8v23.7H199V65.8h-7.3v-6.7h22.6v6.7H206.9z"
-              />
+              <path style="fill: #ffffff" d="M206.9,65.8v23.7H199V65.8h-7.3v-6.7h22.6v6.7H206.9z" />
               <path
                 style="fill: #ffffff"
                 d="M235.1,89.5l-7.6-11.7v11.7h-7.9V59.1h12.3c2.9,0,5.4,0.5,7.4,2.7c1.7,1.8,2.6,4.3,2.6,6.7	c0,1.9-0.6,4.1-1.7,5.6c-1.2,1.7-2.9,2.5-4.9,2.9l9.5,12.4H235.1z M229,65.2h-1.5v7.5h1.5c2.5,0,4.8-1,4.8-3.8	C233.8,66.1,231.4,65.2,229,65.2z"
@@ -969,13 +861,11 @@
               <path
                 style="fill: url(#SVGID_3_)"
                 d="M13.8,120.8c0.4,0.7,0.8,1.4,1.3,2.1c0.4,0.7,0.9,1.3,1.3,1.9s0.9,1.2,1.4,1.8	c0.5,0.6,0.9,1.2,1.4,1.7c-6.7-7.5-9.1-19.7-9.5-32.9c0-0.8,0-1.6,0-2.5c-0.1-16.3,2.5-32.4,5.9-48.3c1-4.6,2-9.1,2.8-13.7	c0.6-3.2,1.4-6.9,2.1-10.1c2.1-10,6.4-15.2,7.3-16.1c0.9-0.9,1.9-1.5,3-1.9l0,0c-1.7,0.7-4.1,1.7-5.7,2.5c-3.2,1.6-6.4,3.5-9.1,5.8	c-1.3,1-2.4,2.1-3.5,3.3C7.1,20,4,26.6,2.3,33.8c-1,4.1-1.5,8.3-1.6,12.5C0,61.7,3.1,77,5.3,92.1C6.7,102,8.8,112,13.8,120.8z"
-              /></svg
-          ></a>
-          <a
-            data-attr-t
-            href-t="growr-home.recognitions.httf4-link"
-            target="_blank"
-            ><svg
+              />
+            </svg>
+          </a>
+          <a data-attr-t href-t="growr-home.recognitions.httf4-link" target="_blank">
+            <svg
               class="block dark:hidden max-h-32 mx-auto"
               viewBox="0 0 279 140"
               fill="none"
@@ -994,10 +884,7 @@
                   d="M43.8 0.400024C40 0.400024 36.3 0.900024 30.6 2.90002C46.8 -2.99998 45.6 28.8 64 40.1C64.1 40.2 64.2 40.2 64.3 40.3C64.4 40.4 64.5 40.4 64.6 40.5C74.4 46 77.7 35.5 99.7 24.4C95.9 26.3 92.5 27.8 88.3 28.4C81.9 29.2 78.2 23.8 75.6 20.7C73.5 18 63.5 0.500024 44.1 0.400024H43.8Z"
                   fill="url(#paint2_linear_1241_45)"
                 />
-                <path
-                  d="M61.2 65.8V70.9H72.9V77.6H61.2V89.5H53.3V59.1H73.8V65.8H61.2Z"
-                  fill="#414141"
-                />
+                <path d="M61.2 65.8V70.9H72.9V77.6H61.2V89.5H53.3V59.1H73.8V65.8H61.2Z" fill="#414141" />
                 <path d="M80.1 89.5V59.1H88V89.5H80.1Z" fill="#414141" />
                 <path
                   d="M117.9 89.5L103.4 70.9V89.5H95.5V59.1H103.4L117.9 77.7V59.1H125.8V89.5H117.9Z"
@@ -1007,10 +894,7 @@
                   d="M153.5 89.5L151.5 84.2H140.6L138.5 89.5H130.2L141.7 59.1H150.4L162 89.5H153.5ZM146.1 68.5L142.8 78.2H149.4L146.1 68.5Z"
                   fill="#414141"
                 />
-                <path
-                  d="M206.8 65.8V89.5H198.9V65.8H191.6V59.1H214.2V65.8H206.8Z"
-                  fill="#414141"
-                />
+                <path d="M206.8 65.8V89.5H198.9V65.8H191.6V59.1H214.2V65.8H206.8Z" fill="#414141" />
                 <path
                   d="M234.9 89.5L227.3 77.8V89.5H219.4V59.1H231.7C234.6 59.1 237.1 59.6 239.1 61.8C240.8 63.6 241.7 66.1 241.7 68.5C241.7 70.4 241.1 72.6 240 74.1C238.8 75.8 237.1 76.6 235.1 77L244.6 89.4H234.9V89.5ZM228.9 65.2H227.4V72.7H228.9C231.4 72.7 233.7 71.7 233.7 68.9C233.7 66.1 231.3 65.2 228.9 65.2Z"
                   fill="#414141"
@@ -1098,47 +982,36 @@
                 <clipPath id="clip0_1241_45">
                   <rect width="278.6" height="139.9" fill="white" />
                 </clipPath>
-              </defs></svg
-          ></a>
+              </defs>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
 
     <a name="news"></a>
-    <div
-      class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
-    >
-      <div
-        class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12"
-      >
+    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
         <h2
           class="max-w-lg mb-6 text-3xl font-bold leading-none tracking-tight text-black dark:text-gray-lighter sm:text-5xl md:mx-auto"
           data-t
+          >growr-home.news.title</h2
         >
-          growr-home.news.title
-        </h2>
       </div>
       <div class="grid gap-12 row-gap-5 md:grid-cols-2">
         <div class="relative p-5 sm:p-10">
           <div>
-            <p
-              class="mb-2 text-xs text-gray-700 dark:text-gray-light font-semibold tracking-wide uppercase"
-              data-t
+            <p class="mb-2 text-xs text-gray-700 dark:text-gray-light font-semibold tracking-wide uppercase" data-t
+              >growr-home.news.news-20231020-date</p
             >
-              growr-home.news.news-20231020-date
-            </p>
             <h3
               class="max-w-md mb-6 text-gray-900 dark:text-gray-lighter text-3xl font-extrabold leading-none sm:text-4xl"
               data-t
+              >growr-home.news.news-20231020-title</h3
             >
-              growr-home.news.news-20231020-title
-            </h3>
-            <p
-              class="mb-6 text-base text-gray-700 dark:text-gray-light md:text-lg sm:mb-8"
-              data-t
+            <p class="mb-6 text-base text-gray-700 dark:text-gray-light md:text-lg sm:mb-8" data-t
+              >growr-home.news.news-20231020-content</p
             >
-              growr-home.news.news-20231020-content
-            </p>
           </div>
           <a
             class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60"
@@ -1151,24 +1024,17 @@
         </div>
         <div class="relative p-5 sm:p-10">
           <div>
-            <p
-              class="mb-2 text-xs text-gray-700 dark:text-gray-light font-semibold tracking-wide uppercase"
-              data-t
+            <p class="mb-2 text-xs text-gray-700 dark:text-gray-light font-semibold tracking-wide uppercase" data-t
+              >growr-home.news.news-20230518-date</p
             >
-              growr-home.news.news-20230518-date
-            </p>
             <h3
               class="max-w-md mb-6 text-gray-900 dark:text-gray-lighter text-3xl font-extrabold leading-none sm:text-4xl"
               data-t
+              >growr-home.news.news-20230518-title</h3
             >
-              growr-home.news.news-20230518-title
-            </h3>
-            <p
-              class="mb-6 text-base text-gray-700 dark:text-gray-light md:text-lg sm:mb-8"
-              data-t
+            <p class="mb-6 text-base text-gray-700 dark:text-gray-light md:text-lg sm:mb-8" data-t
+              >growr-home.news.news-20230518-content</p
             >
-              growr-home.news.news-20230518-content
-            </p>
           </div>
           <a
             class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60"
@@ -1181,24 +1047,17 @@
         </div>
         <div class="relative p-5 sm:p-10">
           <div>
-            <p
-              class="mb-2 text-xs text-gray-700 dark:text-gray-light font-semibold tracking-wide uppercase"
-              data-t
+            <p class="mb-2 text-xs text-gray-700 dark:text-gray-light font-semibold tracking-wide uppercase" data-t
+              >growr-home.news.news-20221207-date</p
             >
-              growr-home.news.news-20221207-date
-            </p>
             <h3
               class="max-w-md mb-6 text-gray-900 dark:text-gray-lighter text-3xl font-extrabold leading-none sm:text-4xl"
               data-t
+              >growr-home.news.news-20221207-title</h3
             >
-              growr-home.news.news-20221207-title
-            </h3>
-            <p
-              class="mb-6 text-base text-gray-700 dark:text-gray-light md:text-lg sm:mb-8"
-              data-t
+            <p class="mb-6 text-base text-gray-700 dark:text-gray-light md:text-lg sm:mb-8" data-t
+              >growr-home.news.news-20221207-content</p
             >
-              growr-home.news.news-20221207-content
-            </p>
           </div>
           <a
             class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60"
@@ -1211,24 +1070,17 @@
         </div>
         <div class="relative p-5 sm:p-10">
           <div>
-            <p
-              class="mb-2 text-xs text-gray-700 dark:text-gray-light font-semibold tracking-wide uppercase"
-              data-t
+            <p class="mb-2 text-xs text-gray-700 dark:text-gray-light font-semibold tracking-wide uppercase" data-t
+              >growr-home.news.news-20221012-date</p
             >
-              growr-home.news.news-20221012-date
-            </p>
             <h3
               class="max-w-md mb-6 text-gray-900 dark:text-gray-lighter text-3xl font-extrabold leading-none sm:text-4xl"
               data-t
+              >growr-home.news.news-20221012-title</h3
             >
-              growr-home.news.news-20221012-title
-            </h3>
-            <p
-              class="mb-6 text-base text-gray-700 dark:text-gray-light md:text-lg sm:mb-8"
-              data-t
+            <p class="mb-6 text-base text-gray-700 dark:text-gray-light md:text-lg sm:mb-8" data-t
+              >growr-home.news.news-20221012-content</p
             >
-              growr-home.news.news-20221012-content
-            </p>
           </div>
           <a
             class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60"
@@ -1241,24 +1093,17 @@
         </div>
         <div class="relative p-5 sm:p-10">
           <div>
-            <p
-              class="mb-2 text-xs text-gray-700 dark:text-gray-light font-semibold tracking-wide uppercase"
-              data-t
+            <p class="mb-2 text-xs text-gray-700 dark:text-gray-light font-semibold tracking-wide uppercase" data-t
+              >growr-home.news.news-20220725-date</p
             >
-              growr-home.news.news-20220725-date
-            </p>
             <h3
               class="max-w-md mb-6 text-gray-900 dark:text-gray-lighter text-3xl font-extrabold leading-none sm:text-4xl"
               data-t
+              >growr-home.news.news-20220725-title</h3
             >
-              growr-home.news.news-20220725-title
-            </h3>
-            <p
-              class="mb-6 text-base text-gray-700 dark:text-gray-light md:text-lg sm:mb-8"
-              data-t
+            <p class="mb-6 text-base text-gray-700 dark:text-gray-light md:text-lg sm:mb-8" data-t
+              >growr-home.news.news-20220725-content</p
             >
-              growr-home.news.news-20220725-content
-            </p>
           </div>
           <a
             class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60"
@@ -1271,24 +1116,17 @@
         </div>
         <div class="relative p-5 sm:p-10">
           <div>
-            <p
-              class="mb-2 text-xs text-gray-700 dark:text-gray-light font-semibold tracking-wide uppercase"
-              data-t
+            <p class="mb-2 text-xs text-gray-700 dark:text-gray-light font-semibold tracking-wide uppercase" data-t
+              >growr-home.news.news-20220629-date</p
             >
-              growr-home.news.news-20220629-date
-            </p>
             <h3
               class="max-w-md mb-6 text-gray-900 dark:text-gray-lighter text-3xl font-extrabold leading-none sm:text-4xl"
               data-t
+              >growr-home.news.news-20220629-title</h3
             >
-              growr-home.news.news-20220629-title
-            </h3>
-            <p
-              class="mb-6 text-base text-gray-700 dark:text-gray-light md:text-lg sm:mb-8"
-              data-t
+            <p class="mb-6 text-base text-gray-700 dark:text-gray-light md:text-lg sm:mb-8" data-t
+              >growr-home.news.news-20220629-content</p
             >
-              growr-home.news.news-20220629-content
-            </p>
           </div>
           <a
             class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60"
@@ -1301,24 +1139,17 @@
         </div>
         <div class="relative p-5 sm:p-10">
           <div>
-            <p
-              class="mb-2 text-xs text-gray-700 dark:text-gray-light font-semibold tracking-wide uppercase"
-              data-t
+            <p class="mb-2 text-xs text-gray-700 dark:text-gray-light font-semibold tracking-wide uppercase" data-t
+              >growr-home.news.news-20220428-date</p
             >
-              growr-home.news.news-20220428-date
-            </p>
             <h3
               class="max-w-md mb-6 text-gray-900 dark:text-gray-lighter text-3xl font-extrabold leading-none sm:text-4xl"
               data-t
+              >growr-home.news.news-20220428-title</h3
             >
-              growr-home.news.news-20220428-title
-            </h3>
-            <p
-              class="mb-6 text-base text-gray-700 dark:text-gray-light md:text-lg sm:mb-8"
-              data-t
+            <p class="mb-6 text-base text-gray-700 dark:text-gray-light md:text-lg sm:mb-8" data-t
+              >growr-home.news.news-20220428-content</p
             >
-              growr-home.news.news-20220428-content
-            </p>
           </div>
           <a
             class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60"
@@ -1331,24 +1162,17 @@
         </div>
         <div class="relative p-5 sm:p-10">
           <div>
-            <p
-              class="mb-2 text-xs text-gray-700 dark:text-gray-light font-semibold tracking-wide uppercase"
-              data-t
+            <p class="mb-2 text-xs text-gray-700 dark:text-gray-light font-semibold tracking-wide uppercase" data-t
+              >growr-home.news.news-20220410-date</p
             >
-              growr-home.news.news-20220410-date
-            </p>
             <h3
               class="max-w-md mb-6 text-gray-900 dark:text-gray-lighter text-3xl font-extrabold leading-none sm:text-4xl"
               data-t
+              >growr-home.news.news-20220410-title</h3
             >
-              growr-home.news.news-20220410-title
-            </h3>
-            <p
-              class="mb-6 text-base text-gray-700 dark:text-gray-light md:text-lg sm:mb-8"
-              data-t
+            <p class="mb-6 text-base text-gray-700 dark:text-gray-light md:text-lg sm:mb-8" data-t
+              >growr-home.news.news-20220410-content</p
             >
-              growr-home.news.news-20220410-content
-            </p>
           </div>
           <a
             class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60"
@@ -1361,24 +1185,17 @@
         </div>
         <div class="p-5 sm:p-10">
           <div>
-            <p
-              class="mb-2 text-xs text-gray-700 dark:text-gray-light font-semibold tracking-wide uppercase"
-              data-t
+            <p class="mb-2 text-xs text-gray-700 dark:text-gray-light font-semibold tracking-wide uppercase" data-t
+              >growr-home.news.news-20211209-date</p
             >
-              growr-home.news.news-20211209-date
-            </p>
             <h3
               class="max-w-md mb-6 text-gray-900 dark:text-gray-lighter text-3xl font-extrabold leading-none sm:text-4xl"
               data-t
+              >growr-home.news.news-20211209-title</h3
             >
-              growr-home.news.news-20211209-title
-            </h3>
-            <p
-              class="mb-6 text-base text-gray-700 dark:text-gray-light md:text-lg sm:mb-8"
-              data-t
+            <p class="mb-6 text-base text-gray-700 dark:text-gray-light md:text-lg sm:mb-8" data-t
+              >growr-home.news.news-20211209-content</p
             >
-              growr-home.news.news-20211209-content
-            </p>
           </div>
           <a
             class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60"
@@ -1391,24 +1208,17 @@
         </div>
         <div class="p-5 sm:p-10">
           <div>
-            <p
-              class="mb-2 text-xs text-gray-700 dark:text-gray-light font-semibold tracking-wide uppercase"
-              data-t
+            <p class="mb-2 text-xs text-gray-700 dark:text-gray-light font-semibold tracking-wide uppercase" data-t
+              >growr-home.news.news-20211115-date</p
             >
-              growr-home.news.news-20211115-date
-            </p>
             <h3
               class="max-w-md mb-6 text-gray-900 dark:text-gray-lighter text-3xl font-extrabold leading-none sm:text-4xl"
               data-t
+              >growr-home.news.news-20211115-title</h3
             >
-              growr-home.news.news-20211115-title
-            </h3>
-            <p
-              class="mb-6 text-base text-gray-700 dark:text-gray-light md:text-lg sm:mb-8"
-              data-t
+            <p class="mb-6 text-base text-gray-700 dark:text-gray-light md:text-lg sm:mb-8" data-t
+              >growr-home.news.news-20211115-content</p
             >
-              growr-home.news.news-20211115-content
-            </p>
           </div>
           <a
             class="block text-center bg-teal hover:bg-teal-light dark:bg-teal-dark dark:hover:bg-teal shadow-md py-3 px-6 rounded-md text-md text-white font-medium mt-10 w-full md:w-60"
@@ -1423,9 +1233,7 @@
     </div>
 
     <!-- Footer -->
-    <footer
-      class="text-sm bg-gray-200 text-gray-500 dark:bg-gray-darker dark:text-gray-400"
-    >
+    <footer class="text-sm bg-gray-200 text-gray-500 dark:bg-gray-darker dark:text-gray-400">
       <div class="flex flex-col justify-between px-6 py-5 sm:flex-row">
         <p class="text-sm">
           <span data-t>footer.rights</span>

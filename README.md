@@ -4,14 +4,30 @@
 
 The Growr landing page is created using Tailwind CSS and static-i18n.
 
-## Tailwind CSS
+## Building
 
-To generate the tailwind.css for distribution, run `npx tailwindcss -i ./styles.css -o ./dist/tailwind.css`.
+To build everything (CSS + i18n), run:
+```bash
+npm run build
+```
 
-## I18n
+This will:
+1. Generate the tailwind.css for distribution
+2. Fix i18n whitespace formatting and generate English files
 
-To generate the English files for distribution, run `static-i18n -l en -o dist default`.
+### Manual build steps
 
-To generate the internationalized files for distribution, run `static-i18n -l en -i en -i bg -o dist default`.
+**Tailwind CSS**: `npm run build:css` or `npx tailwindcss -i ./styles.css -o ./dist/tailwind.css`
 
-Each new language is configured in default/locales (see en.json as an example). Add additional param to the command above, e.g. `-i es` for Spanish, `-i bg` for Bulgarian, etc.
+**I18n**: `npm run build:i18n`
+
+The i18n build script automatically fixes whitespace issues before running static-i18n, so you can format HTML files with Prettier without breaking translations.
+
+### Multiple languages
+
+To generate files for multiple languages (e.g., English + Bulgarian), edit `fix-i18n-whitespace.js` and change the static-i18n command to:
+```javascript
+execSync('static-i18n -l en -i en -i bg -o dist default', { stdio: 'inherit' });
+```
+
+Each new language is configured in default/locales (see en.json as an example).

@@ -1,4 +1,9 @@
 {
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./styles.css -o ./dist/tailwind.css",
+    "build:i18n": "node fix-i18n-whitespace.js",
+    "build": "npm run build:css && npm run build:i18n"
+  },
   "dependencies": {
     "tailwindcss": "^3.0.22"
   },
